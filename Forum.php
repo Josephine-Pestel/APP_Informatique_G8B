@@ -23,26 +23,27 @@
     </div>
 
 
-    <a href=# class="bouton">Ajouter une discussion </a>
+
+    <a class="test">Ajouter une discussion </a>
 
 
 
     <table>
         <tr>
-            <th>fil de discussion</th>
-            <th>theme</th>
-            <th>date</th>
-            <th>lancée par</th>
-            <th>dernier message de</th>
-        </tr>
-
+        <td>Fil de discussion </td>
+        <td>Thème</td>
+        <td>Date</td>
+        <td>Lancée par</td>
+        <td>Dernier message de</td>
+    </tr>
         <tr>
             <td>1</td>
-            <td>temperature</td>
-            <td>01/02/2010</td>
-            <td>josephine</td>
+            <td>température</td>
+            <td>01/02/2020</td>
             <td>linaelle</td>
+            <td>josephine</td>
         </tr>
+
     </table>
 
 
