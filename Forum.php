@@ -10,7 +10,7 @@
 
 
 <body>
-<-- header et menu -->
+<!-- header et menu -->
 <?php include("ENTETE_MENU.php"); ?>
 
 
