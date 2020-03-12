@@ -19,14 +19,29 @@ html,body
 
 
 }
+.test{
+    margin-bottom: 50%;
+    margin-left: 5%;
+    font-family:"Times New Roman";
+    font-size:110%;
+    color:mintcream;
+    background: midnightblue;
+    border-radius:10px;
+    text-align:center;
+    padding-top:0.8%;
+    padding-right:0.8% ;
+    padding-bottom: 0.8%;
+    padding-left: 0.8%;
 
-
-.bouton:hover {
-    background:cornflowerblue;
 
 }
 
+.test:hover {
+    background:skyblue;
+
+}
 table {
+    margin-top:10%;
     border: medium solid #6495ed;
     border-collapse: collapse;
     width: 80%;
@@ -54,3 +69,9 @@ caption {
 section {
     margin-bottom: 30%;
 }
+
+
+}
+
+
+
