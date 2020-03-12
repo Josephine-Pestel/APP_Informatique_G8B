@@ -13,7 +13,7 @@
 
 <body>
 
-<!-- Appel En-Tete et Menu -->
+<!-- Appel En-Tete et Menu  + TEST-->
 
 <?php
 require('ENTETE_MENU.php');
