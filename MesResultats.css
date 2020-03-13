@@ -4,6 +4,12 @@ html, body
     margin:0;
     padding:0;
 }
+<<<<<<< Updated upstream
+=======
+.test {
+    background-color: #1D2043;
+}
+>>>>>>> Stashed changes
 #canvas{
     display:inline-flex;
     horiz-align: right;
