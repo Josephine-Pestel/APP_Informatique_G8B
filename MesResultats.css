@@ -1,33 +1,32 @@
 html, body
 {
     width: 100%;
+
 }
 
 #canvas{
     display:inline-block;
-    horiz-align: right;
 }
 #canvas_tableau{
     background-color: #D0EDF7;
-    width: 35%;
-    height: 35%;
+    width: 55%;
+    height: 25%;
     border-radius: 30px;
-    position: absolute;
-    left: 20%;
-    top: 20%;
-    margin-bottom: 100px;
     padding-bottom: 20px;
+    margin-bottom: 100px;
+    padding-top: 2px;
+    margin-top: 5%;
 }
 #canvas_graphique{
     background-color: #D0EDF7;
-    width: 35%;
-    height: 35%;
+    width: 39%;
+    height: 40%;
     border-radius: 30px;
-    margin-bottom: 100px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     position: absolute;
+    top: 24.5%;
     left: 60%;
-    top: 30%;
+
 }
 h2{
     text-align: center;
@@ -58,6 +57,19 @@ h2{
     text-decoration: none;
     margin-left:80%;
     -top: 150px;
-
-
+}
+.quatrieme_bouton{
+    border: 0;
+    line-height: 1.5;
+    padding: 10px 15px;
+    font-size: 1rem;
+    text-align: center;
+    color: #F1F9FF;
+    border-radius: 2px;
+    background-color: #2043F4;
+rgba(0, 0, 0, .2),
+rgba(0, 0, 0, .2) 30%,
+rgba(0, 0, 0, 0));
+    text-decoration: none;
+    margin-left:78%;
 }
