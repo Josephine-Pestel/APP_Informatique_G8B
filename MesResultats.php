@@ -8,14 +8,14 @@
 <body>
     <?php include("ENTETE_MENU.php"); ?>
 
-<div id="canvas">
-    <section id="canvas_tableau">
+<section id="canvas">
+    <div id="canvas_tableau">
         <h2>TABLEAU</h2>
         <div class="texte_milieu">
             <p>Les résultats sous forme de tableau vous permettant d'avoir une vision détaillée de vos scores depuis la création de vos comptes</p>
         </div>
         <a href="TableauResultats.html" class="troisieme_bouton" alt="Accéder au tableau" target="_blank">TABLEAU</a>
-    </section>
+    </>
     <aside id="canvas_graphique">
         <h2>GRAPHIQUE</h2>
         <div class="texte_milieu">
@@ -23,10 +23,9 @@
         </div>
         <a href="GraphiqueResultats.html" class="troisieme_bouton" alt="Accéder au graphique" target="_blank">GRAPHIQUE</a>
     </aside>
-</div>
+</section>
 </body>
 <footer>
 <?php include("FOOTER.php"); ?>
 </footer>
-
 </html>
