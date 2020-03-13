@@ -3,6 +3,7 @@ p
     color: black;
 }
 
+
 #logo
 {
 
@@ -64,12 +65,12 @@ h1{
 
 	width:100%;
 	height: 50%;
-	border: 3px #D0EDF7 solid;
+	border: 3px #f1f9ff solid;
 	border-radius: 10px;
     display: flex;
     justify-content: space-around;
     text-align: center;
-    background-color: #D0EDF7;
+    background-color: #f1f9ff;
 }
 .BoutTry{
 	text-decoration: none;
