@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ac3c9552-5002-47f6-b3e8-b63399e39ce5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajouter_discussion.css" beforeDir="false" afterPath="$PROJECT_DIR$/Ajouter_discussion.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajouter_discussion.php" beforeDir="false" afterPath="$PROJECT_DIR$/Ajouter_discussion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Forum.php" beforeDir="false" afterPath="$PROJECT_DIR$/Forum.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +44,7 @@
       <workItem from="1584005865479" duration="1418000" />
       <workItem from="1584008765555" duration="3164000" />
       <workItem from="1584640989350" duration="3106000" />
+      <workItem from="1584647690645" duration="544000" />
     </task>
     <servers />
   </component>
@@ -52,10 +52,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1584641007227">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1584647727815">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584641007227" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584647727815" />
     <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584009942153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
