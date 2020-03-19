@@ -32,13 +32,17 @@ html,body
 
 }
 .bouton_discussion:hover {
-    background: sandybrown;
+    background: grey;
 }
 .formulaire{
     background-color: gainsboro;
-    padding:5%;
+    padding:2%;
     text-align: left;
     margin-left: 25%;
-    margin-right: 25%;
+    margin-right: 50%;
+    font-size:120%;
+    font-family:"Times New Roman";
+    border-radius:12%;
+
 
 }
