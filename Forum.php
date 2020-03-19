@@ -22,9 +22,7 @@
         <p>Bienvenue sur le forum, profitez-en pour poser vos questions sur notre système ou sur notre site internet !</p>
     </div>
 
-
-
-    <a class="test">Ajouter une discussion </a>
+    <button class="bouton_discussion">Ajouter une discussion</button>
 
 
 
