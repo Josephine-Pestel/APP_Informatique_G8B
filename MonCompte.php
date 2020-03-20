@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-
+  
 <head>
     <!-- En-tête de la page -->
     <link type="text/css" rel="stylesheet" href="P_MonCompte.css?t=<? echo time(); ?>" media="all">
