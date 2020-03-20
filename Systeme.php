@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="Notre_Systeme.css" />
+    <link rel="stylesheet" href="Systeme.css" />
     <title>WINK</title>
     <link rel="shortcut icon" href="favicon.ico" />
 </head>
