@@ -14,6 +14,7 @@ h2{
     font-family: "Times New Roman";
     text-align:left;
     text-align: justify;
+    margin-right: 2%;
 
   }
 h3{
@@ -26,6 +27,7 @@ h3{
     font-family: "Times New Roman";
     text-align:left;
     text-align: justify;
+    margin-right: 2%;
 
 }
 
@@ -35,7 +37,23 @@ H4{
     text-align: left;
 }
 .Para3{
+    margin-left: 20%;
     font-family: "Times New Roman";
     text-align:left;
     text-align: justify;
+    margin-right: 2%;
+}
+h5{
+    margin-left:20%;
+    font-family: "Times New Roman";
+    font-size: 100%;
+    text-align: left;
+}
+
+.Para4{
+    margin-left:20%;
+    font-family: "Times New Roman";
+    text-align:left;
+    text-align: justify;
+    margin-right: 2%;
 }
