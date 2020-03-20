@@ -77,11 +77,10 @@ header /* balise */
     margin-top:-10%;
     float: left;
     width : 15%;
-    height:100%;
-    background : #1D2043 0 0 no-repeat padding-box;
+    height: 100%;
+    background : #1D2043 0 0;
     opacity : 1;
     box-shadow: 0 2px 5px #1c1a19;
-    margin-bottom: 2%;
     margin-right: 5%;
 }
 
