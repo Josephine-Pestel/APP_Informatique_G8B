@@ -35,8 +35,8 @@
     <div class="bloc_footer2">
         <a href="#" class="cookies"><p>COOKIES</p></a>
         <a href="#" class="confidentialite"><p>CONFIDENTIALITE</p></a>
-        <a href="#" class="conditions"><p>CONDITIONS</p></a>
-        <a href="#" class="mentions"><p>MENTIONS LEGALES</p></a>
+        <a href="CGU.php" class="conditions"><p>CONDITIONS</p></a>
+        <a href="Mentions_Legales.php" class="mentions"><p>MENTIONS LEGALES</p></a>
     </div>
 
 </footer>
