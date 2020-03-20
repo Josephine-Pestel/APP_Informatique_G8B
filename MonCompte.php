@@ -41,7 +41,7 @@ require('ENTETE_MENU.php');
     <section class="partie_droite">
         <section class="details1">
             <p class="nom"> JOSEPHINE PESTEL</p>
-            <p class="date_inscription"> Incris le ???</p>
+            <p class="date_inscription"> Incris le ??? </p>
         </section>
 
         <div class="separation1"></div>
