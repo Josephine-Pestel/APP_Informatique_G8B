@@ -13,7 +13,6 @@
 <body>
 
 <header>
-
     <div class="taille_menu"> </div>
     <a href="" class="bouton_langue" alt="Changer la langue" target="_blank">ENGLISH</a>
     <h1 class="titre">INFINITE MEASURES</h1>
@@ -36,14 +35,15 @@
     <nav>
         <ul>
             <li><a href="P_Accueil.html">Accueil</a></li>
-            <li><a href="#">Notre Système</a></li>
-            <li><a href="#">Forum</a></li>
-            <li><a href="#">Mon compte</a></li>
+            <li><a href="NotreSysteme.php">Notre Système</a></li>
+            <li><a href="Forum.php">Forum</a></li>
+            <li><a href="MonCompte.php">Mon compte</a></li>
             <li><a href="P_FAQ.html">FAQ</a></li>
         </ul>
     </nav>
 
 </div>
+
 
 
 
