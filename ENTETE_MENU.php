@@ -35,7 +35,7 @@
     <nav>
         <ul>
             <li><a href="P_Accueil.html">Accueil</a></li>
-            <li><a href="NotreSysteme.php">Notre Système</a></li>
+            <li><a href="Notre_Systeme.html">Notre Système</a></li>
             <li><a href="Forum.php">Forum</a></li>
             <li><a href="MonCompte.php">Mon compte</a></li>
             <li><a href="P_FAQ.html">FAQ</a></li>
