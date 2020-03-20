@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac3c9552-5002-47f6-b3e8-b63399e39ce5" name="Default Changelist" comment="">
+    <list default="true" id="e294bafe-2908-445f-b6f5-9f920416f354" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CGU.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGU.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajouter_discussion.css" beforeDir="false" afterPath="$PROJECT_DIR$/Ajouter_discussion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ajouter_discussion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ajouter_discussion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Forum.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Forum.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GraphiqueResultats.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GraphiqueResultats.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MesResultats.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MesResultats.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notre_Systeme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notre_Systeme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P_Accueil.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P_Accueil.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P_Administrateur.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P_Administration.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P_Connexion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P_Connexion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P_Gestionnaire.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P_Gestionnaire.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +34,13 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,6 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -58,6 +86,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1584702854823">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584702854823" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1584700544567">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
