@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac3c9552-5002-47f6-b3e8-b63399e39ce5" name="Default Changelist" comment="" />
+    <list default="true" id="ac3c9552-5002-47f6-b3e8-b63399e39ce5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ENTETE_MENU.php" beforeDir="false" afterPath="$PROJECT_DIR$/ENTETE_MENU.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +43,7 @@
       <updated>1584005863067</updated>
       <workItem from="1584005865479" duration="1418000" />
       <workItem from="1584008765555" duration="3164000" />
+      <workItem from="1584702008434" duration="287000" />
     </task>
     <servers />
   </component>
@@ -47,6 +51,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1584702004903">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584702004902" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1584008768143">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
