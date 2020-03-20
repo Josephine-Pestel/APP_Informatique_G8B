@@ -1,0 +1,115 @@
+html, body
+{
+    width: 100%;
+    height : 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.titre_moncompte{
+    margin-top: 3%;
+    text-align: center;
+    color:#1D2043;
+    text-decoration: underline ;
+    text-decoration-color: #1D2043;
+}
+
+.deux_parties{
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.partie_gauche
+{
+    diplay: flex;
+    flex-direction: column;
+    width:60%;
+    margin-top: 8%;
+}
+
+.boutons{
+    display: flex;
+    margin-left: 8%;
+    position:absolute;
+    z-index:2;
+}
+
+.edtier{
+    margin-right:10%;
+    color: #2699FB;
+    background: white;
+    width:30%;
+    font-weight: bold;
+}
+
+.consulter{
+    color: #2699FB;
+    background: white;
+    width:35%;
+    font-weight: bold;
+
+}
+
+.photo_profil{
+    margin-bottom:7%;
+    margin-top:7%;
+    margin-left: 8%;
+    background: white;
+    position: absolute;
+    z-index:2;
+
+
+}
+
+.description_utilisateur{
+    color: #2699FB;
+    font-style: italic;
+    margin-bottom: 30%;
+    margin-top:40%;
+    margin-left:10%;
+
+}
+
+.partie_droite
+{
+    diplay: flex;
+    flex-direction: column;
+    width:40%;
+    margin-top: 7%;
+}
+
+.details1, .details2
+{
+    display: flex;
+    flex-direction: column;
+    color:#2699FB;
+
+}
+
+.nom, .naissance
+{
+    font-weight: bold;
+    font-size: 150%;
+    margin-bottom:0%;
+}
+
+.separation1 {
+    background-color: #2699FB;
+    height:0.3%;
+    width: 90%;
+    margin-bottom:20%;
+}
+
+.fond
+{
+    background: #2699FB;
+    opacity: 0.15;
+    width: 80%;
+    height: 70%;
+    position:absolute;
+    margin-left:18%;
+    z-index:1;
+    margin-top:3%;
+}
