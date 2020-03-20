@@ -1,0 +1,41 @@
+html,body
+h1{
+    text-align:center;
+    font-size:130%;
+    font-family: "Times New Roman";
+    color:midnightblue;
+}
+h2{
+    font-family: "Times New Roman";
+    font-size: 100%;
+    text-align: left;
+}
+.Para1{
+    font-family: "Times New Roman";
+    text-align:left;
+    text-align: justify;
+
+  }
+h3{
+    font-family: "Times New Roman";
+    font-size: 100%;
+    text-align: left;
+
+}
+.Para2{
+    font-family: "Times New Roman";
+    text-align:left;
+    text-align: justify;
+
+}
+
+H4{
+    font-family: "Times New Roman";
+    font-size: 100%;
+    text-align: left;
+}
+.Para3{
+    font-family: "Times New Roman";
+    text-align:left;
+    text-align: justify;
+}
