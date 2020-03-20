@@ -7,6 +7,8 @@
 </head>
 
 <body>
+
+
 <?php include("ENTETE_MENU.php"); ?>
 
 
@@ -36,13 +38,22 @@
     </div>
 
 
-    <h4>Acces au site</h4>
+    <h4>Accès au site</h4>
     <div class="Para3">
         <p>3.1. Le Site est normalement accessible dans le Monde entier. Toutefois, pour des raisons juridiques, les accès au Site peuvent être limités depuis certains pays ou territoires. L’Application est disponible fonction du système d'exploitation mobile installé sur le terminal mobile de l’Utilisateur (App store, Google play, Windows store, etc.).
 
             3.2. L'accès au Site ou à l’Application, et à travers eux, les Contenus et Services est, en principe, possible 24 heures sur 24, 7 jours sur 7, sauf en cas de force majeure, d'événements hors du contrôle d’EVS, des éventuelles pannes du Site, de l’Application ou des Services, ainsi que des interventions de maintenance nécessaires au bon fonctionnement du Site, de l’Application ou des Services.
 
             3.3. Le service clientèle est disponible par téléphone au 09 86 26 91 47 du lundi au vendredi de 9h00 à 18h00.</p>
+    </div>
+
+    <h5>Inscriptions et Identification</h5>
+    <div class="Para4">
+        <p>4.1. L'inscription aux Services est obligatoire dès lors que l’Utilisateur souhaite bénéficier d’un accès mobile ou d’un message d’accueil, d’une sécurité renforcée ou encore d’une personnalisation de la navigation sur le Site.
+
+            4.2. Le compte ouvert par l’Utilisateur est personnel. L’Utilisateur est seul responsable de sa gestion et de son utilisation. Toute connexion ou opération effectuée dans le cadre de l’utilisation des Contenus et Services sera réputée avoir été réalisée par l’Utilisateur et sous sa responsabilité exclusive.
+
+            4.3. L’Utilisateur demeure l’unique responsable de la protection du mot de passe qu’il utilise pour accéder aux Contenus et Services ainsi que pour l’ensemble des actions nécessitant une authentification avec mot de passe sur le Site et l’Application. EVS recommande l’utilisation de mots de passe complexes pour une protection optimale en combinant notamment des lettres majuscules et minuscules, de chiffres et de caractères spéciaux. EVS ne saurait être responsable d'un quelconque dommage résultant d'un manquement de la part de l’Utilisateur sur ce qui précède. L’Utilisateur s’engage à ne pas divulguer ses identifiant et mot de passe. En cas d’utilisation frauduleuse, EVS ne pourra en aucun cas être tenu pour responsable. En cas de perte de votre identifiant et de votre mot de passe ou d’utilisation non autorisée de votre compte, il incombe à l’Utilisateur d’informer sans délai EVS dans les conditions prévues à l’article 7 des CGU.</p>
     </div>
 </section>
 
