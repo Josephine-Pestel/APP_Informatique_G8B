@@ -5,7 +5,9 @@ html,body
     padding:0;
 
 }
-
+body{
+    background-image:url("images/imagefond1.png");
+}
 
 #titre_forum {
     text-indent: 35%;
@@ -36,7 +38,7 @@ html,body
     background: grey;
 }
 .formulaire{
-    background-color: gainsboro;
+    background-color: lightgray;
     padding:2%;
     text-align: left;
     margin-left: 25%;
