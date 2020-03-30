@@ -11,15 +11,6 @@
 <?php include("ENTETE_MENU.php"); ?>
 
 <section>
-<nav>
-    <ul>
-        <li class="navbarr"><a href="index.html">Accueil</a></li>
-        <li class="navbarr"><a href="forum.html">Notre Système</a></li>
-        <li class="navbarr"><a href="contact.html">Forum</a></li>
-        <li class="navbarr"><a href="Compte.html">Mon Compte</a>
-        <li class="navbarr"><a href="page.html">FAQ</a></li>
-    </ul>
-</nav> 
     
 <h1>Les Tests :</h1>
 
