@@ -8,13 +8,9 @@
 </head>
 
 <body>
-<header>
-   <img src="images/logo.png" id="logo" />
+<?php include("ENTETE_MENU.php"); ?>
 
-</header>
-test
-
-
+<section>
 <nav>
     <ul>
         <li class="navbarr"><a href="index.html">Accueil</a></li>
@@ -91,10 +87,10 @@ test
 </div><br />
 
 
-    
 
+</section>
 <footer>
-<img src="images/logo.png" id="logo"  />
+    <?php include("FOOTER.php"); ?>
 </footer>
 
 
