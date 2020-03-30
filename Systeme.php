@@ -80,11 +80,12 @@
 
 
 </section>
-<footer>
-    <?php include("FOOTER.php"); ?>
-</footer>
 
 
 
 </body>
+<?php
+require('FOOTER.php');
+
+?>
 </html>
