@@ -15,10 +15,9 @@
 <h1>Les Tests :</h1>
 
 
-<div id="conteneur">
-    <div class="element 1"> 
+  <div class="element 1">
 
-    
+
     <p>Stimulus Sonore<br /></p>
        <img src="images/ear2.jpg" id="ear"  />
        <p>Mesure le temps de réaction à <br />
@@ -47,12 +46,12 @@
        <p> <a class=BoutTry href="page.html">Consulter mes résultats</a></p>
 
 </div>
-</div><br />
+<br />
 
 
 <img src="images/arrow.png" id="arrow"  />
 
-<div id="conteneur">
+
     <div class="element 1">
 
 
@@ -75,7 +74,7 @@
 
     </div>
 
-</div><br />
+<br />
 
 
 
