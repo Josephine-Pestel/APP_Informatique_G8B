@@ -6,6 +6,10 @@ html, body
 	padding: 0;
 }
 
+p
+{
+	color: black;
+}
 
 
 
@@ -15,15 +19,15 @@ html, body
 }
 
 h1{
-	text-align: right;
-	color: #69ff72;
+	text-align: center;
+	color: #52abff;
 }
 
 
 #conteneur
 {
-	padding-left: 30%;
-	width:60%;
+
+	width:100%;
 	height: 50%;
 	border: 3px #f1f9ff solid;
 	border-radius: 10px;
@@ -49,7 +53,7 @@ h1{
 #arrow
 {
 	display: block;
-	width: 100%;
+	width: 10%;
 	margin-right: auto;
 	margin-left: auto;
 }
