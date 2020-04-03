@@ -15,7 +15,8 @@
 <h1>Les Tests :</h1>
 
 
-  <div class="element 1">
+<div id="conteneur">
+    <div class="element 1">
 
 
     <p>Stimulus Sonore<br /></p>
@@ -46,12 +47,12 @@
        <p> <a class=BoutTry href="page.html">Consulter mes résultats</a></p>
 
 </div>
-<br />
+</div><br />
 
 
 <img src="images/arrow.png" id="arrow"  />
 
-
+<div id="conteneur">
     <div class="element 1">
 
 
@@ -74,7 +75,7 @@
 
     </div>
 
-<br />
+</div><br />
 
 
 
