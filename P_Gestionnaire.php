@@ -22,7 +22,7 @@ require('ENTETE_MENU.php');
 
 <!-- Milieu -->
 
-    <h1 class="titre_gestionnaire"> PORTAIL DU GESTIONNAIRE </h1>
+    <h1 class="titre_gestionnaire"> Historique des tests effectués par les utilisateurs </h1>
 
     <section class="bloc_recherche">
         <div class="rectangle_recherche"> </div>

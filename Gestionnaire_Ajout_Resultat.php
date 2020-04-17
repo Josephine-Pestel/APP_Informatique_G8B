@@ -17,7 +17,7 @@ require('ENTETE_MENU.php');
 ?>
 <h1>Veuillez remplir le formulaire ci-dessous pour ajouter un résultat à un utilisateur </h1>
 <div class="formulaire">
-<form action="P_gestionnaire.php" method="POST">
+<form action="Ajout_Resultat_versBDD.php" method="POST">
     <p><label>Identifiant de l'utilisateur : <input type ="text" name="identifiant_utilisateur"/></label></p>
     <p><label>Type de test : <select name="choix">
                 <option value="Temperature">Temperature</option>
@@ -27,8 +27,8 @@ require('ENTETE_MENU.php');
                 <option value="stimulus_visuel">Temps de réaction à un stimulus_visuel</option>
             </select></label></p>
     <p><label> Score : <input type="int" name="score"</label></p>
-    <p><label>Date : <input type=int" name="date_test"/></label></p>
-    <p><input type="submit"/></p>
+    <p><label>Date : <input type="datetime-local" name="date"/></label></p>
+    <p><input type="submit" /></p>
 </div>
 </body>
 <?php
