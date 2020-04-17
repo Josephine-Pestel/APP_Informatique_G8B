@@ -26,8 +26,8 @@ h1{
 
 #conteneur
 {
-
-	width:100%;
+	margin-left: 20%;
+	width:79%;
 	height: 50%;
 	border: 3px #f1f9ff solid;
 	border-radius: 10px;
