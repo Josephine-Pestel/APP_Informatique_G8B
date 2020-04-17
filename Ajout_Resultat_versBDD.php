@@ -7,7 +7,7 @@
    }
    return($ajouter_resultat);
 
-   // On ajoute dans la table test le score et la date de l'utilisateur
+   // On ajoute dans la table test le score et la date de l'utilisateur en fonction du test effectué
 
 $req = $bdd->prepare('INSERT INTO tests(score, date,type) VALUES(:score , :date, ') WHERE idUtilisateur=$_POST['idUtilisateur']);
 $req->execute(array(
