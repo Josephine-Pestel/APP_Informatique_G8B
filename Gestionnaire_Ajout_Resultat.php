@@ -16,7 +16,7 @@ require('ENTETE_MENU.php');
 
 ?>
 <h1>Veuillez remplir le formulaire ci-dessous pour ajouter un résultat à un utilisateur </h1>
-
+<div class="formulaire">
 <form action="P_gestionnaire.php" method="POST">
     <p><label>Identifiant de l'utilisateur : <input type ="text" name="identifiant_utilisateur"/></label></p>
     <p><label>Type de test : <select name="choix">
@@ -29,7 +29,7 @@ require('ENTETE_MENU.php');
     <p><label> Score : <input type="int" name="score"</label></p>
     <p><label>Date : <input type=int" name="date_test"/></label></p>
     <p><input type="submit"/></p>
-
+</div>
 </body>
 <?php
 require('FOOTER.php');
