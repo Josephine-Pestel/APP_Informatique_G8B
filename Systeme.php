@@ -2,36 +2,23 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="Notre_Systeme.css" />
+    <link rel="stylesheet" href="Systeme.css" />
     <title>WINK</title>
     <link rel="shortcut icon" href="favicon.ico" />
 </head>
 
 <body>
-<header>
-   <img src="images/logo.png" id="logo" />
+<?php include("ENTETE_MENU.php"); ?>
 
-</header>
-test
-
-
-<nav>
-    <ul>
-        <li class="navbarr"><a href="index.html">Accueil</a></li>
-        <li class="navbarr"><a href="forum.html">Notre Système</a></li>
-        <li class="navbarr"><a href="contact.html">Forum</a></li>
-        <li class="navbarr"><a href="Compte.html">Mon Compte</a>
-        <li class="navbarr"><a href="page.html">FAQ</a></li>
-    </ul>
-</nav> 
+<section>
     
 <h1>Les Tests :</h1>
 
 
 <div id="conteneur">
-    <div class="element 1"> 
+    <div class="element 1">
 
-    
+
     <p>Stimulus Sonore<br /></p>
        <img src="images/ear2.jpg" id="ear"  />
        <p>Mesure le temps de réaction à <br />
@@ -91,13 +78,14 @@ test
 </div><br />
 
 
-    
 
-<footer>
-<img src="images/logo.png" id="logo"  />
-</footer>
+</section>
 
 
 
 </body>
+<?php
+require('FOOTER.php');
+
+?>
 </html>
