@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <link type="text/css" rel="stylesheet" href="../css/P_Inscription.css?t=<? echo time(); ?>" media="all">
+    <link type="text/css" rel="stylesheet" href="../CSS_files/P_Inscription.css?t=<? echo time(); ?>" media="all">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>INIFINITE MEASURES - INSCRIPTION</title>
     <script src="../javascript/Inscription.js"></script>
@@ -13,7 +13,7 @@
 
 <!-- Appel En-Tete et Menu avec requete php -->
 <?php
-require('../html/ENTETE_MENU.php');
+require('../HTML_Files/ENTETE_MENU.php');
 ?>
 
 <!-- Milieu -->
@@ -54,7 +54,7 @@ require('../html/ENTETE_MENU.php');
 
 <!-- Appel Footer -->
 <?php
-require('FOOTER.php');
+require('../HTML_Files/FOOTER.php');
 
 ?>
 
