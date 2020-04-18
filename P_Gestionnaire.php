@@ -19,9 +19,8 @@ require('ENTETE_MENU.php');
 ?>
 <?php
 
-$pdo = new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
-$sql = 'SELECT * FROM tests';
-$req = $pdo->query($sql);
+$bdd = new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
+$reponse = $bdd->query('SELECT * FROM tests');
 
 ?>
 
@@ -40,22 +39,21 @@ $req = $pdo->query($sql);
 
         </tr>
 
+        <?php
 
 
-        <tr>
-            <? while($row = $req->fetch()) { ?>
-            <td><? echo $row['idUtilisateur']; ?></td>
-            <td><? echo $row['type']; ?></td>
+        while ($donnees = $reponse->fetch()) { ?>
+            <tr>
+                <th><p class="utilisateur"><?php echo $donnees['idUtilisateur'] ?></p></th>
+                <th><p class="Type"><?php echo $donnees['type'] ?></p></th>
+                <th><p class="Date"><?php echo $donnees['date'] ?></p></th>
+                <th><p class="Score"><?php echo $donnees['score'] ?></p></th>
+            </tr>
 
-            <td><? echo $row['date']; ?></td>
-            <td><? echo $row['score']; ?></td>
-        </tr>
+            <?php
+        }
+        $reponse->closeCursor();
 
-
-
-
-        <? }
-        $req->closeCursor();
         ?>
     </table>
 
