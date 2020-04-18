@@ -3,7 +3,7 @@
 
 <head>
     <!-- En-tête de la page -->
-    <link type="text/css" rel="stylesheet" href="View/P_MonCompte.css?t=<? echo time(); ?>" media="all">
+    <link type="text/css" rel="stylesheet" href="../View/P_MonCompte.css?t=<? echo time(); ?>" media="all">
     <!--<link rel="stylesheet" href="P_Accueil_Payen.css" />-->
     <meta charset="utf-8" />
     <title>WINK FOR INIFINITE MEASURES</title>
@@ -32,7 +32,7 @@ require('ENTETE_MENU.php');
             <button class="edtier"> EDITER SON PROFIL</button>
             <button class="consulter"> CONSULTER MES RESULTATS</button>
         </section>
-        <img class="photo_profil" src="images/logowink.png" alt="photo de profil"/>
+        <img class="photo_profil" src="../images/logowink.png" alt="photo de profil"/>
         <p class="description_utilisateur"> Voici ton profil</p>
 
     </section>
