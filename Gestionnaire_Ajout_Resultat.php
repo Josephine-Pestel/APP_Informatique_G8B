@@ -16,7 +16,9 @@ require('ENTETE_MENU.php');
 
 ?>
 <h1>Veuillez remplir le formulaire ci-dessous pour ajouter un résultat à un utilisateur </h1>
+
 <div class="formulaire">
+
 <form action="Ajout_Resultat_versBDD.php" method="POST">
     <p><label>Identifiant de l'utilisateur : <input type ="text" name="identifiant_utilisateur"/></label></p>
     <p><label>Type de test : <select name="choix">
@@ -29,7 +31,10 @@ require('ENTETE_MENU.php');
     <p><label> Score : <input type="int" name="score"</label></p>
     <p><label>Date : <input type="datetime-local" name="date"/></label></p>
     <p><input type="submit" /></p>
+
 </div>
+
+
 </body>
 <?php
 require('FOOTER.php');
