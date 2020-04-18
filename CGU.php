@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <link rel="Stylesheet" href="../View/CGU.css"/>
+    <link rel="Stylesheet" href="View/CGU.css"/>
     <title>Infinite_Measures</title>
 </head>
 
