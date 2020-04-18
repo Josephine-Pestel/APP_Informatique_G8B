@@ -21,10 +21,10 @@ require('ENTETE_MENU.php');
     <p><label>Identifiant de l'utilisateur : <input type ="text" name="identifiant_utilisateur"/></label></p>
     <p><label>Type de test : <select name="choix">
                 <option value="Temperature">Temperature</option>
-                <option value="Frequence_cardiaque">frequence_cardiaque</option>
-                <option value="reconnaissance_tonalité">Mesure de reconnaissance de tonalite</option>
-                <option value="stimulus_sonore">Temps de réaction à un stimulus sonore</option>
-                <option value="stimulus_visuel">Temps de réaction à un stimulus_visuel</option>
+                <option value="Frequence cardiaque">frequence_cardiaque</option>
+                <option value="reconnaissance de tonalité">Mesure de reconnaissance de tonalite</option>
+                <option value="stimulus sonore">Temps de réaction à un stimulus sonore</option>
+                <option value="stimulus visuel">Temps de réaction à un stimulus_visuel</option>
             </select></label></p>
     <p><label> Score : <input type="int" name="score"</label></p>
     <p><label>Date : <input type="datetime-local" name="date"/></label></p>

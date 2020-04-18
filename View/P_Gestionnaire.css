@@ -56,6 +56,7 @@ html, body
     background: #F1F9FF;
     z-index:2;
     position:absolute;
+    margin-bottom: 20%;
 
 
 }
@@ -66,17 +67,4 @@ tr, th, td /* Mettre une bordure sur les td ET les th */
     color:#1D2043;
     text-align: center;
     width:10%;
-}
-
-.bouton_retour
-{
-    margin-top: 35%;
-    margin-bottom: 7%;
-    width:20%;
-    height :5%;
-    margin-left: 57%;
-    font-size: larger;
-    border: 1px solid #1D2043;
-
-
 }

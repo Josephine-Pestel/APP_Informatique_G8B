@@ -13,14 +13,20 @@
 
 <body>
 
-<!-- Appel En-Tete et Menu -->
-
 <?php
 require('ENTETE_MENU.php');
 
 ?>
+<?php
 
-<!-- Milieu -->
+$pdo = new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
+$sql = 'SELECT * FROM tests';
+$req = $pdo->query($sql);
+
+?>
+
+
+<!--creation du tableau-->
 
     <h1 class="titre_gestionnaire"> Historique des tests effectués par les utilisateurs </h1>
 
@@ -32,65 +38,26 @@ require('ENTETE_MENU.php');
     <div class="fond"> </div>
     <table class="tableau_gestionnaire">
         <tr>
-            <th> UTILISATEUR </th>
-            <th> TEST </th>
-            <th> DATE </th>
-            <th> TEMPS </th>
-            <th> NIVEAU </th>
-        </tr>
+            <th><p class="utilisateur">Nom de l'utilisateur</p></th>
+            <th><p class="Type">Type de test</p></th>
+            <th><p class="Date">Date</p></th>
+            <th><p class="Score">score</p></th>
 
+        </tr>
         <tr>
-            <td> josephine </td>
-            <td> température </td>
-            <td> ajd </td>
-            <td> 1min% </td>
-            <td> 4/10 </td>
+            <? while($row = $req->fetch()) { ?>
+            <td><? echo $row['idUtilisateur']; ?></td>
+            <td><? echo $row['type']; ?></td>
+
+            <td><? echo $row['date']; ?></td>
+            <td><? echo $row['score']; ?></td>
         </tr>
-
-        <tr>
-            <td> yeleen </td>
-            <td> température </td>
-            <td> ajd </td>
-            <td> 1min% </td>
-            <td> 4/10 </td>
-        </tr>
-
-        <tr>
-            <td> antoine </td>
-            <td> température </td>
-            <td> ajd </td>
-            <td> 1min% </td>
-            <td> 4/10 </td>
-        </tr>
-
-        <tr>
-            <td> alexandre </td>
-            <td> température </td>
-            <td> ajd </td>
-            <td> 1min% </td>
-            <td> 4/10 </td>
-        </tr>
-
-        <tr>
-            <td> linaelle </td>
-            <td> température </td>
-            <td> ajd </td>
-            <td> 1min% </td>
-            <td> 4/10 </td>
-        </tr>
-
-        <tr>
-            <td> romé </td>
-            <td> température </td>
-            <td> ajd </td>
-            <td> 1min% </td>
-            <td> 4/10 </td>
-        </tr>
-
-
+        <? }
+        $req->closeCursor();
+        ?>
     </table>
 
-    <button class="bouton_retour"> RETOUR</button>
+
 
 </body>
 

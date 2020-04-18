@@ -9,15 +9,16 @@
 
    // On ajoute dans la table test le score et la date de l'utilisateur en fonction du test effectué
 
-$req = $bdd->prepare('INSERT INTO `tests`(`score`, `date`, `idUtilisateur`) VALUES(:score, :date, :idUtilisateur)');
+$req = $bdd->prepare('INSERT INTO `tests`(`type`,`score`, `date`, `idUtilisateur`) VALUES(:type, :score, :date, :idUtilisateur)');
 $req->execute(array(
+    'type' => $_POST['choix'],
     'score' => $_POST['score'],
     'date' => $_POST['date'],
     'idUtilisateur' => $_POST['identifiant_utilisateur']
     ));
 
 if (isset($_POST['score'])) {
-    echo 'Le score a bien été ajouté';
+    echo 'Le résultat du test a bien été ajouté';
 } else {
     echo 'Dommage';
 }
