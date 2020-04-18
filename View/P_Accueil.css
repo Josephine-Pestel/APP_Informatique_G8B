@@ -13,7 +13,7 @@ html, body
     margin-top: 5%;
     height: 500px;
     border-radius: 5px;
-    background: url('images/banniere-paris.jpg') no-repeat;
+    background: url('../images/banniere-paris.jpg') no-repeat;
     position: relative;
     margin-bottom: 10%;
     margin-left: 18%;
