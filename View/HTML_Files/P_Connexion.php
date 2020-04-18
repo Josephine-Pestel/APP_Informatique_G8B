@@ -38,7 +38,7 @@ require('../HTML_Files/ENTETE_MENU.php');
 
         <p>
         <button class="nouvel_utilisateur">
-            <a class="text" href="../html/P_Inscription.php">Nouvel utilisateur ? INSCRIS-TOI ! </a>
+            <a class="text" href="../HTML_Files/P_Inscription.php">Nouvel utilisateur ? INSCRIS-TOI ! </a>
         </button></p>
     </form>
 
