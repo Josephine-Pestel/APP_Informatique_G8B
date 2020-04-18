@@ -36,12 +36,12 @@ else{
     if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) OR $_POST['mdp'] != $_POST['confirmation_mdp'] ){
         echo '<p class="ERREURS"> Change les erreurs qui te sont apparus en pop-up !
                                   Tu vas être redirigé dans quelques secondes sur le formulaire d\'inscription</p>' ;
-        header('Refresh:8; url=../view/html/P_Inscription.php');
+        header('Refresh:8; url=../view/HTML_Files/P_Inscription.php');
     }
     //sinon, s'il n'y a pas d'erreur, c'est bon on passe à la connexion !
     else{
         getDonneesUtilisateurs();
-        header('Location:../view/html/P_Connexion.php');
+        header('Location:../View/HTML_Files/P_Connexion.php');
     }
 }
 
