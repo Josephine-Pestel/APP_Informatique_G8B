@@ -24,7 +24,10 @@ $reponse = $bdd->query('SELECT * FROM tests');
 
 ?>
 
-
+<!--Création de la barre de recherche-->
+<div class="barre_recherche">
+    
+</div>
 <!--creation du tableau-->
 
     <h1 class="titre_gestionnaire"> Historique des tests effectués par les utilisateurs </h1>
