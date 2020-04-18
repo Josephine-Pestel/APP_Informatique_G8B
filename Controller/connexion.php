@@ -74,32 +74,41 @@ if (empty($_POST['email']) || empty($_POST['mdp']))
 {
     echo 'Une donnée n\'a pas été rentrée';
 }
+
+
+
 //sinon : CONNEXION ADMINISTRATEUR
 else if($_POST['email'] == $recup_email_admin){
     if($isPasswordCorrect_admin){
         session_start();
-        echo 'Vous êtes connecté en tant qu\'administrateur !';
+        header('Location:../MonCompteAdmin.php');
         $_SESSION['nomAdmin'] = $recup_nom_admin;
-        echo 'Bonjour ' . $_SESSION['nomAdmin'];
+        //echo 'Bonjour ' . $_SESSION['nomAdmin'];
     }
     else{
         echo 'ADMIN : Mauvais identifiant ou mot de passe !';
     }
 }
+
+
+
+
 //sinon : CONNEXION GESTIONNAIRE
 else if($_POST['email'] == $recup_email_gestionnaire){
     if($isPasswordCorrect_gestionnaire){
         session_start();
-        echo 'Vous êtes connecté en tant que gestionnaire !';
+        header('Location:../MonCompteGestionnaire.php');
         $_SESSION['nomGestionnaire'] = $recup_nom_gestionnaire;
-        echo 'Bonjour ' . $_SESSION['nomGestionnaire'];
-        //echo 'Vous êtes connecté en tant que gestionnaire !';
-        //Header('Location:../view/html/P_MonCompte_Gestionnaire');
+        //echo 'Bonjour ' . $_SESSION['nomGestionnaire'];
+
     }
     else{
         echo 'GESTIONNAIRE : Mauvais identifiant ou mot de passe !';
     }
 }
+
+
+
 //sinon : CONNEXION MEMBRE
 else{
     //Boucle pour vérifier les données rentrées dans le formulaire
@@ -114,8 +123,9 @@ else{
             session_start();
             //$_SESSION['id_Utilisateur'] = $recupId;
             $_SESSION['prenom_utilisateur'] = $recupPrenom;
-            echo 'Vous êtes connecté en tant qu\'utilisateur !';
-            echo 'Bonjour ' . $_SESSION['prenom_utilisateur'];
+            header('Location:../MonCompteUtilisateur.php');
+            //echo 'Vous êtes connecté en tant qu\'utilisateur !';
+            //echo 'Bonjour ' . $_SESSION['prenom_utilisateur'];
         }
         // sinon erreur
         else{
