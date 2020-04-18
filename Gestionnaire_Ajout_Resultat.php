@@ -11,6 +11,8 @@
 
 <body>
 
+
+
 <?php
 require('ENTETE_MENU.php');
 
@@ -28,8 +30,8 @@ require('ENTETE_MENU.php');
                 <option value="stimulus sonore">Temps de réaction à un stimulus sonore</option>
                 <option value="stimulus visuel">Temps de réaction à un stimulus_visuel</option>
             </select></label></p>
-    <p><label> Score : <input type="int" name="score"</label></p>
-    <p><label>Date : <input type="datetime-local" name="date"/></label></p>
+    <p><label> Score : <input  type="int" name="score"required></label></p>
+    <p><label>Date : <input type="datetime-local" name="date"required></label></p>
     <p><input type="submit" /></p>
 
 </div>
