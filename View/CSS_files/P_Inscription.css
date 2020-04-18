@@ -1,0 +1,59 @@
+html, body
+{
+    width: 100%;
+    height : 100%;
+    margin: 0;
+    padding: 0 ;
+}
+
+.titre_inscription{
+    margin-top: 3%;
+    text-align: center;
+    color:#1D2043;
+    text-decoration: underline ;
+    text-decoration-color: #1D2043;
+}
+
+.bloc_infos
+{
+    margin-left:30%;
+    display:flex;
+    flex-direction:column;
+    margin-top:5%;
+    margin-bottom:2%;
+}
+
+.rectangle_prenom, .rectangle_nom, .rectangle_mdp, .rectangle_mdp2, .rectangle_email{
+    height: 2em;
+    width:50em;
+
+}
+
+.prenom, .nom, .mdp, .mdp2, .email
+{
+    font-size: 120%;
+    font-weight: bold;
+    color: #0b2752;
+}
+
+.envoyer
+{
+    width:25em;
+    height: 3em;
+    margin-left:11%;
+    margin-top:10%;
+    margin-bottom:10%;
+    font-size: 120%;
+    color: white;
+    background: #1D2043;
+}
+
+
+.ERREUR_donnees_absente, .ERREUR_mail_existe, .ERREURS {
+    font-size: 190%;
+    text-align: center;
+    color:#1D2043;
+    color:red;
+    font-weight: bold;
+    text-decoration-color: #1D2043;
+}
