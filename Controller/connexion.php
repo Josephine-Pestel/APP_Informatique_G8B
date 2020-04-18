@@ -15,7 +15,7 @@ $donneesEmail = getDonneesUtilisateur($_POST['email']);
 $recupEmail = ($donneesEmail['email']);
 
 $donneesId = getDonneesUtilisateur($_POST['email']);
-$recupDateInscription = ($donneesId['id_Utilisateur']);
+$recupDateInscription = ($donneesId['idUtilisateur']);
 
 $donneesDateCompte = getDonneesUtilisateur($_POST['email']);
 $recupId = ($donneesDateCompte['date_inscription']);
@@ -121,7 +121,7 @@ else{
         //si la verif du mot de passe est true, alors on démarre une session
         if ($isPasswordCorrect_membre){
             session_start();
-            //$_SESSION['id_Utilisateur'] = $recupId;
+            //$_SESSION['idUtilisateur'] = $recupId;
             $_SESSION['prenom_utilisateur'] = $recupPrenom;
             header('Location:../MonCompteUtilisateur.php');
             //echo 'Vous êtes connecté en tant qu\'utilisateur !';
