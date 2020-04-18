@@ -30,12 +30,7 @@ $req = $pdo->query($sql);
 
     <h1 class="titre_gestionnaire"> Historique des tests effectués par les utilisateurs </h1>
 
-    <section class="bloc_recherche">
-        <div class="rectangle_recherche"> </div>
-        <button class="recherche"> RECHERCHER </button>
-    </section>
-
-    <div class="fond"> </div>
+    <div class="tableau">
     <table class="tableau_gestionnaire">
         <tr>
             <th><p class="utilisateur">Nom de l'utilisateur</p></th>
@@ -44,6 +39,9 @@ $req = $pdo->query($sql);
             <th><p class="Score">score</p></th>
 
         </tr>
+
+
+
         <tr>
             <? while($row = $req->fetch()) { ?>
             <td><? echo $row['idUtilisateur']; ?></td>
@@ -52,11 +50,16 @@ $req = $pdo->query($sql);
             <td><? echo $row['date']; ?></td>
             <td><? echo $row['score']; ?></td>
         </tr>
+
+
+
+
         <? }
         $req->closeCursor();
         ?>
     </table>
 
+</div>
 
 
 </body>
