@@ -16,10 +16,5 @@ $req->execute(array(
     'date' => $_POST['date'],
     'idUtilisateur' => $_POST['identifiant_utilisateur']
 ));
-
-if (isset($_POST['score'])) {
-    header('location:P_Gestionnaire.php');
-} else {
-    echo 'Dommage l\'ajout n\'a pas fonctionné';
-}
+header('location:P_Gestionnaire.php');
 ?>
