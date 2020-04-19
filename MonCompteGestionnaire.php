@@ -48,6 +48,14 @@ require('ENTETE_MENU.php');
     </section>
 
 
+
+    <?php
+
+    $bdd = new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
+    $reponse = $bdd->query('SELECT * FROM `gestionnaire');
+
+    ?>
+
     <section class="partie_droite">
         <section class="details1">
             <p class="nom"> JOSEPHINE PESTEL</p>
