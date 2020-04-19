@@ -21,16 +21,11 @@
         <div class="texte_milieu">
             <p>Les résultats sous forme de graphiques vous permettant d'avoir une vision détaillée de vos scores depuis la création de vos comptes</p>
         </div>
-        <a href="GraphiqueResultats.html" class="quatrieme_bouton" alt="Accéder au graphique" target="_blank">GRAPHIQUE</a>
+        <a href="GraphiqueResultats.php" class="quatrieme_bouton" alt="Accéder au graphique" target="_blank">GRAPHIQUE</a>
     </aside>
 </section>
 </body>
 <footer>
 <?php include("FOOTER.php"); ?>
 </footer>
-
-<footer>
-<?php include("FOOTER.php"); ?>
-</footer>
-</body>
 </html>
