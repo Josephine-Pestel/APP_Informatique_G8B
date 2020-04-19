@@ -22,7 +22,7 @@ require('ENTETE_MENU.php');
 <?php
 
 $bdd = new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
-$reponse = $bdd->query('SELECT * FROM tests');
+$reponse = $bdd->query('SELECT * FROM `tests` ORDER by date DESC');
 
 ?>
 
