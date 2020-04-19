@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="Ajouter_discussion.css" />
+    <link rel="stylesheet" href="View/Ajouter_discussion.css" />
     <title>WINK FOR INIFINITE MEASURES</title>
 </head>
 

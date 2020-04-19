@@ -1,0 +1,78 @@
+html, body  
+{
+    width: 100%;
+    height : 100%;
+    margin: 0;
+    padding: 0 ;
+}
+
+.titre_connexion{   
+    margin-top: 3%;
+
+    text-align: center;
+    color:#1D2043;
+    text-decoration: underline ;
+    text-decoration-color: #1D2043;
+}
+
+.bloc_infos
+{   
+    margin-left:40%;
+
+    display:flex;
+    flex-direction:column;
+    margin-top:5%;
+    margin-bottom:2%;
+}
+
+.rectangle_email, .rectangle_mdp{
+    height: 2em;
+    width:45em;
+
+}
+
+.email, .mdp
+{
+    font-size: 120%;
+    font-weight: bold;
+    color: #0b2752;
+}
+
+.envoyer
+{
+    width:15em;
+    height :2em;
+    margin-left:17%;
+    margin-top:8%;
+    font-size: 120%;
+    color: white;
+    background: #1D2043;
+}
+
+.oublie
+{
+    color: #1D2042;
+    font-style:italic;
+}
+
+.nouvel_utilisateur
+{
+    width:30em;
+    height :2em;
+    margin-left:4%;
+    margin-top:3%;
+    margin-bottom:5%;
+
+    font-size: 110%;
+
+    background: #d1eaff;
+    border-radius: 1em;
+
+}
+
+.text{
+    color: #1D2043;
+    font-size: 100%;
+
+    font-style:italic;
+}

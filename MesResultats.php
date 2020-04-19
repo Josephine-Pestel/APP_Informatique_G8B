@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="MesResultats.css" />
+    <link rel="stylesheet" href="View/MesResultats.css" />
     <title>Mes Résultats</title>
 </head>
 <body>

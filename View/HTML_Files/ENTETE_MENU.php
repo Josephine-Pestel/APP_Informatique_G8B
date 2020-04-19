@@ -3,7 +3,7 @@
 
 <head>
     <!-- En-tête de la page -->
-    <link type="text/css" rel="stylesheet" href="View/ENTETE_MENU.css?t=<? echo time(); ?>" media="all">
+    <link type="text/css" rel="stylesheet" href="../CSS_files/ENTETE_MENU.css?t=<? echo time(); ?>" media="all">
     <!--<link rel="stylesheet" href="P_Accueil_Payen.css" />-->
     <meta charset="utf-8" />
     <title>WINK FOR INIFINITE MEASURES</title>
@@ -19,6 +19,7 @@
 
     <!-- Petits icones -->
     <div class="icones">
+        <a href="#" class="bouton_search"><img src="images/iconsearch.png" alt="" /></a>
         <a href="#" class="bouton_user"><img src="images/iconuser.png" alt="" /></a>
         <a href="mailto:alexandre.payen@lilalions.com" class="bouton_contact"><img src="images/iconmail.png" alt="" /></a>
     </div>
@@ -36,7 +37,7 @@
             <li><a href="P_Accueil.php">Accueil</a></li>
             <li><a href="Systeme.php">Notre Système</a></li>
             <li><a href="Forum.php">Forum</a></li>
-            <li><a href="View/HTML_Files/P_Connexion.php">Mon compte</a></li>
+            <li><a href="Model/MonCompte.php">Mon compte</a></li>
             <li><a href="P_FAQ.html">FAQ</a></li>
         </ul>
     </nav>
