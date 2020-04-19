@@ -58,7 +58,7 @@ require('ENTETE_MENU.php');
 
     <section class="partie_droite">
         <section class="details1">
-            <p class="nom"> <?php echo $_SESSION['nom'] ?></p>
+            <p class="nom"> josephine PESTEL</p>
             <p class="date_inscription"> Incris le ??? </p>
         </section>
 
