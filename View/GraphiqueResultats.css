@@ -2,191 +2,6 @@ html, body
 {
     width: 100%;
 }
-html, body, .bandeau_menu {
-    height : 100%;
-    margin: 0;
-    padding: 0;
-}
-.bandeau_menu {
-    float: left;
-    height: 100%;
-    width : 300px;
-    background : #1D2043 0 0 no-repeat padding-box;
-    opacity : 1;
-    box-shadow: 0 2px 5px #1c1a19;
-}
-/* POUR LE MENU : LOGO */
-.logo {
-    padding-top: 20px;
-    padding-left: 50px;
-}
-/* POUR LE MENU : NAV */
-nav ul
-{
-    list-style-type: none;
-}
-nav li
-{
-    padding-top: 30px;
-    margin-right: 15px;
-    margin-bottom: 20px;
-}
-nav a
-{
-    font-size: 1.8em;
-    color: #FFFFFF;
-    padding-bottom: 3px;
-    text-decoration: none;
-}
-nav a:hover
-{
-    color: #2699FB;
-    border-bottom: 3px solid #F1F9FF;
-}
-.Wink
-{
-    color: white;
-    font-size : 1.2em;
-    text-align: center;
-    margin-top: 180px;
-
-}
-/* HEADER */
-header
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    background: #F1F9FF 0 0 no-repeat padding-box;
-    opacity: 1;
-
-
-}
-#header {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-}
-header h1
-{
-    margin-top: 10px;
-    color: #1D2043;
-    margin-left: 600px; /* Pour centrer car mon écran sans le menu fait 1195 px */
-}
-.icones {
-    margin-left: 595px;
-
-}
-.bouton_search{
-    margin-right: 15px;
-}
-.bouton_contact{
-    margin-left : 15px;
-}
-.premier_bouton{
-    border: 0;
-    margin-top : 10px;
-    margin-left: 45px;
-    margin-bottom: 10px;
-
-    line-height: 1.5;
-    padding: 10px 10px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 5px;
-    background-color: rgba(29, 32, 67, 1);
-    background-image: linear-gradient(to top left,
-    rgba(0, 0, 0, .2),
-    rgba(0, 0, 0, .2) 30%,
-    rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-    inset -2px -2px 3px rgba(0, 0, 0, .6);
-    text-decoration: none;
-}
-.premier_bouton:hover {
-    background-color:  #F1F9FF/*rgba(255, 0, 0, 1)*/;
-}
-
-.premier_bouton:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-    inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
-/*SEPARATEUR HAUT */
-.traitduhaut{
-    height: 2px;
-    background-color: #2699FB;
-}
-/* FOOTER */
-.traitdubas{
-    height: 1.5px;
-    background-color: #0b2752;
-}
-footer
-{
-    background: #1D2043 0 0 no-repeat padding-box;
-    opacity: 1;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    margin-top: 46.5%;
-}
-footer .avantfin {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-.apropos{
-    color : white;
-    margin-left: 470px;
-}
-.apropos h1{
-    margin-left: 190px;
-}
-.deuxieme_phrase{
-    margin-left: 90px;
-}
-.deuxieme_bouton
-{
-
-    border: 0;
-    margin-right : 30px;
-    margin-bottom: 50px;
-    width: 150px ;
-    line-height: 1.5;
-    padding: 10px 10px;
-    font-size: 1rem;
-    text-align: center;
-    color: #1D2043;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 4px;
-    background-color: white;
-    background-image: linear-gradient(to top left,
-    rgba(0, 0, 0, .2),
-    rgba(0, 0, 0, .2) 30%,
-    rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-    inset -2px -2px 3px rgba(0, 0, 0, .6);
-    text-decoration: none;
-}
-footer .fin {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-.traitdubasdeux{ /*Séparation du footer en deux */
-    height: 2px;
-    background-color: white;
-}
-footer a
-{
-    font-size: 1.1em;
-    color: #FFFFFF;
-    padding-left: 120px;
-    padding-right: 120px;
-    text-decoration: none;
-}
 .canvas{
     background-color: #D0EDF7;
     width: 35%;
@@ -195,7 +10,7 @@ footer a
     position: absolute;
     left: 38%;
     top: 300px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     padding-bottom: 20px;
 }
 h2 {
@@ -206,7 +21,7 @@ h2 {
 .bargraph {
     height: 229px;
     position: relative;
-    background:  url("images/papergrid.jpg") repeat-x;
+    background:  url('../images/graph.jpg') repeat-x;
     border-left: 1px solid #d4d4d4;
     margin: 15px auto 50px;
 }
@@ -214,7 +29,6 @@ h2 {
 .bargraph ul.bars {
     margin: 0;
     padding: 0;
-    /* getting rid of bullets */
     list-style-type: none;
 }
 
@@ -222,7 +36,6 @@ h2 {
     position: absolute;
     width: 30px;
     height: 200px;
-    /*move it up from bottom label*/
     bottom: 29px;
     padding: 0;
     margin: 0;
@@ -254,7 +67,6 @@ h2 {
 
 
 
-/* bottom means 100% in background-position */
 .bargraph ul.bars li.bluebar  { background-position: 0px bottom; }
 .bargraph ul.bars li.redbar   { background-position: -30px bottom; }
 .bargraph ul.bars li.greenbar { background-position: -60px bottom; }
@@ -273,9 +85,6 @@ h2 {
 
     float: left;
     text-align: center;
-    /*safeguard against a label that is too long - if they type
-       that in from the HTML
-     */
     overflow: hidden;
 
     font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
@@ -284,9 +93,6 @@ h2 {
 
 
 ul.y-axis { list-style-type: none; position: absolute;
-    /*
-      positioning the ul box - the box that goes
-      around the list, 100, 75,... */
     left: -45px;
     width: 40px;
     text-align: right;
@@ -314,7 +120,6 @@ ul.y-axis li.units {
     line-height: 1.2em;
     height: auto;
 }
-/*labeling of the graph*/
 .bargraph  p {
     position: absolute;
     left: 0;
@@ -330,14 +135,17 @@ ul.y-axis li.units {
     line-height: 1.3em;
 
 }
-.bargraph p.centered { text-align: center; }
+.bargraph p.centered {
+    text-align: center;
+    font-size: 15px;
+}
 
 h3{
     text-align: center;
     font-family: Georgia;
     font-size: 2em;
     position: absolute;
-    left: 49%;
+    left: 53%;
     top: 180px;
 }
 div.tabbed {
@@ -348,8 +156,7 @@ div.tabbed {
 
 div.tabs a {
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    color: lightsteelblue;
-    background-color: whitesmoke;
+    color: darkblue;
     margin-right: 2px;
     padding: 0px 2px;
     border-radius: 3px;
@@ -371,4 +178,9 @@ div.tab:target {
 }
 :target div.tab + div.tab{
     display: none;
+}
+footer {
+    position: fixed;
+    bottom: 0px ;
+
 }

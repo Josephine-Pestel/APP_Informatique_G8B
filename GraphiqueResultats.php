@@ -5,38 +5,8 @@
     <link rel="stylesheet" href="View/GraphiqueResultats.css" />
     <title>Resultats Graphique</title>
 </head>
-<div class="bandeau_menu">
-<img class="logo" src="logoinf.png" alt="Logo d'infinite Measures" />
-<nav>
-    <ul>
-        <li><a href="P_Accueil.html">Accueil</a></li>
-        <li><a href="#">Notre Système</a></li>
-        <li><a href="#">Forum</a></li>
-        <li><a href="#">Mon compte</a></li>
-        <li><a href="P_FAQ.html">FAQ</a></li>
-    </ul>
-</nav>
-<div class="Wink">
-    <p>RÉALISÉ PAR</p>
-    <img class="" src="logoWink.png" alt="Logo Wink" />
-</div>
-</div>
-<header>
-    <!-- Partie haute -->
-    <div id="header">
-        <a href="https://juniorisep.com" class="premier_bouton" alt="Changer la langue" target="_blank">ENGLISH</a>
-
-        <h1>WINK</h1>
-        <!-- Petits icones -->
-        <div class="icones">
-            <a href="#" class="bouton_search"><img src="iconsearch.png" alt="ich ich" /></a>
-            <a href="#" class="bouton_user"><img src="iconuser.png" alt="ich ich" /></a>
-            <a href="mailto:alexandre.payen@lilalions.com" class="bouton_contact"><img src="iconmail.png" alt="" /></a>
-        </div>
-    </div>
-</header>
-<div class="traitduhaut"></div>
 <body>
+    <?php include("ENTETE_MENU.php"); ?>
 <h3>Vos Résultats</h3>
 <div class="canvas">
     <h2>Graphiques</h2>
@@ -102,25 +72,7 @@
 </div>
 </body>
 <footer>
-    <!-- PARTIE DU FOOTER POUR TOUTES LES PAGES-->
-    <!-- Partie basse -->
-    <div class="traitdubas"></div>
-    <div class="avantfin">
-        <div class="apropos">
-            <h1>À Propos de nous</h1>
-            <p>Wink est une jeune start-up française spécialisée dans la réalisation de tests psychotechniques </p>
-            <p class="deuxieme_phrase">Les tests sur cette plateforme ont été conçus pour Infinite Measures</p>
-        </div>
-        <a href="mailto:alexandre.payen@lilalions.com" class="deuxieme_bouton" alt="Envoyer un mail" target="_blank">CONTACTEZ-NOUS</a>
-    </div>
-    <div class="traitdubasdeux"></div>
-    <div class="fin">
-        <a href="#" class="cookies"><p>COOKIES</p></a>
-        <a href="#" class="confidentialite"><p>CONFIDENTIALITE</p></a>
-        <a href="#" class="conditions"><p>CONDITIONS</p></a>
-        <a href="#" class="mentions"><p>MENTIONS LEGALES</p></a>
-    </div>
-    <!-- FIN DU FOOTER POUR TOUTES LES PAGES-->
+    <?php include("FOOTER.php"); ?>
 </footer>
 </html>
 </html>

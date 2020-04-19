@@ -8,18 +8,20 @@ html, body
 }
 #canvas_tableau{
     background-color: #D0EDF7;
-    width: 55%;
-    height: 25%;
+    width: 65%;
+
+    width: 30%;
+    height: 30%;
     border-radius: 30px;
-    padding-bottom: 20px;
-    margin-bottom: 100px;
-    padding-top: 2px;
-    margin-top: 5%;
+    padding-bottom: 40px;
+    position: absolute;
+    top: 24.5%;
+    left: 22.5%;
 }
 #canvas_graphique{
     background-color: #D0EDF7;
-    width: 39%;
-    height: 40%;
+    width: 30%;
+    height: 30%;
     border-radius: 30px;
     padding-bottom: 40px;
     position: absolute;
@@ -71,4 +73,8 @@ rgba(0, 0, 0, .2) 30%,
 rgba(0, 0, 0, 0));
     text-decoration: none;
     margin-left:78%;
+}
+footer{
+    position: fixed;
+    bottom: 0px;
 }
