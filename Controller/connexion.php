@@ -72,7 +72,8 @@ $isPasswordCorrect_membre = password_verify($_POST['mdp'], $recupMdp);
 //si les champs sont vides
 if (empty($_POST['email']) || empty($_POST['mdp']))
 {
-    echo 'Une donnée n\'a pas été rentrée';
+    echo 'Une donnée n\'a pas été rentrée. Vous allez être redirigé sur le formulaire de connexion.';
+    header('Refresh:8; url=../view/HTML_Files/P_Connexion.php');
 }
 
 
@@ -86,7 +87,8 @@ else if($_POST['email'] == $recup_email_admin){
         //echo 'Bonjour ' . $_SESSION['nomAdmin'];
     }
     else{
-        echo 'ADMIN : Mauvais identifiant ou mot de passe !';
+        echo 'ADMIN : Mauvais identifiant ou mot de passe. Vous allez être redirigé sur le formulaire de connexion';
+        header('Refresh:8; url=../view/HTML_Files/P_Connexion.php');
     }
 }
 
@@ -103,7 +105,8 @@ else if($_POST['email'] == $recup_email_gestionnaire){
 
     }
     else{
-        echo 'GESTIONNAIRE : Mauvais identifiant ou mot de passe !';
+        echo 'GESTIONNAIRE : Mauvais identifiant ou mot de passe. Vous allez être redirigé sur le formulaire de connexion';
+        header('Refresh:8; url=../view/HTML_Files/P_Connexion.php');
     }
 }
 
@@ -114,7 +117,8 @@ else{
     //Boucle pour vérifier les données rentrées dans le formulaire
     //si les données n'existent pas alors erreur
     if (!$recupMdp OR !$recupId){
-        echo 'Vous n\'avez pas de compte.';
+        echo 'Vous n\'avez pas de compte. Vous allez être redirigé sur le formulaire de connexion';
+        header('Refresh:8; url=../view/HTML_Files/P_Connexion.php');
     }
     // sinon si elles existent
     else{
@@ -129,7 +133,8 @@ else{
         }
         // sinon erreur
         else{
-            echo '2. MEMBRE : Mauvais identifiant ou mot de passe !';
+            echo '2. MEMBRE : Mauvais identifiant ou mot de passe. Vous allez être redirigé sur le formulaire de connexion';
+            header('Refresh:8; url=../view/HTML_Files/P_Connexion.php');
         }
     }
 }
