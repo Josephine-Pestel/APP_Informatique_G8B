@@ -24,7 +24,6 @@
        <p>Mesure le temps de réaction à <br />
         un son inattendu</p><br />
 
-       <p> <a class=BoutTry href="page.html">Consulter mes résultats</a></p>
 
     </div>
 
@@ -34,7 +33,7 @@
       <p> Mesure le temps de réaction à <br />
         une lumière inattendu</p><br />
 
-       <p> <a class=BoutTry href="page.html">Consulter mes résultats</a></p>
+
 
     </div>
 
@@ -44,7 +43,7 @@
       <p> Mesure la capacité de l'utilisateur<br />
    à reproduire un son</p><br />
 
-       <p> <a class=BoutTry href="page.html">Consulter mes résultats</a></p>
+
 
 </div>
 </div><br />
@@ -61,7 +60,6 @@
         <p>En positionant votre doigt nous mesurons votre  <br />
             frequence cardique à l'aide d'un capteur</p><br />
 
-        <p> <a class=BoutTry href="page.html">Consulter mes résultats</a></p>
 
     </div>
 
@@ -71,7 +69,6 @@
         <p> Nous mesurons à l'aide d'un capteur adéquat, <br />
             votre température corporelle</p><br />
 
-        <p> <a class=BoutTry href="page.html">Consulter mes résultats</a></p>
 
     </div>
 
