@@ -18,11 +18,8 @@ $req->execute(array(
 ));
 
 if (isset($_POST['score'])) {
-    echo 'Le résultat du test a bien été ajouté';
+    header('location:P_Gestionnaire.php');
 } else {
     echo 'Dommage l\'ajout n\'a pas fonctionné';
 }
-
-echo '<br> <a href="P_Gestionnaire.php"><button>Retour à l\'historique</button> </a>';
-echo '<br> <a href="Gestionnaire_Ajout_Resultat.php"><button>Ajouter un autre résultat</button> </a>';
 ?>
