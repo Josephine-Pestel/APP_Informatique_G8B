@@ -24,20 +24,31 @@ require('ENTETE_MENU.php');
 $bdd = new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
 $reponse = $bdd->query('SELECT * FROM `tests` ORDER by date DESC');
 
+
+
+
 ?>
 
 <!--/////////////////////////////// boutons de redirection//////////////////////////////////////////////////////////////-->
-    <a href="Gestionnaire_Ajout_Resultat.php"><button class="boutonAjout">Ajouter un autre résultat</button> </a>
-    
+<a href="Gestionnaire_Ajout_Resultat.php"><button class="boutonAjout">Ajouter un autre résultat</button> </a>
+
 
 
 
 
 <!--/////////////////////////////////creation du tableau ////////////////////////////////////////////////////////-->
 
-    <h1 class="titre_gestionnaire"> Historique des tests effectués par les utilisateurs </h1>
+<h1 class="titre_gestionnaire"> Historique des tests effectués par les utilisateurs </h1>
 
-    <div class="tableau">
+<div class="barre_recherche">
+    <form action="" method="POST">
+        <input class="barreDeRecherche" type="search" name="recherche" placeholder="Rechercher un utilisateur">
+        <input class="bouton_recherche" type="submit" />
+
+    </form>
+</div>
+
+<div class="tableau">
     <table class="tableau_gestionnaire">
         <tr>
             <th><p class="utilisateur">Nom de l'utilisateur</p></th>
@@ -48,19 +59,40 @@ $reponse = $bdd->query('SELECT * FROM `tests` ORDER by date DESC');
         </tr>
 
         <?php
+        if (!isset($_POST['recherche'])) {
 
 
-        while ($donnees = $reponse->fetch()) { ?>
-            <tr>
-                <th><p class="utilisateur"><?php echo $donnees['idUtilisateur'] ?></p></th>
-                <th><p class="Type"><?php echo $donnees['type'] ?></p></th>
-                <th><p class="Date"><?php echo $donnees['date'] ?></p></th>
-                <th><p class="Score"><?php echo $donnees['score'] ?></p></th>
-            </tr>
+            while ($donnees = $reponse->fetch()) { ?>
+                <tr>
+                    <th><p class="utilisateur"><?php echo $donnees['idUtilisateur'] ?></p></th>
+                    <th><p class="Type"><?php echo $donnees['type'] ?></p></th>
+                    <th><p class="Date"><?php echo $donnees['date'] ?></p></th>
+                    <th><p class="Score"><?php echo $donnees['score'] ?></p></th>
+                </tr>
 
-            <?php
+                <?php
+            }
+            $reponse->closeCursor();
+
+        } else {
+
+            $reponse_recherche = $bdd->prepare('SELECT * FROM tests WHERE idUtilisateur = :idUtilisateur');
+            $reponse_recherche->execute(array(
+                'idUtilisateur' => $_POST['recherche']
+            ));
+
+            while ($donnees = $reponse_recherche->fetch()) { ?>
+                <tr>
+                    <th><p class="utilisateur"><?php echo $donnees['idUtilisateur'] ?></p></th>
+                    <th><p class="Type"><?php echo $donnees['type'] ?></p></th>
+                    <th><p class="Date"><?php echo $donnees['date'] ?></p></th>
+                    <th><p class="Score"><?php echo $donnees['score'] ?></p></th>
+                </tr>
+
+                <?php
+            }
+            $reponse_recherche->closeCursor();
         }
-        $reponse->closeCursor();
 
         ?>
     </table>
@@ -68,11 +100,13 @@ $reponse = $bdd->query('SELECT * FROM `tests` ORDER by date DESC');
 </div>
 
 
+
+
 </body>
 
-    <?php
-    require('FOOTER.php');
+<?php
+require('FOOTER.php');
 
-    ?>
+?>
 
 </html>
