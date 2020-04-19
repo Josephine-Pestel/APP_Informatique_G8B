@@ -5,7 +5,7 @@
     <link type="text/css" rel="stylesheet" href="../CSS_files/P_Inscription.css?t=<? echo time(); ?>" media="all">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>INIFINITE MEASURES - INSCRIPTION</title>
-    <script src="../javascript/Inscription.js"></script>
+    <script src="../Javascript_Files/Inscription.js"></script>
 
 </head>
 
