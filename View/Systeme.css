@@ -36,19 +36,7 @@ h1{
     text-align: center;
     background-color: #f1f9ff;
 }
-.BoutTry{
-	text-decoration: none;
-	display: inline-block;
-	width: 40%;
-	border: 2px blue outset;
 
-	font-size:25px;
-
-}
-#conteneur .BoutTry a {
-
-	color: white;
-}
 
 #arrow
 {
