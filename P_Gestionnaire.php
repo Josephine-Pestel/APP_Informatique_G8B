@@ -17,6 +17,8 @@
 require('ENTETE_MENU.php');
 
 ?>
+
+<!--/////////////////////////// selectionne les données dans la bdd///////////////////////////////////////-->
 <?php
 
 $bdd = new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
@@ -24,11 +26,14 @@ $reponse = $bdd->query('SELECT * FROM tests');
 
 ?>
 
-<!--Création de la barre de recherche-->
-<div class="barre_recherche">
+<!--/////////////////////////////// boutons de redirection//////////////////////////////////////////////////////////////-->
+    <a href="Gestionnaire_Ajout_Resultat.php"><button class="boutonAjout">Ajouter un autre résultat</button> </a>
     
-</div>
-<!--creation du tableau-->
+
+
+
+
+<!--/////////////////////////////////creation du tableau ////////////////////////////////////////////////////////-->
 
     <h1 class="titre_gestionnaire"> Historique des tests effectués par les utilisateurs </h1>
 
@@ -65,7 +70,6 @@ $reponse = $bdd->query('SELECT * FROM tests');
 
 </body>
 
-    <!-- Appel Footer -->
     <?php
     require('FOOTER.php');
 

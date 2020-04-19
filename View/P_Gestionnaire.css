@@ -13,7 +13,13 @@ html, body
     text-decoration: underline ;
     text-decoration-color: #1D2043;
 }
+.boutonAjout{
+    margin-top: 5%;
+    font-size:100%;
+    background-color:beige;
 
+
+}
 .tableau{
     margin-bottom: 30%;
 }
