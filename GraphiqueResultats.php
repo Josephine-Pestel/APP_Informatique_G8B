@@ -5,9 +5,9 @@
     <link rel="stylesheet" href="View/GraphiqueResultats.css" />
     <title>Resultats Graphique</title>
 </head>
+
 <body>
     <?php include("ENTETE_MENU.php"); ?>
-<h3>Vos Résultats</h3>
 <div class="canvas">
     <h2>Graphiques</h2>
     <div class="tabbed">
