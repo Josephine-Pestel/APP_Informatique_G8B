@@ -19,7 +19,6 @@
 
     <!-- Petits icones -->
     <div class="icones">
-        <a href="#" class="bouton_search"><img src="images/iconsearch.png" alt="" /></a>
         <a href="#" class="bouton_user"><img src="images/iconuser.png" alt="" /></a>
         <a href="mailto:alexandre.payen@lilalions.com" class="bouton_contact"><img src="images/iconmail.png" alt="" /></a>
     </div>

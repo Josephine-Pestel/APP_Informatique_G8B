@@ -6,7 +6,7 @@ html, body
 	padding: 0;
 }
 
-p
+ body.p
 {
 	color: black;
 }
@@ -18,7 +18,7 @@ p
 	width: 40%;
 }
 
-h1{
+body.h1{
 	text-align: center;
 	color: #52abff;
 }

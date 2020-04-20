@@ -12,7 +12,7 @@
 <!-- Appel En-Tete et Menu avec requete php -->
 
 <?php
-require('../HTML_Files/ENTETE_MENU.php');
+include('ENTETE_MENU.php');
 
 ?>
 
