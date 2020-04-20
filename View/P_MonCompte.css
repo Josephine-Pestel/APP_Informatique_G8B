@@ -35,7 +35,7 @@ html, body
     z-index:2;
 }
 
-.edtier{
+.editer{
     margin-right:10%;
     color: #2699FB;
     background: white;
@@ -46,7 +46,7 @@ html, body
 .consulter{
     color: #2699FB;
     background: white;
-    width:35%;
+    width:10em;
     font-weight: bold;
 
 }

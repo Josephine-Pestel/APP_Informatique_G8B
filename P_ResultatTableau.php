@@ -86,7 +86,10 @@ require('ENTETE_MENU.php');
 
 </table>
 
-<button class="bouton_retour"> RETOUR</button>
+<a href="MonCompteUtilisateur.php">
+    <button class="bouton_retour"> RETOUR</button>
+</a>
+
 
 </body>
 

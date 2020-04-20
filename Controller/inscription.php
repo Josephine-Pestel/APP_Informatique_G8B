@@ -3,7 +3,7 @@
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link type="text/css" rel="stylesheet" href=../view/css/P_Inscription.css?t=<? echo time(); ?>
+    <link type="text/css" rel="stylesheet" href=../View/CSS_files/P_Inscription.css?t=<? echo time(); ?>
 </head>
 
 <?php
@@ -22,13 +22,16 @@ $mailGestionnaire=recup_email_gestionnaire_inscription();
 
 if ($pseudo_rentre)
 {
-    echo '<p class="ERREUR_donnees_absente">Impossible ce mail existe déjà dans les utilisateur</p>';
+    echo '<p class="ERREUR_donnees_absente">Impossible ce mail existe déjà dans les utilisateur. Vous allez être redirigé dans quelques secondes sur le formulaire d\'inscription</p>';
+    header('Refresh:8; url=../view/HTML_Files/P_Inscription.php');
 }
 else if($_POST['email']==$mailAdmin){
-    echo '<p class="ERREUR_mail_existe"> Impossible ce mail est celui de l\'administrateur </p>';
+    echo '<p class="ERREUR_mail_existe"> Impossible ce mail est celui de l\'administrateur. Vous allez être redirigé dans quelques secondes sur le formulaire d\'inscription </p>';
+    header('Refresh:8; url=../view/HTML_Files/P_Inscription.php');
 }
 else if($_POST['email']==$mailGestionnaire){
-    echo '<p class="ERREUR_mail_existe"> Impossible ce mail est celui du gestionnaire </p>';
+    echo '<p class="ERREUR_mail_existe"> Impossible ce mail est celui du gestionnaire.  Vous allez être redirigé dans quelques secondes sur le formulaire d\'inscription </p>';
+    header('Refresh:8; url=../view/HTML_Files/P_Inscription.php');
 }
 //si si les variables existent
 else{

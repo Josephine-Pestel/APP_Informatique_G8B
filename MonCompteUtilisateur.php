@@ -29,8 +29,14 @@ require('ENTETE_MENU.php');
     <section class="partie_gauche">
 
         <section class="boutons">
-            <button class="edtier"> EDITER SON PROFIL</button>
-            <button class="consulter"> CONSULTER MES RESULTATS</button>
+            <button class="consulter"> EDITER SON PROFIL</button>
+            <a href="P_ResultatTableau.php">
+                <button class="consulter"> CONSULTER MES RESULTATS (TABLEAU)</button>
+            </a>
+            <a href="GraphiqueResultats.html">
+                <button class="consulter"> CONSULTER MES RESULTATS (GRAPHIQUE)</button>
+            </a>
+
         </section>
         <img class="photo_profil" src="../images/logowink.png" alt="photo de profil"/>
         <p class="description_utilisateur"> Voici ton profil</p>
