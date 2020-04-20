@@ -1,26 +1,20 @@
-html, body
-{
-    width: 100%;
-
-}
 #canvas{
     display:inline-block;
 }
 #canvas_tableau{
     background-color: #D0EDF7;
-    width: 65%;
-
-    width: 30%;
+    width:35%;
     height: 30%;
     border-radius: 30px;
     padding-bottom: 40px;
+    margin-bottom: 600px;
     position: absolute;
     top: 24.5%;
-    left: 22.5%;
+    left: 20%;
 }
 #canvas_graphique{
     background-color: #D0EDF7;
-    width: 30%;
+    width:35%;
     height: 30%;
     border-radius: 30px;
     padding-bottom: 40px;
@@ -36,11 +30,12 @@ h2{
 
 }
 .texte_milieu{
-    margin-top: 125px ;
+    margin-top: 10px ;
     margin-right: 50px;
     margin-left: 50px;
     margin-bottom: 75px;
     font-family: Arial;
+    padding-top: 70px;
 
 }
 .troisieme_bouton{

@@ -9,9 +9,9 @@ html, body
     border-radius: 30px;
     position: absolute;
     left: 38%;
-    top: 300px;
+    top: 200px;
     margin-bottom: 150px;
-    padding-bottom: 20px;
+    padding-bottom: 75px;
 }
 h2 {
     text-align: center;
@@ -48,7 +48,9 @@ h2 {
     font-size: 13px;
     z-index: 99;
 }
-
+body{
+    margin-bottom: 10000px;
+}
 
 .bargraph ul.bars li span {
     position: relative;
@@ -181,6 +183,5 @@ div.tab:target {
 }
 footer {
     position: fixed;
-    bottom: 0px ;
-
+    bottom: 0px;
 }

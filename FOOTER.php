@@ -14,7 +14,7 @@
 <footer>
 
     <div class ="signature">
-        <p class="realisation">  REALISER PAR</p>
+        <p class="realisation">  RÉALISÉ PAR</p>
         <img class="logo_WINK" src="images/logowink.png" alt="Logo WINK" />
     </div>
 
