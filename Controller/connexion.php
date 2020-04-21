@@ -150,7 +150,7 @@ else{
             $_SESSION['email'] = $recupEmail;
             $_SESSION['date_inscription'] = $recupDateInscription;
             $_SESSION['mdp'] = $recupDateInscription;
-            header('Location:../View/HTML_Files/MonCompteAdmin.php');
+            header('Location:../View/HTML_Files/MonCompteUtilisateur.php');
         }
         // sinon erreur
         else{
