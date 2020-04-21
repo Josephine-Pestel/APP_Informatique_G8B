@@ -14,15 +14,18 @@ $recupMdp = ($donneesMdp['mdp']);
 $donneesEmail = getDonneesUtilisateur($_POST['email']);
 $recupEmail = ($donneesEmail['email']);
 
-$donneesId = getDonneesUtilisateur($_POST['email']);
-$recupDateInscription = ($donneesId['idUtilisateur']);
+$donneesDateInscription = getDonneesUtilisateur($_POST['email']);
+$recupDateInscription = ($donneesDateInscription['date_inscription']);
 
-$donneesDateCompte = getDonneesUtilisateur($_POST['email']);
-$recupId = ($donneesDateCompte['date_inscription']);
+$donneesId = getDonneesUtilisateur($_POST['email']);
+$recupId = ($donneesId['idUtilisateur']);
 
 
 
 //RECUPERATION DES DONNEES ADMINISTRATEUR
+$donneesIdAdmin = getDonneesAdmin();
+$recup_Id_admin = ($donneesIdAdmin['idAdministrateur']);
+
 $donneesEmailAdmin = getDonneesAdmin();
 $recup_email_admin = ($donneesEmailAdmin['email']);
 
@@ -35,6 +38,9 @@ $recup_nom_admin = ($donneesNomAdmin['nom']);
 
 
 //RECUPERATION DES DONNEES GESTIONNAIRE
+$donneesIdGestionnaire = getDonneesGestionnaire();
+$recup_Id_gestionnaire = ($donneesIdGestionnaire['id_Gestionnaire']);
+
 $donneesEmailGestionnaire = getDonneesGestionnaire();
 $recup_email_gestionnaire = ($donneesEmailGestionnaire['email']);
 
@@ -43,6 +49,12 @@ $recup_mdp_gestionnaire = ($donneesMdpGestionnaire['mdp']);
 
 $donneesNomGestionnaire = getDonneesGestionnaire();
 $recup_nom_gestionnaire = ($donneesNomGestionnaire['nom']);
+
+$donneesNum_TelGestionnaire = getDonneesGestionnaire();
+$recup_NumTel_gestionnaire = ($donneesNum_TelGestionnaire['num_tel']);
+
+$donneesDomaineGestionnaire = getDonneesGestionnaire();
+$recup_domaine_gestionnaire = ($donneesDomaineGestionnaire['domaine']);
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -83,8 +95,11 @@ else if($_POST['email'] == $recup_email_admin){
     if($isPasswordCorrect_admin){
         session_start();
         header('Location:../View/HTML_Files/MonCompteAdmin.php');
-        $_SESSION['nomAdmin'] = $recup_nom_admin;
-        //echo 'Bonjour ' . $_SESSION['nomAdmin'];
+        $_SESSION['idAdministrateur'] = $recup_Id_admin;
+        $_SESSION['email'] = $recup_email_admin;
+        $_SESSION['nom'] = $recup_nom_admin;
+        $_SESSION['mdp'] = $recup_mdp_admin;
+
     }
     else{
         echo 'ADMIN : Mauvais identifiant ou mot de passe. Vous allez être redirigé sur le formulaire de connexion';
@@ -100,8 +115,12 @@ else if($_POST['email'] == $recup_email_gestionnaire){
     if($isPasswordCorrect_gestionnaire){
         session_start();
         header('Location:../View/HTML_Files/MonCompteGestionnaire.php');
-        $_SESSION['nomGestionnaire'] = $recup_nom_gestionnaire;
-        //echo 'Bonjour ' . $_SESSION['nomGestionnaire'];
+        $_SESSION['id_Gestionnaire'] = $recup_Id_gestionnaire;
+        $_SESSION['email'] = $recup_email_gestionnaire;
+        $_SESSION['nom'] = $recup_nom_gestionnaire;
+        $_SESSION['num_tel'] = $recup_NumTel_gestionnaire;
+        $_SESSION['domaine'] = $recup_domaine_gestionnaire;
+        $_SESSION['mdp'] = $recup_mdp_gestionnaire;
 
     }
     else{
@@ -112,7 +131,7 @@ else if($_POST['email'] == $recup_email_gestionnaire){
 
 
 
-//sinon : CONNEXION MEMBRE
+//sinon : CONNEXION UTILISATEUR
 else{
     //Boucle pour vérifier les données rentrées dans le formulaire
     //si les données n'existent pas alors erreur
@@ -125,11 +144,13 @@ else{
         //si la verif du mot de passe est true, alors on démarre une session
         if ($isPasswordCorrect_membre){
             session_start();
-            //$_SESSION['idUtilisateur'] = $recupId;
-            $_SESSION['prenom_utilisateur'] = $recupPrenom;
+            $_SESSION['idUtilisateur'] = $recupId;
+            $_SESSION['prenom'] = $recupPrenom;
+            $_SESSION['nom'] = $recupNom;
+            $_SESSION['email'] = $recupEmail;
+            $_SESSION['date_inscription'] = $recupDateInscription;
+            $_SESSION['mdp'] = $recupDateInscription;
             header('Location:../View/HTML_Files/MonCompteAdmin.php');
-            //echo 'Vous êtes connecté en tant qu\'utilisateur !';
-            //echo 'Bonjour ' . $_SESSION['prenom_utilisateur'];
         }
         // sinon erreur
         else{
