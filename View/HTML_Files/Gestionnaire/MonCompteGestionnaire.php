@@ -29,11 +29,11 @@ require('ENTETE_MENU_Gestionnaire.php');
     <section class="partie_gauche">
         <section class="boutons1">
             <a href="#">
-                <button class="editermonprofil"> Consulter l'historique des résultats des utilisateurs</button>
+                <button class="editermonprofil"> Editer mon profil</button>
             </a>
 
             <a href="#">
-                <button class="editierunprofil"> Consulter l'historique des résultats des utilisateurs</button>
+                <button class="editierunprofil"> Editer le profil d'un utilisateur</button>
             </a>
         </section>
 
