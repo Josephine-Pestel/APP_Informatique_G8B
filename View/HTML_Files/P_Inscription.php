@@ -13,7 +13,7 @@
 
 <!-- Appel En-Tete et Menu avec requete php -->
 <?php
-require('../HTML_Files/ENTETE_MENU.php');
+require('ENTETE_MENU_SANSCompte.php');
 ?>
 
 <!-- Milieu -->
@@ -54,7 +54,7 @@ require('../HTML_Files/ENTETE_MENU.php');
 
 <!-- Appel Footer -->
 <?php
-require('../HTML_Files/FOOTER.php');
+require('FOOTER.php');
 
 ?>
 

@@ -82,7 +82,7 @@ if (empty($_POST['email']) || empty($_POST['mdp']))
 else if($_POST['email'] == $recup_email_admin){
     if($isPasswordCorrect_admin){
         session_start();
-        header('Location:../MonCompteAdmin.php');
+        header('Location:../View/HTML_Files/MonCompteAdmin.php');
         $_SESSION['nomAdmin'] = $recup_nom_admin;
         //echo 'Bonjour ' . $_SESSION['nomAdmin'];
     }
@@ -99,7 +99,7 @@ else if($_POST['email'] == $recup_email_admin){
 else if($_POST['email'] == $recup_email_gestionnaire){
     if($isPasswordCorrect_gestionnaire){
         session_start();
-        header('Location:../MonCompteGestionnaire.php');
+        header('Location:../View/HTML_Files/MonCompteGestionnaire.php');
         $_SESSION['nomGestionnaire'] = $recup_nom_gestionnaire;
         //echo 'Bonjour ' . $_SESSION['nomGestionnaire'];
 
@@ -127,7 +127,7 @@ else{
             session_start();
             //$_SESSION['idUtilisateur'] = $recupId;
             $_SESSION['prenom_utilisateur'] = $recupPrenom;
-            header('Location:../MonCompteUtilisateur.php');
+            header('Location:../View/HTML_Files/MonCompteAdmin.php');
             //echo 'Vous êtes connecté en tant qu\'utilisateur !';
             //echo 'Bonjour ' . $_SESSION['prenom_utilisateur'];
         }
