@@ -37,7 +37,7 @@
             <li><a href="Systeme.php">Notre Système</a></li>
             <li><a href="ForumUtilisateur.php">Forum</a></li>
             <li><a href="P_Connexion.php">Mon compte</a></li>
-            <li><a href="P_FAQ.html">FAQ</a></li>
+            <li><a href="FAQ_Utilisateur.php">FAQ</a></li>
         </ul>
     </nav>
 
