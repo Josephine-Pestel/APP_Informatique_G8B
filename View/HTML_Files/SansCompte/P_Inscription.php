@@ -23,23 +23,23 @@ require('ENTETE_MENU_SansCompte.php');
     <form name="formulaire_inscription" action="../../../Controller/inscription.php" method="post">
 
         <p class="prenom"> Prénom* :</p>
-            <input class = "rectangle_prenom" type="text" name="prenom" value="infinitmeasures" onFocus="javascript:this.value='';"/> <br/>
+            <input class = "rectangle_prenom" type="text" name="prenom"required/> <br/>
         </br>
 
         <p class="nom"> Nom* :</p>
-            <input class = "rectangle_nom" type="text" name="nom" value="INFINITMEASURES" onFocus="javascript:this.value='';"/> <br/>
+            <input class = "rectangle_nom" type="text" name="nom" required/> <br/>
         </br>
 
         <p class="mdp"> Mot de passe* :</p>
-            <input class = "rectangle_mdp" type="password" name="mdp" value="mdp-a-rentrer" onFocus="javascript:this.value='';"/> <br/>
+            <input class = "rectangle_mdp" type="password" name="mdp" required/> <br/>
         </br>
 
         <p class="mdp2">Confirmation du mot de passe* :</p>
-            <input class = "rectangle_mdp2" type="password" name="confirmation_mdp" value="mdp-a-rentrer" onFocus="javascript:this.value='';"/> <br/>
+            <input class = "rectangle_mdp2" type="password" name="confirmation_mdp" required/> <br/>
         </br>
 
         <p class="email"> Adresse E-mail* :</p>
-            <input class = "rectangle_email" type="text" name="email" value="exemple@gmail.com" onFocus="javascript:this.value='';"/> <br/>
+            <input class = "rectangle_email" type="text" name="email" required/> <br/>
         </br>
 
         <p class="date_naissance"> Date de naissance* :</p>

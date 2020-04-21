@@ -58,3 +58,16 @@ tr, th, td /* Mettre une bordure sur les td ET les th */
     text-align: center;
     width:10%;
 }
+
+.bouton_retour
+{
+    font-size:140%;
+    background-color:beige;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    width:20%;
+    height :5%;
+    margin-left: 73%;
+
+
+}

@@ -22,69 +22,41 @@ html, body
 
 .partie_gauche
 {
-    display: flex;
+    diplay: flex;
     flex-direction: column;
-    width:55%;
-    margin-top: 8%;
+    width:60%;
+    margin-top: 25%;
+
 }
 
-.boutons{
+.boutons1, .boutons2{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin-left: 5%;
+    position:absolute;
     z-index:2;
+    justify-content: space-between;
 
 }
 
-.editermonprofil{
-    margin-right: 2%;
-    color: #2699FB;
-    background: white;
-    font-weight: bold;
-    padding: 0.5%;
-}
-.editierunprofil{
-    margin-right: 2%;
-    color: #2699FB;
-    background: white;
-    font-weight: bold;
-    padding: 0.5%;
+.editermonprofil, .consulter, .editierunprofil, .Ajouter{
+    width:15em;
+    height :5em;
+    margin-top:2%;
+    font-size: 100%;
+    color: white;
+    background: #1D2043;
 
 }
 
-.consulter{
-    margin-right: 2%;
-    color: #2699FB;
-    background: white;
-    font-weight: bold;
-    padding: 0.5%;
-
-}
-.Ajouter{
-    margin-right: 2%;
-    color: #2699FB;
-    background: white;
-    font-weight: bold;
-    padding: 0.5%;
-}
 
 .photo_profil{
-    margin-bottom:7%;
-    margin-top:7%;
-    margin-left: 8%;
+    margin-bottom:15%;
+    margin-top:6%;
+    margin-left: 17%;
     background: white;
     position: absolute;
     z-index:2;
 
-
-}
-
-.description_utilisateur{
-    color: #2699FB;
-    font-style: italic;
-    margin-bottom: 18%;
-    margin-top:40%;
-    margin-left:10%;
 
 }
 
@@ -96,34 +68,45 @@ html, body
     margin-top: 7%;
 }
 
-.details1, .details2
+.details1
 {
     display: flex;
     flex-direction: column;
     color:#2699FB;
 
+
+}
+.details2
+{
+    display: flex;
+    flex-direction: column;
+    color:#2699FB;
+    margin-bottom:50%;
+
 }
 
-.nom, .naissance,.email_utilisateur
+.nom, .naissance
 {
     font-weight: bold;
     font-size: 150%;
-    margin-top: 5%;
 }
 
 .separation1 {
     background-color: #2699FB;
-    height:0.3%;
-    width: 90%;
+    height:0.1%;
+    width:27%;
+    margin-top:8%;
     margin-bottom:20%;
-    margin-top: 5%;
+    position:absolute;
 }
 
 .separation2 {
     background-color: #2699FB;
-    height:0.3%;
-    width: 90%;
-    margin-top: 5%;
+    height:0.1%;
+    width:27%;
+    margin-top:17%;
+    margin-bottom:20%;
+    position:absolute;
 }
 
 .fond
@@ -131,9 +114,9 @@ html, body
     background: #2699FB;
     opacity: 0.15;
     width: 80%;
-    height: 60%;
+    height: 70%;
     position:absolute;
     margin-left:18%;
     z-index:1;
-    margin-top:3%;
+    margin-top:1%;
 }

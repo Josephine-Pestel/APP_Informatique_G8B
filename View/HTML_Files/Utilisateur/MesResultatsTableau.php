@@ -3,7 +3,7 @@
 
 <head>
     <!-- En-tête de la page -->
-    <link type="text/css" rel="stylesheet" href="../CSS_files/P_ResultatTableau.css?t=<? echo time(); ?>" media="all">
+    <link type="text/css" rel="stylesheet" href="../../CSS_files/P_ResultatTableau.css?t=<? echo time(); ?>" media="all">
     <!--<link rel="stylesheet" href="P_Accueil_Payen.css" />-->
     <meta charset="utf-8" />
     <title>WINK FOR INIFINITE MEASURES</title>
@@ -86,7 +86,7 @@ require('ENTETE_MENU_Utilisateur.php');
 
 </table>
 
-<a href="Utilisateur/MonCompteUtilisateur.php">
+<a href="MonCompteUtilisateur.php">
     <button class="bouton_retour"> RETOUR</button>
 </a>
 
@@ -95,7 +95,7 @@ require('ENTETE_MENU_Utilisateur.php');
 
 <!-- Appel Footer -->
 <?php
-require('FOOTER.php');
+require('../FOOTER.php');
 
 ?>
 

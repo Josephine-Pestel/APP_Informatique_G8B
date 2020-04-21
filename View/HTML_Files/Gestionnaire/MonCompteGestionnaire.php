@@ -24,14 +24,22 @@ require('ENTETE_MENU_Gestionnaire.php');
 
 <section class="deux_parties">
 
+    <img class="photo_profil" src="../../../images/iconGestionnaire.png" alt="photo de profil"/>
+
     <section class="partie_gauche">
+        <section class="boutons1">
+            <a href="#">
+                <button class="editermonprofil"> Consulter l'historique des résultats des utilisateurs</button>
+            </a>
 
-        <section class="boutons">
-                <button class="editermonprofil">Editer mon profil</button>
+            <a href="#">
+                <button class="editierunprofil"> Consulter l'historique des résultats des utilisateurs</button>
+            </a>
+        </section>
 
-                <button class="editierunprofil"> Editer le profil d'un utilisateur</button>
+        </br></br></br></br></br>
 
-
+        <section class="boutons2">
             <a href="P_Gestionnaire.php">
                 <button class="consulter"> Consulter l'historique des résultats des utilisateurs</button>
             </a>
@@ -39,11 +47,8 @@ require('ENTETE_MENU_Gestionnaire.php');
             <a href="Gestionnaire_Ajout_Resultat.php">
                <button class="Ajouter"> Ajouter un résultat a un utilisateur</button>
             </a>
-
-
         </section>
-        <img class="photo_profil" src="../../../images/logowink.png" alt="photo de profil"/>
-        <p class="description_utilisateur"> Voici ton profil</p>
+
 
     </section>
 
@@ -52,26 +57,26 @@ require('ENTETE_MENU_Gestionnaire.php');
     <?php
 
     $bdd = new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
-    $reponse = $bdd->query('SELECT * FROM `gestionnaire');
+    $reponse = $bdd->query('SELECT * FROM gestionnaire');
 
     ?>
-
     <section class="partie_droite">
         <section class="details1">
             <p class="nom"> josephine PESTEL</p>
             <p class="date_inscription"> Incris le ??? </p>
         </section>
-
         <div class="separation1"></div>
+
 
         <section class="details2">
             <p class="naissance"> 23 mars 1999</p>
             <p class="email_utilisateur"> E: nale.surname@gmail.com</p>
-        </section>
 
-        <div class="separation"></div>
+        </section>
+        <div class="separation2"></div>
 
     </section>
+
 </section>
 
 

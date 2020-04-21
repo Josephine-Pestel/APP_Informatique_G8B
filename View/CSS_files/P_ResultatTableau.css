@@ -8,7 +8,7 @@ html, body
 
 .titre_tableau{
     margin-top: 3%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     text-align: center;
     color:#1D2043;
     text-decoration: underline ;
@@ -50,8 +50,8 @@ tr, th, td /* Mettre une bordure sur les td ET les th */
 
 .bouton_retour
 {
-    margin-top: 35%;
-    margin-bottom: 7%;
+    margin-top: 33%;
+    margin-bottom: 3%;
     width:20%;
     height :5%;
     margin-left: 57%;

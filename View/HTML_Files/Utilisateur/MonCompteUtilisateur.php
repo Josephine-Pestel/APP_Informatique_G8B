@@ -27,7 +27,6 @@ require('ENTETE_MENU_Utilisateur.php');
 <div class="fond"> </div>
 
 <img class="photo_profil" src="../../../images/iconProfilUser.png" alt="photo de profil"/>
-
 <section class="deux_parties">
 
     <section class="partie_gauche">
@@ -36,10 +35,10 @@ require('ENTETE_MENU_Utilisateur.php');
             <a href="EditerProfil_Utilisateur.php">
                 <button class="editer">EDITER SON PROFIL</button>
             </a>
-            <a href="../MesResultatsTableau.php">
+            <a href="MesResultatsTableau.php">
                 <button class="consulter_tableau"> CONSULTER MES RESULTATS (TABLEAU)</button>
             </a>
-            <a href="GraphiqueResultats.html">
+            <a href="MesResultatsGraphique.php">
                 <button class="consulter_graphique"> CONSULTER MES RESULTATS (GRAPHIQUE)</button>
             </a>
         </section>

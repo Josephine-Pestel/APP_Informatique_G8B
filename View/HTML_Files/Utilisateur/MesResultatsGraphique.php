@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../CSS_files/GraphiqueResultats.css" />
+    <link rel="stylesheet" href="../../CSS_files/GraphiqueResultats.css" />
     <title>Resultats Graphique</title>
 </head>
 
@@ -70,9 +70,14 @@
         </div>
     </div>
 </div>
+
+    <a href="MonCompteUtilisateur.php">
+        <button class="bouton_retour"> RETOUR</button>
+    </a>
+
 </body>
 <footer>
-    <?php include("FOOTER.php"); ?>
+    <?php include("../FOOTER.php"); ?>
 </footer>
 </html>
 </html>

@@ -183,5 +183,18 @@ div.tab:target {
 }
 footer {
     position: fixed;
-    bottom: 0px;
+    bottom: -90px;
+}
+
+.bouton_retour
+{
+    margin-top: 33%;
+    margin-bottom: 7%;
+    width:20%;
+    height :5%;
+    margin-left: 54%;
+    font-size: larger;
+    border: 1px solid #1D2043;
+
+
 }
