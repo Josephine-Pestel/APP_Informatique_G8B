@@ -16,7 +16,7 @@
 <title>FAQ</title>
 
 <?php
-require('ENTETE_MENU_Utilisateur.php');
+require('ENTETE_MENU_Gestionnaire.php');
 
 ?>
 

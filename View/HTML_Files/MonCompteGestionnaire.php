@@ -14,7 +14,7 @@
 <body>
 
 <?php
-require('ENTETE_MENU.php');
+require('ENTETE_MENU_Gestionnaire.php');
 
 ?>
 

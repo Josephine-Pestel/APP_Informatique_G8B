@@ -7,10 +7,10 @@ require('ENTETE_MENU.php'); ?>
     <nav>
         <ul>
             <li><a href="AccueilAdmin.php">Accueil</a></li>
-            <li><a href="Systeme.php">Notre Système</a></li>
+            <li><a href="Systeme_Admin.php">Notre Système</a></li>
             <li><a href="ForumAdmin.php">Forum</a></li>
-            <li><a href="MonCompteAdmin.php.php">Mon compte</a></li>
-            <li><a href="FAQ_Admin.php.php">FAQ</a></li>
+            <li><a href="MonCompteAdmin.php">Mon compte</a></li>
+            <li><a href="FAQ_Admin.php">FAQ</a></li>
         </ul>
     </nav>
 

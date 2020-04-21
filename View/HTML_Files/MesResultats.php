@@ -6,7 +6,7 @@
     <title>Mes Résultats</title>
 </head>
 <body>
-    <?php include("ENTETE_MENU.php"); ?>
+    <?php include("ENTETE_MENU_Utilisateur.php"); ?>
 <section id="canvas">
     <div id="canvas_tableau">
         <h2>TABLEAU</h2>

@@ -16,7 +16,7 @@
 <!-- Appel En-Tete et Menu -->
 
 <?php
-require('ENTETE_MENU.php');
+require('ENTETE_MENU_Utilisateur.php');
 
 ?>
 

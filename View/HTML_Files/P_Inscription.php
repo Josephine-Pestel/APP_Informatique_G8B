@@ -13,7 +13,7 @@
 
 <!-- Appel En-Tete et Menu avec requete php -->
 <?php
-require('ENTETE_MENU_SANSCompte.php');
+require('ENTETE_MENU_SansCompte.php');
 ?>
 
 <!-- Milieu -->

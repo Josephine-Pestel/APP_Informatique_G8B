@@ -11,7 +11,7 @@
 
 <body>
 <!-- header et menu -->
-<?php include("ENTETE_MENU_Utilisateur.php"); ?>
+<?php include("ENTETE_MENU_SansCompte.php"); ?>
 
 
 <!--  ---------------------- FORUM ---------------------------------------   -->
@@ -30,12 +30,12 @@
 
     <table>
         <tr>
-        <td>Fil de discussion </td>
-        <td>Thème</td>
-        <td>Date</td>
-        <td>Lancée par</td>
-        <td>Dernier message de</td>
-    </tr>
+            <td>Fil de discussion </td>
+            <td>Thème</td>
+            <td>Date</td>
+            <td>Lancée par</td>
+            <td>Dernier message de</td>
+        </tr>
         <tr>
             <td>1</td>
             <td>température</td>

@@ -9,7 +9,7 @@
 
 <body>
 <!-- header et menu -->
-<?php include("ENTETE_MENU.php"); ?>
+<?php include("ENTETE_MENU_Utilisateur.php"); ?>
 
 
 <!--  ---------------------- FORMULAIRE DE DISCUSSION---------------------------------------   -->

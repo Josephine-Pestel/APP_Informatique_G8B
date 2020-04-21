@@ -8,9 +8,9 @@ require('ENTETE_MENU.php'); ?>
         <ul>
             <li><a href="AccueilSansCompte.php">Accueil</a></li>
             <li><a href="Systeme.php">Notre Système</a></li>
-            <li><a href="ForumUtilisateur.php">Forum</a></li>
+            <li><a href="Forum_SansCompte.php">Forum</a></li>
             <li><a href="P_Connexion.php">Mon compte</a></li>
-            <li><a href="FAQ_Utilisateur.php">FAQ</a></li>
+            <li><a href="FAQ_SansCompte.php">FAQ</a></li>
         </ul>
     </nav>
 

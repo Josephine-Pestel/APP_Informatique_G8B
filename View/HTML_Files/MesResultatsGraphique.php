@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php include("ENTETE_MENU.php"); ?>
+    <?php include("ENTETE_MENU_Utilisateur.php"); ?>
 <div class="canvas">
     <h2>Graphiques</h2>
     <div class="tabbed">

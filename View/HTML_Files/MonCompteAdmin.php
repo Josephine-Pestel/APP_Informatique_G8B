@@ -16,7 +16,7 @@
 <!-- Appel En-Tete et Menu par requete php avec require-->
 
 <?php
-require('ENTETE_MENU.php');
+require('ENTETE_MENU_Admin.php');
 
 ?>
 

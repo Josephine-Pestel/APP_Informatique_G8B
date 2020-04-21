@@ -14,7 +14,7 @@
 
 
 <?php
-require('ENTETE_MENU.php');
+require('ENTETE_MENU_Gestionnaire.php');
 
 ?>
 <h1>Veuillez remplir le formulaire ci-dessous pour ajouter un résultat à un utilisateur </h1>

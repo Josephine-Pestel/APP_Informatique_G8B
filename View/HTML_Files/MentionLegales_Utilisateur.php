@@ -9,7 +9,7 @@
 <body>
 
 
-<?php include("ENTETE_MENU.php"); ?>
+<?php include("ENTETE_MENU_Utilisateur.php"); ?>
 <section>
     <h1>Mentions légales</h1>
     <div class="texte">
