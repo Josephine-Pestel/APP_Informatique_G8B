@@ -42,6 +42,10 @@ require('ENTETE_MENU_SANSCompte.php');
             <input class = "rectangle_email" type="text" name="email" value="exemple@gmail.com" onFocus="javascript:this.value='';"/> <br/>
         </br>
 
+        <p class="date_naissance"> Date de naissance* :</p>
+            <input type="date" name="naissance"required></label>
+        </br>
+
         <input class="envoyer" type ="submit" value="S'inscrire" onclick="checkForm();"/>
     </form>
 

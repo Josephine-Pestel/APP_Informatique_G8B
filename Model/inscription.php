@@ -16,12 +16,13 @@ function getDonneesUtilisateurs(){
     $bdd=connexion_bdd();
 
     //Requete pour insérer les données dans la bdd
-    $req = $bdd->prepare('INSERT INTO utilisateurs(prenom, nom, mdp, email, date_inscription) VALUES(:prenom, :nom, :pass_hash, :email, CURDATE())');
+    $req = $bdd->prepare('INSERT INTO utilisateurs(prenom, nom, mdp, email, date_inscription, date_naissance) VALUES(:prenom, :nom, :pass_hash, :email, CURDATE(), :naissance)');
     $req->execute(array(
         'prenom' => $_POST['prenom'],
         'nom' => $_POST['nom'],
         'pass_hash' => passwordHash($_POST['mdp']),
-        'email' => $_POST['email']));
+        'email' => $_POST['email'],
+        'naissance'=>$_POST['naissance']));
     //fermeture de la requête
     $req->closeCursor();
 }

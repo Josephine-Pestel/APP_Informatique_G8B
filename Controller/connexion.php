@@ -20,6 +20,9 @@ $recupDateInscription = ($donneesDateInscription['date_inscription']);
 $donneesId = getDonneesUtilisateur($_POST['email']);
 $recupId = ($donneesId['idUtilisateur']);
 
+$donneesNaissance = getDonneesUtilisateur($_POST['email']);
+$recupNaissance = ($donneesNaissance['date_naissance']);
+
 
 
 //RECUPERATION DES DONNEES ADMINISTRATEUR
@@ -150,6 +153,7 @@ else{
             $_SESSION['email'] = $recupEmail;
             $_SESSION['date_inscription'] = $recupDateInscription;
             $_SESSION['mdp'] = $recupDateInscription;
+            $_SESSION['naissance'] = $recupNaissance;
             header('Location:../View/HTML_Files/MonCompteUtilisateur.php');
         }
         // sinon erreur

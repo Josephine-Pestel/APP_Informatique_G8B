@@ -55,8 +55,7 @@ require('ENTETE_MENU_Utilisateur.php');
         <div class="separation1"></div>
 
         <section class="details2">
-            <!--<p class="naissance"> Né le <?php echo $_SESSION['naissance'];?></p>-->
-            <p class="naissance"> 23 mars 1999</p>
+            <p class="naissance"> Né le <?php echo $_SESSION['naissance'];?></p>
             <p class="email_utilisateur"> EMAIL : <?php echo $_SESSION['email'];?></p>
 
         </section>
