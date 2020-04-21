@@ -13,7 +13,7 @@
         <div class="texte_milieu">
             <p>Les résultats sous forme de tableau vous permettant d'avoir une vision détaillée de vos scores depuis la création de vos comptes</p>
         </div>
-        <a href="P_ResultatTableau.php" class="troisieme_bouton" alt="Accéder au tableau" target="_blank">TABLEAU</a>
+        <a href="MesResultatsTableau.php" class="troisieme_bouton" alt="Accéder au tableau" target="_blank">TABLEAU</a>
     </>
     </div>
     <aside id="canvas_graphique">
@@ -21,7 +21,7 @@
         <div class="texte_milieu">
             <p>Les résultats sous forme de graphiques vous permettant d'avoir une vision détaillée de vos scores depuis votre inscription</p>
         </div>
-        <a href="GraphiqueResultats.php" class="quatrieme_bouton" alt="Accéder au graphique" target="_blank">GRAPHIQUE</a>
+        <a href="MesResultatsGraphique.php" class="quatrieme_bouton" alt="Accéder au graphique" target="_blank">GRAPHIQUE</a>
     </aside>
 </section>
 </body>

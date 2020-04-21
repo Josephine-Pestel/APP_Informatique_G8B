@@ -30,7 +30,7 @@ require('ENTETE_MENU.php');
 
         <section class="boutons">
             <button class="consulter"> EDITER SON PROFIL</button>
-            <a href="P_ResultatTableau.php">
+            <a href="MesResultatsTableau.php">
                 <button class="consulter"> CONSULTER MES RESULTATS (TABLEAU)</button>
             </a>
             <a href="GraphiqueResultats.html">
