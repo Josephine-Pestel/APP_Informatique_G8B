@@ -20,7 +20,7 @@ require('ENTETE_MENU_SansCompte.php');
 <h1 class="titre_inscription"> Inscris-toi !</h1>
 <!-- Formulaire d'inscriptions-->
 <section class="bloc_infos">
-    <form name="formulaire_inscription" action="../../controller/inscription.php" method="post">
+    <form name="formulaire_inscription" action="../../../Controller/inscription.php" method="post">
 
         <p class="prenom"> Prénom* :</p>
             <input class = "rectangle_prenom" type="text" name="prenom" value="infinitmeasures" onFocus="javascript:this.value='';"/> <br/>

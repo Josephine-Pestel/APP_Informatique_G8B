@@ -21,7 +21,7 @@ include('ENTETE_MENU_SansCompte.php');
 <h1 class="titre_connexion"> Connecte-toi !</h1>
 <!-- Formulaire d'inscriptions-->
 <section class="bloc_infos">
-    <form action="../../controller/connexion.php" method="post">
+    <form action="../../../Controller/connexion.php" method="post">
 
         <p class="email"> Adresse E-mail*</p>
             <input class = "rectangle_email" type="text" name="email" value="exemple@gmail.com" onFocus="javascript:this.value='';"/> <br/>

@@ -1,5 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link type="text/css" rel="stylesheet" href=../View/CSS_files/P_Connexion.css?t=<? echo time(); ?>
+</head>
+
 <?php
-require('../model/connexion.php');
+require('../Model/connexion.php');
 
 //RECUPERATION DES DONNEES MEMBRE
 $donneesPrenom = getDonneesUtilisateur($_POST['email']);
@@ -87,8 +95,8 @@ $isPasswordCorrect_membre = password_verify($_POST['mdp'], $recupMdp);
 //si les champs sont vides
 if (empty($_POST['email']) || empty($_POST['mdp']))
 {
-    echo 'Une donnée n\'a pas été rentrée. Vous allez être redirigé sur le formulaire de connexion.';
-    header('Refresh:8; url=../view/HTML_Files/P_Connexion.php');
+    echo '<p class="ERREURS"> Une donnée n\'a pas été rentrée. Vous allez être redirigé sur le formulaire de connexion.</p>';
+    header('Refresh:8; url=../View/HTML_Files/SansCompte/P_Connexion.php');
 }
 
 
@@ -97,7 +105,7 @@ if (empty($_POST['email']) || empty($_POST['mdp']))
 else if($_POST['email'] == $recup_email_admin){
     if($isPasswordCorrect_admin){
         session_start();
-        header('Location:../View/HTML_Files/MonCompteAdmin.php');
+        header('Location:../View/HTML_Files/Administrateur/MonCompteAdmin.php');
         $_SESSION['idAdministrateur'] = $recup_Id_admin;
         $_SESSION['email'] = $recup_email_admin;
         $_SESSION['nom'] = $recup_nom_admin;
@@ -105,8 +113,8 @@ else if($_POST['email'] == $recup_email_admin){
 
     }
     else{
-        echo 'ADMIN : Mauvais identifiant ou mot de passe. Vous allez être redirigé sur le formulaire de connexion';
-        header('Refresh:8; url=../view/HTML_Files/P_Connexion.php');
+        echo '<p class="ERREURS"> Administrateur : Mauvais identifiant ou mot de passe. Vous allez être redirigé sur le formulaire de connexion.</p>';
+        header('Refresh:8; url=../View/HTML_Files/SansCompte/P_Connexion.php');
     }
 }
 
@@ -117,7 +125,7 @@ else if($_POST['email'] == $recup_email_admin){
 else if($_POST['email'] == $recup_email_gestionnaire){
     if($isPasswordCorrect_gestionnaire){
         session_start();
-        header('Location:../View/HTML_Files/MonCompteGestionnaire.php');
+        header('Location:../View/HTML_Files/Gestionnaire/MonCompteGestionnaire.php');
         $_SESSION['id_Gestionnaire'] = $recup_Id_gestionnaire;
         $_SESSION['email'] = $recup_email_gestionnaire;
         $_SESSION['nom'] = $recup_nom_gestionnaire;
@@ -127,8 +135,8 @@ else if($_POST['email'] == $recup_email_gestionnaire){
 
     }
     else{
-        echo 'GESTIONNAIRE : Mauvais identifiant ou mot de passe. Vous allez être redirigé sur le formulaire de connexion';
-        header('Refresh:8; url=../view/HTML_Files/P_Connexion.php');
+        echo '<p class="ERREURS"> Gestionnaire : Mauvais identifiant ou mot de passe. Vous allez être redirigé sur le formulaire de connexion.</p>';
+        header('Refresh:8; url=../View/HTML_Files/SansCompte/P_Connexion.php');
     }
 }
 
@@ -139,8 +147,9 @@ else{
     //Boucle pour vérifier les données rentrées dans le formulaire
     //si les données n'existent pas alors erreur
     if (!$recupMdp OR !$recupId){
-        echo 'Vous n\'avez pas de compte. Vous allez être redirigé sur le formulaire de connexion';
-        header('Refresh:8; url=../view/HTML_Files/P_Connexion.php');
+        echo '<p class="ERREURS"> Vous n\'avez pas de compte. Vous allez être redirigé sur le formulaire de connexion.</p>';
+
+        header('Refresh:8; url=../View/HTML_Files/SansCompte/P_Connexion.php');
     }
     // sinon si elles existent
     else{
@@ -154,12 +163,14 @@ else{
             $_SESSION['date_inscription'] = $recupDateInscription;
             $_SESSION['mdp'] = $recupDateInscription;
             $_SESSION['naissance'] = $recupNaissance;
-            header('Location:../View/HTML_Files/MonCompteUtilisateur.php');
+            header('Location:../View/HTML_Files/Utilisateur/MonCompteUtilisateur.php');
         }
         // sinon erreur
         else{
-            echo '2. MEMBRE : Mauvais identifiant ou mot de passe. Vous allez être redirigé sur le formulaire de connexion';
-            header('Refresh:8; url=../view/HTML_Files/P_Connexion.php');
+            echo '<p class="ERREURS"> Mauvais identifiant ou mot de passe. Vous allez être redirigé sur le formulaire de connexion.</p>';
+            header('Refresh:8; url=../View/HTML_Files/SansCompte/P_Connexion.php');
         }
     }
 }
+?>
+</html>

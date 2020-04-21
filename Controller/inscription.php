@@ -9,9 +9,9 @@
 <?php
 
 //appelle du model inscription
-require('../model/inscription.php');
+require('../Model/inscription.php');
 //appel du model connexion pour pouvoir utiliser les fonctions de récupération d'email de l'admin et du gestionnaire
-require('../model/connexion.php');
+require('../Model/connexion.php');
 
 
 //VERIFICATION ENTREE DE L'UTILISATEUR
@@ -23,15 +23,15 @@ $mailGestionnaire=recup_email_gestionnaire_inscription();
 if ($pseudo_rentre)
 {
     echo '<p class="ERREUR_donnees_absente">Impossible ce mail existe déjà dans les utilisateur. Vous allez être redirigé dans quelques secondes sur le formulaire d\'inscription</p>';
-    header('Refresh:8; url=../view/HTML_Files/P_Inscription.php');
+    header('Refresh:8; url=../View/HTML_Files/SansCompte/P_Inscription.php');
 }
 else if($_POST['email']==$mailAdmin){
     echo '<p class="ERREUR_mail_existe"> Impossible ce mail est celui de l\'administrateur. Vous allez être redirigé dans quelques secondes sur le formulaire d\'inscription </p>';
-    header('Refresh:8; url=../view/HTML_Files/P_Inscription.php');
+    header('Refresh:8; url=../view/HTML_Files/SansCompte/P_Inscription.php');
 }
 else if($_POST['email']==$mailGestionnaire){
     echo '<p class="ERREUR_mail_existe"> Impossible ce mail est celui du gestionnaire.  Vous allez être redirigé dans quelques secondes sur le formulaire d\'inscription </p>';
-    header('Refresh:8; url=../view/HTML_Files/P_Inscription.php');
+    header('Refresh:8; url=../view/HTML_Files/SansCompte/P_Inscription.php');
 }
 //si si les variables existent
 else{
@@ -39,12 +39,12 @@ else{
     if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) OR $_POST['mdp'] != $_POST['confirmation_mdp'] ){
         echo '<p class="ERREURS"> Change les erreurs qui te sont apparus en pop-up !
                                   Tu vas être redirigé dans quelques secondes sur le formulaire d\'inscription</p>' ;
-        header('Refresh:8; url=../view/HTML_Files/P_Inscription.php');
+        header('Refresh:8; url=../view/HTML_Files/SansCompte/P_Inscription.php');
     }
     //sinon, s'il n'y a pas d'erreur, c'est bon on passe à la connexion !
     else{
         getDonneesUtilisateurs();
-        header('Location:../View/HTML_Files/P_Connexion.php');
+        header('Location:../View/HTML_Files/SansCompte/P_Connexion.php');
     }
 }
 
@@ -53,6 +53,7 @@ function passwordHash($input_password){
     $pass_hash = password_hash($input_password,  PASSWORD_DEFAULT);
     return($pass_hash);
 }
-
+?>
+</html>
 
 

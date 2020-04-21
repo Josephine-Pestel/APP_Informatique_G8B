@@ -76,3 +76,11 @@ html, body
 
     font-style:italic;
 }
+.ERREURS {
+    font-size: 190%;
+    text-align: center;
+    color:#1D2043;
+    color:red;
+    font-weight: bold;
+    text-decoration-color: #1D2043;
+}
