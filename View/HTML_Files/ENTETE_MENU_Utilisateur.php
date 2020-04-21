@@ -33,10 +33,10 @@
     <img class="logo_ininite_measures" src="../../images/logoinfinitemeasures.png" alt="Logo Infinite Measures" />
     <nav>
         <ul>
-            <li><a href="AccueilAdmin.php">Accueil</a></li>
+            <li><a href="AccueilUtilisateur.php">Accueil</a></li>
             <li><a href="Systeme.php">Notre Système</a></li>
             <li><a href="ForumUtilisateur.php">Forum</a></li>
-            <li><a href="P_Connexion.php">Mon compte</a></li>
+            <li><a href="MonCompteUtilisateur.php">Mon compte</a></li>
             <li><a href="FAQ_Utilisateur.php">FAQ</a></li>
         </ul>
     </nav>

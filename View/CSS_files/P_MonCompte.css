@@ -7,7 +7,7 @@ html, body
 }
 
 .titre_moncompte{
-    margin-top: 3%;
+    margin-top: 2%;
     text-align: center;
     color:#1D2043;
     text-decoration: underline ;
@@ -25,40 +25,36 @@ html, body
     diplay: flex;
     flex-direction: column;
     width:60%;
-    margin-top: 8%;
+    margin-top: 25%;
+
 }
 
 .boutons{
     display: flex;
-    margin-left: 8%;
+    margin-left: 2%;
     position:absolute;
     z-index:2;
-}
-
-.editer{
-    margin-right:10%;
-    color: #2699FB;
-    background: white;
-    width:30%;
-    font-weight: bold;
-}
-
-.consulter{
-    color: #2699FB;
-    background: white;
-    width:10em;
-    font-weight: bold;
+    justify-content: space-between;
 
 }
+
+.editer,.consulter_tableau,.consulter_graphique{
+    width:12em;
+    height :5em;
+    margin-top:2%;
+    font-size: 100%;
+    color: white;
+    background: #1D2043;
+
+}
+
 
 .photo_profil{
-    margin-bottom:7%;
-    margin-top:7%;
-    margin-left: 8%;
+    margin-top:5%;
+    margin-left: 15%;
     background: white;
     position: absolute;
     z-index:2;
-
 
 }
 
@@ -106,9 +102,9 @@ html, body
     background: #2699FB;
     opacity: 0.15;
     width: 80%;
-    height: 70%;
+    height: 60%;
     position:absolute;
     margin-left:18%;
     z-index:1;
-    margin-top:3%;  
+    margin-top:1%;
 }

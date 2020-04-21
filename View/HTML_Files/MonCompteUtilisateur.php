@@ -16,7 +16,9 @@
 <!-- Appel En-Tete et Menu par requete php avec require-->
 
 <?php
-require('ENTETE_MENU.php');
+//on démarre la session de l'utilisateur
+session_start();
+require('ENTETE_MENU_Utilisateur.php');
 
 ?>
 
@@ -24,42 +26,44 @@ require('ENTETE_MENU.php');
 <h1 class="titre_moncompte"> MON COMPTE </h1>
 <div class="fond"> </div>
 
+<img class="photo_profil" src="../../images/iconProfilUser.png" alt="photo de profil"/>
+
 <section class="deux_parties">
 
     <section class="partie_gauche">
 
         <section class="boutons">
-            <button class="consulter"> EDITER SON PROFIL</button>
+            <a href="EditerProfil_Utilisateur.php">
+                <button class="editer">EDITER SON PROFIL</button>
+            </a>
             <a href="MesResultatsTableau.php">
-                <button class="consulter"> CONSULTER MES RESULTATS (TABLEAU)</button>
+                <button class="consulter_tableau"> CONSULTER MES RESULTATS (TABLEAU)</button>
             </a>
             <a href="GraphiqueResultats.html">
-                <button class="consulter"> CONSULTER MES RESULTATS (GRAPHIQUE)</button>
+                <button class="consulter_graphique"> CONSULTER MES RESULTATS (GRAPHIQUE)</button>
             </a>
-
         </section>
-        <img class="photo_profil" src="../images/logowink.png" alt="photo de profil"/>
-        <p class="description_utilisateur"> Voici ton profil</p>
 
     </section>
 
-
     <section class="partie_droite">
         <section class="details1">
-            <p class="nom"> JOSEPHINE PESTEL</p>
-            <p class="date_inscription"> Incris le ??? </p>
+            <p class="nom"> <?php echo $_SESSION['prenom'].' '.$_SESSION['nom'];?></p>
+            <p class="date_inscription"> Incris le <?php echo $_SESSION['date_inscription'];?></p>
         </section>
 
         <div class="separation1"></div>
 
         <section class="details2">
+            <!--<p class="naissance"> Né le <?php echo $_SESSION['naissance'];?></p>-->
             <p class="naissance"> 23 mars 1999</p>
-            <p class="email_utilisateur"> E: nale.surname@gmail.com</p>
+            <p class="email_utilisateur"> EMAIL : <?php echo $_SESSION['email'];?></p>
+
         </section>
 
         <div class="separation1"></div>
-
     </section>
+
 </section>
 
 
