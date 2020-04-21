@@ -12,7 +12,7 @@
 <!-- Appel En-Tete et Menu avec requete php -->
 
 <?php
-include('ENTETE_MENU.php');
+include('ENTETE_MENU_SansCompte.php');
 
 ?>
 
@@ -38,7 +38,7 @@ include('ENTETE_MENU.php');
 
         <p>
         <button class="nouvel_utilisateur">
-            <a class="text" href="../HTML_Files/P_Inscription.php">Nouvel utilisateur ? INSCRIS-TOI ! </a>
+            <a class="text" href="P_Inscription.php">Nouvel utilisateur ? INSCRIS-TOI ! </a>
         </button></p>
     </form>
 
