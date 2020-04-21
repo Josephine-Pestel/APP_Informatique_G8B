@@ -29,7 +29,7 @@ html, body
 
 }
 
-.prenom, .nom, .mdp, .mdp2, .email
+.prenom, .nom, .mdp, .mdp2, .email, .date_naissance
 {
     font-size: 120%;
     font-weight: bold;
