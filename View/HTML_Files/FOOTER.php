@@ -14,8 +14,8 @@
 <footer>
 
     <div class ="signature">
-        <p class="realisation">  REALISER PAR</p>
-        <img class="logo_WINK" src="images/logowink.png" alt="Logo WINK" />
+        <p class="realisation">  RÉALISÉ PAR</p>
+        <img class="logo_WINK" src="../../images/logowink.png" alt="Logo WINK" />
     </div>
 
 
@@ -35,7 +35,7 @@
     <div class="bloc_footer2">
         <a href="#" class="cookies"><p>COOKIES</p></a>
         <a href="#" class="confidentialite"><p>CONFIDENTIALITE</p></a>
-        <a href="Controller/CGU.php" class="conditions"><p>CONDITIONS</p></a>
+        <a href="CGU.php" class="conditions"><p>CONDITIONS</p></a>
         <a href="Mentions_Legales.php" class="mentions"><p>MENTIONS LEGALES</p></a>
     </div>
 

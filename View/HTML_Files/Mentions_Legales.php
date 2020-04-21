@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <link rel="Stylesheet" href="View/Mnetions_Legales.css"/>
+    <link rel="Stylesheet" href="../CSS_files/Mnetions_Legales.css"/>
     <title>Infinite_Measures</title>
 </head>
 

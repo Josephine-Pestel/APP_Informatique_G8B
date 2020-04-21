@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="View/GraphiqueResultats.css" />
+    <link rel="stylesheet" href="../CSS_files/GraphiqueResultats.css" />
     <title>Resultats Graphique</title>
 </head>
 

@@ -3,7 +3,7 @@
 
 <head>
     <!-- En-tête de la page -->
-    <link type="text/css" rel="stylesheet" href="View/P_MonCompte.css?t=<? echo time(); ?>" media="all">
+    <link type="text/css" rel="stylesheet" href="../CSS_files/P_MonCompte.css?t=<? echo time(); ?>" media="all">
     <!--<link rel="stylesheet" href="P_Accueil_Payen.css" />-->
     <meta charset="utf-8" />
     <title>WINK FOR INIFINITE MEASURES</title>
@@ -29,8 +29,14 @@ require('ENTETE_MENU.php');
     <section class="partie_gauche">
 
         <section class="boutons">
-            <button class="edtier"> EDITER SON PROFIL</button>
-            <button class="consulter"> CONSULTER MES RESULTATS</button>
+            <button class="consulter"> EDITER SON PROFIL</button>
+            <a href="P_ResultatTableau.php">
+                <button class="consulter"> CONSULTER MES RESULTATS (TABLEAU)</button>
+            </a>
+            <a href="GraphiqueResultats.html">
+                <button class="consulter"> CONSULTER MES RESULTATS (GRAPHIQUE)</button>
+            </a>
+
         </section>
         <img class="photo_profil" src="../images/logowink.png" alt="photo de profil"/>
         <p class="description_utilisateur"> Voici ton profil</p>
@@ -67,4 +73,3 @@ require('FOOTER.php');
 ?>
 
 </html>
-<?php

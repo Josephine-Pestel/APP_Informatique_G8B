@@ -19,8 +19,8 @@
 
     <!-- Petits icones -->
     <div class="icones">
-        <a href="#" class="bouton_user"><img src="images/iconuser.png" alt="" /></a>
-        <a href="mailto:alexandre.payen@lilalions.com" class="bouton_contact"><img src="images/iconmail.png" alt="" /></a>
+        <a href="#" class="bouton_user"><img src="../../images/iconuser.png" alt="" /></a>
+        <a href="mailto:alexandre.payen@lilalions.com" class="bouton_contact"><img src="../../images/iconmail.png" alt="" /></a>
     </div>
 
 </header>
@@ -30,14 +30,14 @@
 
 
 <div class="bandeau_menu">
-    <img class="logo_ininite_measures" src="images/logoinfinitemeasures.png" alt="Logo Infinite Measures" />
+    <img class="logo_ininite_measures" src="../../images/logoinfinitemeasures.png" alt="Logo Infinite Measures" />
     <nav>
         <ul>
-            <li><a href="../../P_Accueil.php">Accueil</a></li>
-            <li><a href="../../Systeme.php">Notre Système</a></li>
-            <li><a href="../../Forum.php">Forum</a></li>
-            <li><a href="../../View/HTML_Files/P_Connexion.php">Mon compte</a></li>
-            <li><a href="../../P_FAQ.html">FAQ</a></li>
+            <li><a href="P_Accueil.php">Accueil</a></li>
+            <li><a href="Systeme.php">Notre Système</a></li>
+            <li><a href="Forum.php">Forum</a></li>
+            <li><a href="P_Connexion.php">Mon compte</a></li>
+            <li><a href="P_FAQ.html">FAQ</a></li>
         </ul>
     </nav>
 

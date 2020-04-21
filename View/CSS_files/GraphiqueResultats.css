@@ -21,7 +21,7 @@ h2 {
 .bargraph {
     height: 229px;
     position: relative;
-    background:  url('../images/graph.jpg') repeat-x;
+    background:  url('../../images/graph.jpg') repeat-x;
     border-left: 1px solid #d4d4d4;
     margin: 15px auto 50px;
 }
@@ -39,7 +39,7 @@ h2 {
     bottom: 29px;
     padding: 0;
     margin: 0;
-    background: url("../images/barre.jpg") no-repeat;
+    background: url("../../images/barre.jpg") no-repeat;
     text-align: center;
     font-weight: bold;
     color: white;

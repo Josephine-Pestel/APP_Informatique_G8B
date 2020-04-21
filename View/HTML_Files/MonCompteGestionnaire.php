@@ -3,7 +3,7 @@
 
 <head>
     <!-- En-tête de la page -->
-    <link type="text/css" rel="stylesheet" href="View/P_MonCompte.css?t=<? echo time(); ?>" media="all">
+    <link type="text/css" rel="stylesheet" href="../CSS_files/MoncompteGestionnaire.css?t=<? echo time(); ?>" media="all">
     <!--<link rel="stylesheet" href="P_Accueil_Payen.css" />-->
     <meta charset="utf-8" />
     <title>WINK FOR INIFINITE MEASURES</title>
@@ -13,14 +13,12 @@
 
 <body>
 
-<!-- Appel En-Tete et Menu par requete php avec require-->
-
 <?php
 require('ENTETE_MENU.php');
 
 ?>
 
-<!-- Milieu -->
+
 <h1 class="titre_moncompte"> MON COMPTE </h1>
 <div class="fond"> </div>
 
@@ -29,24 +27,38 @@ require('ENTETE_MENU.php');
     <section class="partie_gauche">
 
         <section class="boutons">
-            <button class="consulter"> EDITER SON PROFIL</button>
-            <a href="P_ResultatTableau.php">
-                <button class="consulter"> CONSULTER MES RESULTATS (TABLEAU)</button>
-            </a>
-            <a href="GraphiqueResultats.html">
-                <button class="consulter"> CONSULTER MES RESULTATS (GRAPHIQUE)</button>
+                <button class="editermonprofil">Editer mon profil</button>
+
+                <button class="editierunprofil"> Editer le profil d'un utilisateur</button>
+
+
+            <a href="P_Gestionnaire.php">
+                <button class="consulter"> Consulter l'historique des résultats des utilisateurs</button>
             </a>
 
+            <a href="Gestionnaire_Ajout_Resultat.php">
+               <button class="Ajouter"> Ajouter un résultat a un utilisateur</button>
+            </a>
+
+
         </section>
-        <img class="photo_profil" src="../images/logowink.png" alt="photo de profil"/>
+        <img class="photo_profil" src="../../images/logowink.png" alt="photo de profil"/>
         <p class="description_utilisateur"> Voici ton profil</p>
 
     </section>
 
 
+
+    <?php
+
+    $bdd = new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
+    $reponse = $bdd->query('SELECT * FROM `gestionnaire');
+
+    ?>
+
     <section class="partie_droite">
         <section class="details1">
-            <p class="nom"> JOSEPHINE PESTEL</p>
+            <p class="nom"> josephine PESTEL</p>
             <p class="date_inscription"> Incris le ??? </p>
         </section>
 
@@ -57,7 +69,7 @@ require('ENTETE_MENU.php');
             <p class="email_utilisateur"> E: nale.surname@gmail.com</p>
         </section>
 
-        <div class="separation1"></div>
+        <div class="separation"></div>
 
     </section>
 </section>
@@ -66,10 +78,8 @@ require('ENTETE_MENU.php');
 
 </body>
 
-<!-- Appel Footer -->
-<?php
-require('FOOTER.php');
-
-?>
+<footer>
+    <?php include("FOOTER.php"); ?>
+</footer>
 
 </html>

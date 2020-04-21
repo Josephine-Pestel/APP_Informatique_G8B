@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <link type="text/css" rel="stylesheet" href="View/Gestionnaire_Ajout_Resultat.css?t=<? echo time(); ?>" media="all">
+    <link type="text/css" rel="stylesheet" href="../CSS_files/Gestionnaire_Ajout_Resultat.css?t=<? echo time(); ?>" media="all">
     <meta charset="utf-8" />
     <title>WINK FOR INIFINITE MEASURES</title>
 </head>

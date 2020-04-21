@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="View/Forum.css" />
+    <link rel="stylesheet" href="../CSS_files/Forum.css" />
     <title>WINK FOR INIFINITE MEASURES</title>
 </head>
 
