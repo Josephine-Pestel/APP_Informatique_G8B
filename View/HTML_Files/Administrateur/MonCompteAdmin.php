@@ -3,7 +3,7 @@
 
 <head>
     <!-- En-tête de la page -->
-    <link type="text/css" rel="stylesheet" href="../../CSS_files/P_MonCompte.css?t=<? echo time(); ?>" media="all">
+    <link type="text/css" rel="stylesheet" href="../../CSS_files/MonCompteAdmin.css?t=<? echo time(); ?>" media="all">
     <!--<link rel="stylesheet" href="P_Accueil_Payen.css" />-->
     <meta charset="utf-8" />
     <title>WINK FOR INIFINITE MEASURES</title>
@@ -23,17 +23,16 @@ require('ENTETE_MENU_Admin.php');
 <!-- Milieu -->
 <h1 class="titre_moncompte"> MON COMPTE </h1>
 <div class="fond"> </div>
-
+<img class="photo_profil" src="../../../images/iconAdmin.png" alt="photo de profil"/>
 <section class="deux_parties">
 
     <section class="partie_gauche">
 
         <section class="boutons">
-            <button class="edtier"> EDITER SON PROFIL</button>
+            <button class="editer"> EDITER SON PROFIL</button>
             <button class="consulter"> CONSULTER MES RESULTATS</button>
         </section>
-        <img class="photo_profil" src="../images/logowink.png" alt="photo de profil"/>
-        <p class="description_utilisateur"> Voici ton profil</p>
+
 
     </section>
 
