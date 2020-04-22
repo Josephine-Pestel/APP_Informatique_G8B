@@ -31,10 +31,22 @@ html, body
 
 .boutons{
     display: flex;
-    margin-left: 2%;
+    margin-left: 8%;
     position:absolute;
     z-index:2;
     justify-content: space-between;
+    margin-top:-3%;
+
+}
+
+.boutons2{
+    display: flex;
+    margin-left: 2%;
+    position:absolute;
+    z-index:2;
+    margin-left: 8%;
+    justify-content: space-between;
+    margin-top:3%;
 
 }
 
@@ -58,14 +70,7 @@ html, body
 
 }
 
-.description_utilisateur{
-    color: #2699FB;
-    font-style: italic;
-    margin-bottom: 30%;
-    margin-top:40%;
-    margin-left:10%;
 
-}
 
 .partie_droite
 {

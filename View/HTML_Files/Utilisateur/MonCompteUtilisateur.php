@@ -29,12 +29,22 @@ require('ENTETE_MENU_Utilisateur.php');
 <img class="photo_profil" src="../../../images/iconProfilUser.png" alt="photo de profil"/>
 <section class="deux_parties">
 
+
+
+
+
+
     <section class="partie_gauche">
 
         <section class="boutons">
             <a href="EditerProfil_Utilisateur.php">
                 <button class="editer">EDITER SON PROFIL</button>
             </a>
+            <a href="lancerTest.php">
+                <button class="consulter_graphique"> LANCER UN TEST</button>
+            </a>
+        </section>
+        <section class="boutons2">
             <a href="MesResultatsTableau.php">
                 <button class="consulter_tableau"> CONSULTER MES RESULTATS (TABLEAU)</button>
             </a>
@@ -50,6 +60,7 @@ require('ENTETE_MENU_Utilisateur.php');
             <p class="nom"> <?php echo $_SESSION['prenom'].' '.$_SESSION['nom'];?></p>
             <p class="date_inscription"> Incris le <?php echo $_SESSION['date_inscription'];?></p>
         </section>
+
 
         <div class="separation1"></div>
 
