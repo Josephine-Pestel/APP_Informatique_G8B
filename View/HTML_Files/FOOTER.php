@@ -15,7 +15,7 @@
 
     <div class ="signature">
         <p class="realisation">  RÉALISÉ PAR</p>
-        <img class="logo_WINK" src="../../images/logowink.png" alt="Logo WINK" />
+        <img class="logo_WINK" src="../../../images/logowink.png" alt="Logo WINK" />
     </div>
 
 
