@@ -17,12 +17,14 @@
     <a href="" class="bouton_langue" alt="Changer la langue" target="_blank">ENGLISH</a>
     <h1 class="titre">INFINITE MEASURES</h1>
 
+
     <!-- Petits icones -->
     <div class="icones">
         <a href="#" class="bouton_user"><img src="../../../images/iconuser.png" alt="" /></a>
         <a href="mailto:alexandre.payen@lilalions.com" class="bouton_contact"><img src="../../../images/iconmail.png" alt="" /></a>
-    </div>
 
+    </div>
+    <a href="../deconnexion" class="bouton_deconnexion" alt="Changer la langue">DECONNEXION</a>
 </header>
 
 <div class="trait_fin_menu"></div>
