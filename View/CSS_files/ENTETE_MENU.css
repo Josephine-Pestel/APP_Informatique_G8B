@@ -60,6 +60,18 @@ header /* balise */
     margin-left:10%;
 }
 
+.bouton_langue:hover
+{
+    background-color:  #F1F9FF/*rgba(255, 0, 0, 1)*/;
+    color: black;
+}
+
+.bouton_langue:active
+{
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+    inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
 .bouton_deconnexion{
     border: 0;
     padding: 1% 1%;
@@ -75,13 +87,13 @@ header /* balise */
     margin-right:4%;
 }
 
-.bouton_langue:hover
+.bouton_deconnexion:hover
 {
     background-color:  #F1F9FF/*rgba(255, 0, 0, 1)*/;
     color: black;
 }
 
-.bouton_langue:active
+.bouton_deconnexion:active
 {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
     inset 2px 2px 3px rgba(0, 0, 0, .6);
