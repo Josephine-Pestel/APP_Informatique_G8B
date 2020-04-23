@@ -31,14 +31,26 @@ html, body
 
 .boutons{
     display: flex;
-    margin-left: 4%;
+    margin-left: 7.5%;
     position:absolute;
     z-index:2;
     justify-content: space-between;
+    margin-top:-3%;
 
 }
 
-.editer,.consulter_tableau,.consulter_graphique{
+.boutons2{
+    display: flex;
+    margin-left: 2%;
+    position:absolute;
+    z-index:2;
+    margin-left: 7.5%;
+    justify-content: space-between;
+    margin-top:3%;
+
+}
+
+.ajoutGestionnaire,.gererUtilisateur,.gererForum,.gererFAQ{
     width:12em;
     height :5em;
     margin-top:2%;
@@ -48,19 +60,13 @@ html, body
 
 }
 
+
 .photo_profil{
     margin-top:5%;
+    margin-left: 16%;
     background: white;
     position: absolute;
     z-index:2;
-}
-
-.description_utilisateur{
-    color: #2699FB;
-    font-style: italic;
-    margin-bottom: 30%;
-    margin-top:40%;
-    margin-left:10%;
 
 }
 
@@ -70,6 +76,7 @@ html, body
     flex-direction: column;
     width:40%;
     margin-top: 7%;
+    margin-bottom: 5%;
 }
 
 .details1, .details2
@@ -80,7 +87,7 @@ html, body
 
 }
 
-.nom, .naissance
+.nom, .email
 {
     font-weight: bold;
     font-size: 150%;
@@ -94,45 +101,13 @@ html, body
     margin-bottom:20%;
 }
 
-.fond
-{
+.fond {
     background: #2699FB;
     opacity: 0.15;
     width: 80%;
     height: 60%;
-    position:absolute;
-    margin-left:18%;
-    z-index:1;
-    margin-top:1%;
-}
-.boutons1, .boutons2{
-    display: flex;
-    margin-left: 9%;
-    position:absolute;
-    z-index:2;
-    justify-content: space-between;
-
-}
-
-.editer, .consulter{
-    width:15em;
-    height :5em;
-    margin-top:2%;
-    font-size: 100%;
-    color: white;
-    background: #1D2043;
-
-}
-
-
-.photo_profil{
-    margin-bottom:15%;
-    margin-top:6%;
-    margin-left: 14%;
-    background: white;
     position: absolute;
-    z-index:2;
-
-
+    margin-left: 18%;
+    z-index: 1;
+    margin-top: 1%;
 }
-

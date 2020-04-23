@@ -3,7 +3,7 @@
 
 <head>
     <!-- En-tête de la page -->
-    <link type="text/css" rel="stylesheet" href="../../CSS_files/P_MonCompte.css?t=<? echo time(); ?>" media="all">
+    <link type="text/css" rel="stylesheet" href="../../CSS_files/MonCompteUtilisateur.css?t=<? echo time(); ?>" media="all">
     <!--<link rel="stylesheet" href="P_Accueil_Payen.css" />-->
     <meta charset="utf-8" />
     <title>WINK FOR INIFINITE MEASURES</title>
@@ -28,12 +28,6 @@ require('ENTETE_MENU_Utilisateur.php');
 
 <img class="photo_profil" src="../../../images/iconProfilUser.png" alt="photo de profil"/>
 <section class="deux_parties">
-
-
-
-
-
-
     <section class="partie_gauche">
 
         <section class="boutons">

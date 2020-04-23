@@ -22,7 +22,7 @@ require('ENTETE_MENU_Admin.php');
 ?>
 
 <!-- Milieu -->
-<h1 class="titre_moncompte"> MON COMPTE </h1>
+<h1 class="titre_moncompte"> Gérer les utilisateurs </h1>
 <div class="fond"> </div>
 <img class="photo_profil" src="../../../images/iconAdmin.png" alt="photo de profil"/>
 <section class="deux_parties">
@@ -30,21 +30,14 @@ require('ENTETE_MENU_Admin.php');
     <section class="partie_gauche">
 
         <section class="boutons">
-            <a href="../SansCompte/P_Connexion.php">
-                <button class="ajoutGestionnaire">COMPTE UTILISATEUR</button>
+            <a href="rechercheUtilisateur.php">
+                <button class="ajoutGestionnaire">RECHERCHE UN UTILISATEUR</button>
             </a>
             <a href="gererUtilisateur.php">
-                <button class="gererUtilisateur">GERER LES UTILISATEURS </button>
+                <button class="gererUtilisateur">HISTORIQUE DES ACTIVITES</button>
             </a>
         </section>
-        <section class="boutons2">
-            <a href="gererForum.php">
-                <button class="gererForum"> GERER LE FORUM</button>
-            </a>
-            <a href="gererFAQ.php">
-                <button class="gererFAQ"> GERER LA FAQ</button>
-            </a>
-        </section>
+
 
     </section>
 
