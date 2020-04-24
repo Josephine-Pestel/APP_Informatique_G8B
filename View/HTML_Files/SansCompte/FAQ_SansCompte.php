@@ -31,6 +31,8 @@ require('ENTETE_MENU_SansCompte.php');
     <label for="q1">Pourquoi la vie ?</label>
     <p>... Le début de la réponse ...</p>
     <p>... Suite de la réponse et paragraphes optionnels ...</p>
+
+    <p>Bonjour bonjour </p>
 </section>
 
 
