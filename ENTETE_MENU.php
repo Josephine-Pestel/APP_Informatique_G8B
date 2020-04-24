@@ -15,7 +15,7 @@
 <header>
 
     <a href="" class="bouton_langue" alt="Changer la langue" target="_blank">ENGLISH</a>
-    <h1 class="titre">INFINITE MEASURES</h1>
+    <h1 class="titre">INFINITE MEASURES SALAM</h1>
 
     <!-- Petits icones -->
 
