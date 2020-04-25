@@ -9,12 +9,12 @@ try {
 //on verifie si l'utilisateur est present dans la bdd
 $req = $bdd->prepare('SELECT  * FROM `utilisateurs` WHERE email = :email ');
 $req->execute(array(
-    'email'=>$_POST['identifiant_utilisateur'],
+    'email'=>$_POST['email'],
     ));
 
 $donnees = $req -> fetch();
 
-    if ($donnees['email'] == $_POST['identifiant_utilisateur']) {
+    if ($donnees['email'] == $_POST['email']) {
         // On ajoute dans la table test le score et la date de l'utilisateur en fonction du test effectué
 
         $req = $bdd->prepare('INSERT INTO `tests`(`type`,`score`, `date`, `email`) VALUES(:type, :score, :date, :email)');
@@ -22,13 +22,11 @@ $donnees = $req -> fetch();
             'type' => $_POST['choix'],
             'score' => $_POST['score'],
             'date' => $_POST['date'],
-            'email' => $_POST['identifiant_utilisateur']
+            'email' => $_POST['email']
         ));
         header('location:P_Gestionnaire.php');
 
     } else {
-        echo '<p>Utilisateur saisi n\'exite pas dans la bdd;
+        header('location:P_gestionnaire2.php');
     }
-
-
 ?>

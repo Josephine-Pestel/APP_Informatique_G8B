@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -37,6 +38,7 @@ $reponse = $bdd->query('SELECT * FROM `tests` ORDER by date DESC');
 
 
 <!--/////////////////////////////////creation du tableau ////////////////////////////////////////////////////////-->
+<h1 class="titre">L'utilisateur saisi n'existe pas ! Veuillez remplir le formulaire à nouveau !! </h1>
 
 <h1 class="titre_gestionnaire"> Historique des tests effectués par les utilisateurs </h1>
 
@@ -64,7 +66,7 @@ $reponse = $bdd->query('SELECT * FROM `tests` ORDER by date DESC');
 
             while ($donnees = $reponse->fetch()) { ?>
                 <tr>
-                    <th><p class="utilisateur"><?php echo $donnees['email'] ?></p></th>
+                    <th><p class="utilisateur"><?php echo $donnees['idUtilisateur'] ?></p></th>
                     <th><p class="Type"><?php echo $donnees['type'] ?></p></th>
                     <th><p class="Date"><?php echo $donnees['date'] ?></p></th>
                     <th><p class="Score"><?php echo $donnees['score'] ?></p></th>
@@ -78,12 +80,12 @@ $reponse = $bdd->query('SELECT * FROM `tests` ORDER by date DESC');
 
             $reponse_recherche = $bdd->prepare('SELECT * FROM tests WHERE idUtilisateur = :idUtilisateur');
             $reponse_recherche->execute(array(
-                'email' => $_POST['recherche']
+                'idUtilisateur' => $_POST['recherche']
             ));
 
             while ($donnees = $reponse_recherche->fetch()) { ?>
                 <tr>
-                    <th><p class="utilisateur"><?php echo $donnees['email'] ?></p></th>
+                    <th><p class="utilisateur"><?php echo $donnees['idUtilisateur'] ?></p></th>
                     <th><p class="Type"><?php echo $donnees['type'] ?></p></th>
                     <th><p class="Date"><?php echo $donnees['date'] ?></p></th>
                     <th><p class="Score"><?php echo $donnees['score'] ?></p></th>
