@@ -9,6 +9,12 @@
     margin-left: 30%;
     font-size: large;
 }
+.titre_alerte{
+    color:red;
+    text-align: center;
+    font-size:200%
+
+}
 .bouton_retour
 {
     font-size:100%;

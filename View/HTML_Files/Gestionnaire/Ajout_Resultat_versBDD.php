@@ -27,6 +27,6 @@ $donnees = $req -> fetch();
         header('location:P_Gestionnaire.php');
 
     } else {
-        header('location:P_gestionnaire2.php');
+        header('location:Gestionnaire_Ajout_Resultat2.php');
     }
 ?>
