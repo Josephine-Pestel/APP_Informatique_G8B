@@ -27,7 +27,7 @@ $donnees = $req -> fetch();
         header('location:P_Gestionnaire.php');
 
     } else {
-        echo '<p>Email inconnu</p>';
+        echo '<p>Utilisateur saisi n\'exite pas dans la bdd;
     }
 
 
