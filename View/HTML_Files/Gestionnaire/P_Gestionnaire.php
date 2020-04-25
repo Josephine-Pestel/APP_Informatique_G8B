@@ -78,7 +78,7 @@ $reponse = $bdd->query('SELECT * FROM `tests` ORDER by date DESC');
 
             $reponse_recherche = $bdd->prepare('SELECT * FROM tests WHERE idUtilisateur = :idUtilisateur');
             $reponse_recherche->execute(array(
-                'email' => $_POST['recherche']
+                'idUtilisateur' => $_POST['recherche']
             ));
 
             while ($donnees = $reponse_recherche->fetch()) { ?>

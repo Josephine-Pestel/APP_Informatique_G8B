@@ -66,7 +66,7 @@ $reponse = $bdd->query('SELECT * FROM `tests` ORDER by date DESC');
 
             while ($donnees = $reponse->fetch()) { ?>
                 <tr>
-                    <th><p class="utilisateur"><?php echo $donnees['idUtilisateur'] ?></p></th>
+                    <th><p class="utilisateur"><?php echo $donnees['email'] ?></p></th>
                     <th><p class="Type"><?php echo $donnees['type'] ?></p></th>
                     <th><p class="Date"><?php echo $donnees['date'] ?></p></th>
                     <th><p class="Score"><?php echo $donnees['score'] ?></p></th>
@@ -85,7 +85,7 @@ $reponse = $bdd->query('SELECT * FROM `tests` ORDER by date DESC');
 
             while ($donnees = $reponse_recherche->fetch()) { ?>
                 <tr>
-                    <th><p class="utilisateur"><?php echo $donnees['idUtilisateur'] ?></p></th>
+                    <th><p class="utilisateur"><?php echo $donnees['email'] ?></p></th>
                     <th><p class="Type"><?php echo $donnees['type'] ?></p></th>
                     <th><p class="Date"><?php echo $donnees['date'] ?></p></th>
                     <th><p class="Score"><?php echo $donnees['score'] ?></p></th>
