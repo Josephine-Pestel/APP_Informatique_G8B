@@ -62,13 +62,13 @@ session_start();
     ?>
     <section class="partie_droite">
         <section class="details1">
-            <p class="nom"> </p>
-            <p class="email"> Email: </p>
+            <p class="nom"><?php echo $_SESSION['nom']?> </p>
+            <p class="email"> Email:<?php echo $_SESSION['email']?> </p>
         </section>
 
         <section class="details2">
-            <p class="num_tel"> numero de Tel :</p>
-            <p class="domaine"> Domaine : </p>
+            <p class="num_tel"> numero de Tel : <?php echo $_SESSION['num_tel']?></p>
+            <p class="domaine"> Domaine : <?php echo $_SESSION['domaine']?></p>
 
         </section>
 
