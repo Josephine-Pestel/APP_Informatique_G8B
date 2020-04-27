@@ -7,4 +7,13 @@
 </head>
 
 <?php
-echo ' double lol';
+echo ' double lol';?>
+
+
+<!--/////////////////////////// selectionne les données dans la bdd///////////////////////////////////////-->
+<?php
+require('connexion_bdd.php');
+$bdd=connexion_bdd();
+$reponse = $bdd->query('SELECT * FROM `tests` ORDER by date DESC');
+
+?>

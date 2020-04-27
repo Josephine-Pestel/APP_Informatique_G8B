@@ -21,12 +21,41 @@ require('ENTETE_MENU_Admin.php');
 
 ?>
 
+
 <!-- Milieu -->
 <h1 class="titre_moncompte"> Rechercher un membre  </h1>
-<?php
-require('../../../Controller/rechercheUtilisateur.php');
 
-?>
+<div class="barre_recherche">
+    <form action="" method="POST">
+        <input class="barreDeRecherche" type="search" name="recherche" placeholder="Rechercher un utilisateur">
+        <input class="bouton_recherche" type="submit" />
+
+    </form>
+</div>
+
+<div class="tableau">
+    <table class="tableau_gestionnaire">
+        <tr>
+            <th><p class="utilisateur">Nom de l'utilisateur</p></th>
+            <th><p class="Type">Type de test</p></th>
+            <th><p class="Date">Date</p></th>
+            <th><p class="Score">score</p></th>
+
+        </tr>
+        <?php
+        require('../../../Controller\rechercheUtilisateur.php');
+
+        ?>
+    </table>
+
+</div>
+
+<a href="MonCompteGestionnaire.php">
+    <button class="bouton_retour">RETOUR </button>
+</a>
+
+
+
 
 </body>
 
