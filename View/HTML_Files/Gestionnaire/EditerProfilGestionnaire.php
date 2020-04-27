@@ -27,7 +27,7 @@ include('ENTETE_MENU_Gestionnaire.php');
 <p class="titre"> Changez les données que vous souhaitez en remplissant le formulaire ci-dessous ! </p>
 
 <section class="bloc_infos">
-    <form name="formulaire_inscription" action="EditerProfilGestionnaireBdd.php" method="post">
+    <form name="formulaire_inscription" action="EditerProfilGestionnaireController.php" method="post">
 
         <p class="nom"> Modifier son nom :</p>
         <input class = "rectangle_nom" type="text" name="nom"/> <br/>
