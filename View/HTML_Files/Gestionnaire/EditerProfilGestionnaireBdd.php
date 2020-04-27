@@ -9,40 +9,51 @@ try {
 
 
     //Requete pour modifier le nom
+function updateNom($_emailVar)
+{
     $req = $bdd->prepare('UPDATE gestionnaire SET nom = :nom WHERE email = :email ');
     $req->execute(array(
         'nom' => $_POST['nom'],
         'email' => $_emailVar));
     $req->closeCursor();
-
+}
 
     //Requete pour modifier l'email
+function updatePrenom($_emailVar)
+{
     $req = $bdd->prepare('UPDATE gestionnaire SET email = :nvEmail WHERE email = :email ');
     $req->execute(array(
         'nvEmail' => $_POST['email'],
         'email' => $_emailVar));
     $req->closeCursor();
-
+}
 
 
     //Requete pour modifier le mdp
-    $req = $bdd->prepare('UPDATE utilisateurs SET mdp = :mdp WHERE email = :email ');
-    $req->execute(array(
-        'mdp' => $_POST['MotdePasse'],
-        'email' => $_emailVar));
-    $req->closeCursor();
+function updateMdp($_emailVar)
+    {
+        $req = $bdd->prepare('UPDATE utilisateurs SET mdp = :mdp WHERE email = :email ');
+        $req->execute(array(
+            'mdp' => $_POST['MotdePasse'],
+            'email' => $_emailVar));
+        $req->closeCursor();
+    }
 
     //Requete pour modifier le numero de tel
+function updateTel($_emailVar)
+{
     $req = $bdd->prepare('UPDATE utilisateurs SET num_tel = :num_tel WHERE email = :email ');
     $req->execute(array(
         'num_tel' => $_POST['NumeroTel'],
         'email' => $_emailVar));
     $req->closeCursor();
-
+}
 //Requete pour modifier le domaine
-    $req = $bdd->prepare('UPDATE utilisateurs SET num_tel = :num_tel WHERE email = :email ');
-    $req->execute(array(
-        'domaine' => $_POST['Domaine'],
-        'email' => $_emailVar));
-$req->closeCursor();
-
+    function updateDomaine($_emailVar)
+    {
+        $req = $bdd->prepare('UPDATE utilisateurs SET num_tel = :num_tel WHERE email = :email ');
+        $req->execute(array(
+            'domaine' => $_POST['Domaine'],
+            'email' => $_emailVar));
+        $req->closeCursor();
+    }
