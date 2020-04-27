@@ -28,7 +28,7 @@ require('ENTETE_MENU_Gestionnaire.php');
 
     <section class="partie_gauche">
         <section class="boutons1">
-            <a href="#">
+            <a href="EditerProfilGestionnaire.php">
                 <button class="editermonprofil"> Editer mon profil</button>
             </a>
 

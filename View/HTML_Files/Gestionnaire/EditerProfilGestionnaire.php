@@ -14,7 +14,11 @@ session_start();
 include('ENTETE_MENU_Gestionnaire.php');
 
 ?>
-
+<p>Voici vos données acutelles.</p>
+<?php echo $_SESSION['nom']?> </br>
+<?php echo $_SESSION['email']?></br>
+<?php echo $_SESSION['Num_tel']?></br>
+<?php echo $_SESSION['domaine']?></br>
 <!-- Milieu -->
 
 <h1 class="titre_connexion"> Editer son profil </h1>
