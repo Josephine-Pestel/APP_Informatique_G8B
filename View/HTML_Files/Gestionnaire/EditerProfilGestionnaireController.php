@@ -16,12 +16,12 @@ if($_POST['email']){
 
 if($_POST['NumeroTel']){
     updateTel($_SESSION['email']);
-    $_SESSION['NumeroTel']=$_POST['NumeroTel'];
+    $_SESSION['num_tel']=$_POST['NumeroTel'];
     header('Location:MonCompteGestionnaire.php');
 }
 if($_POST['Domaine']){
     updateDomaine($_SESSION['email']);
-    $_SESSION['Domaine']=$_POST['Domaine'];
+    $_SESSION['domaine']=$_POST['Domaine'];
     header('Location:MonCompteGestionnaire.php');
 }
 else{
