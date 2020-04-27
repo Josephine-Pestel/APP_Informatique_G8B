@@ -28,7 +28,7 @@ include('ENTETE_MENU_Gestionnaire.php');
 <p> Changez les données que vous souhaitée.</p>
 
 <section class="bloc_infos">
-    <form name="formulaire_inscription" action="EditerProfilGestionnaire.php" method="post">
+    <form name="formulaire_inscription" action="EditerProfilGestionnaireBdd.php" method="post">
 
         <p class="nom"> Modifier son nom :</p>
         <input class = "rectangle_nom" type="text" name="nom"/> <br/>
@@ -39,16 +39,16 @@ include('ENTETE_MENU_Gestionnaire.php');
         </br>
 
         <p class="MotdePasse"> Modifier son mot de passe:</p>
-        <input type="date" name="MotdePasse"></label>
+        <input type="text" name="MotdePasse"></label>
         </br>
 
 
         <p class="NumeroTel"> Modifier son numéro de tel :</p>
-        <input type="date" name="NumeroTel"></label>
+        <input type="text" name="NumeroTel"></label>
         </br>
 
         <p class="Domaine"> Modifier son domaine :</p>
-        <input type="date" name="Domaine"></label>
+        <input type="text" name="Domaine"></label>
         </br>
 
 
