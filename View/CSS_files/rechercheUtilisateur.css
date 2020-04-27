@@ -1,0 +1,77 @@
+html, body
+{
+    width: 100%;
+    height : 100%;
+    margin: 0;
+    padding: 0;
+}
+.titre_alerte{
+    color:red;
+    text-align: center;
+    font-size: 200%;
+}
+
+.titre_gestionnaire{
+    margin-top: 1%;
+    margin-bottom: 3%;
+    text-align: center;
+    color:#1D2043;
+    text-decoration: underline ;
+    text-decoration-color: #1D2043;
+}
+.boutonAjout{
+    margin-top: 2%;
+    font-size:100%;
+    background-color:beige;
+
+
+}
+.barre_recherche{
+    text-align: center;
+}
+.barreDeRecherche{
+    font-size: 140%;
+    width: 30%
+}
+.bouton_recherche{
+    font-size:140%;
+    background-color:beige;
+}
+.tableau{
+    margin-bottom: 30%;
+}
+
+
+.tableau_gestionnaire
+{
+    border-collapse: collapse;
+    margin-top:5%;
+    margin-left: 23%;
+    width: 70%;
+    height: 18%;
+    background: #F1F9FF;
+    z-index:2;
+    position:absolute;
+
+
+}
+tr, th, td /* Mettre une bordure sur les td ET les th */
+{
+    border: 1px solid black;
+    font-size: large;
+    color:#1D2043;
+    text-align: center;
+    width:10%;
+}
+
+.bouton_retour
+{
+    font-size:100%;
+    background-color:beige;
+    margin-bottom: 5%;
+    width:15%;
+    height :5%;
+    margin-left: 73%;
+
+
+}
