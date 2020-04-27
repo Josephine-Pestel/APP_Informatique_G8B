@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <link type="text/css" rel="stylesheet" href="../../CSS_files/EditerProfil_Utilisateur.css?t=<? echo time(); ?>" media="all">
+    <link type="text/css" rel="stylesheet" href="../../CSS_files/EditerProfilGestionnaire.css?t=<? echo time(); ?>" media="all">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>INIFINITE MEASURES - CONNEXION</title>
 </head>
@@ -18,14 +18,9 @@ include('ENTETE_MENU_Gestionnaire.php');
 <!-- Milieu -->
 
 <h1 class="titre_connexion"> Editer son profil </h1>
-<!-- Formulaire -->
-<p>Voici vos données acutelles.</p>
-<?php echo $_SESSION['prenom']?> </br>
-<?php echo $_SESSION['nom']?></br>
-<?php echo $_SESSION['email']?></br>
-<?php echo $_SESSION['naissance']?></br>
 
-<p> Changez les données que vous souhaitée.</p>
+
+<p class="titre"> Changez les données que vous souhaitez en remplissant le formulaire ci-dessous ! </p>
 
 <section class="bloc_infos">
     <form name="formulaire_inscription" action="EditerProfilGestionnaireBdd.php" method="post">
