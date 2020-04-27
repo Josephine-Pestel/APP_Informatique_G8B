@@ -10,7 +10,7 @@ if($_POST['nom']){
 }
 if($_POST['email']){
     updateEmail($_SESSION['email']);
-    $_SESSION['email']=$_POST['nvEmail'];
+    $_SESSION['email']=$_POST['email'];
     header('Location:MonCompteGestionnaire.php');
 }
 

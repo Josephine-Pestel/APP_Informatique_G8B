@@ -15,10 +15,7 @@ include('ENTETE_MENU_Gestionnaire.php');
 
 ?>
 <p class="recap"> Voici vos données actuelles: </p>
-<?php echo '-' . $_SESSION['nom']?> </br>
-<?php echo '-'. $_SESSION['email']?></br>
-<?php echo '-'. $_SESSION['num_tel']?></br>
-<?php echo '-'. $_SESSION['domaine']?></br>
+
 <!-- Milieu -->
 
 <h1 class="titre_connexion"> Editer son profil </h1>
