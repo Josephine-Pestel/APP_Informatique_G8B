@@ -85,36 +85,20 @@ html, body
 
 }
 
-.nom, .naissance
+.nom, .email,.domaine,.num_tel
 {
     font-weight: bold;
-    font-size: 150%;
+    font-size: 180%;
 }
 
-.separation1 {
-    background-color: #2699FB;
-    height:0.1%;
-    width:27%;
-    margin-top:8%;
-    margin-bottom:20%;
-    position:absolute;
-}
 
-.separation2 {
-    background-color: #2699FB;
-    height:0.1%;
-    width:27%;
-    margin-top:17%;
-    margin-bottom:20%;
-    position:absolute;
-}
 
 .fond
 {
     background: #2699FB;
     opacity: 0.15;
     width: 80%;
-    height: 70%;
+    height: 60%;
     position:absolute;
     margin-left:18%;
     z-index:1;
