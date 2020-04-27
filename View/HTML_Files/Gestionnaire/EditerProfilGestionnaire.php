@@ -9,8 +9,6 @@
 
 <body>
 
-<!-- Appel En-Tete et Menu avec requete php -->
-
 <?php
 session_start();
 include('ENTETE_MENU_Gestionnaire.php');
@@ -30,11 +28,7 @@ include('ENTETE_MENU_Gestionnaire.php');
 <p> Changez les données que vous souhaitée.</p>
 
 <section class="bloc_infos">
-    <form name="formulaire_inscription" action="../../../Controller/editerProfil_Utilisateur.php" method="post">
-
-        <p class="prenom"> Modifier son prénom :</p>
-        <input class = "rectangle_prenom" type="text" name="prenom"/> <br/>
-        </br>
+    <form name="formulaire_inscription" action="EditerProfilGestionnaire.php" method="post">
 
         <p class="nom"> Modifier son nom :</p>
         <input class = "rectangle_nom" type="text" name="nom"/> <br/>
@@ -44,9 +38,19 @@ include('ENTETE_MENU_Gestionnaire.php');
         <input class = "rectangle_email" type="text" name="email"/> <br/>
         </br>
 
-        <p class="naissance"> Modifier sa date de naissance :</p>
-        <input type="date" name="naissance"></label>
+        <p class="MotdePasse"> Modifier son mot de passe:</p>
+        <input type="date" name="MotdePasse"></label>
         </br>
+
+
+        <p class="NumeroTel"> Modifier son numéro de tel :</p>
+        <input type="date" name="NumeroTel"></label>
+        </br>
+
+        <p class="Domaine"> Modifier son domaine :</p>
+        <input type="date" name="Domaine"></label>
+        </br>
+
 
         <input class="envoyer" type ="submit" value="Enregistrer" onclick="checkForm();"/>
     </form>
