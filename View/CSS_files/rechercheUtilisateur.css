@@ -38,7 +38,7 @@ html, body
     background-color:beige;
 }
 .tableau{
-    margin-bottom: 30%;
+    margin-bottom: 5%;
 }
 
 
@@ -51,7 +51,7 @@ html, body
     height: 18%;
     background: #F1F9FF;
     z-index:2;
-    position:absolute;
+
 
 
 }

@@ -9,46 +9,41 @@
 
 <?php
 
-require('../../../Model/rechercheUtilisateur.php');
-
-        if (!isset($_POST['recherche'])) {
 
 
-            while ($donnees = $reponse->fetch()) { ?>
-<tr>
-    <th><p class="utilisateur"><?php echo $donnees['email'] ?></p></th>
-    <th><p class="Type"><?php echo $donnees['type'] ?></p></th>
-    <th><p class="Date"><?php echo $donnees['date'] ?></p></th>
-    <th><p class="Score"><?php echo $donnees['score'] ?></p></th>
-</tr>
+if (!isset($_POST['recherche'])) {
+    require('../../../Model/rechercheUtilisateur.php');
+    while ($donnees = $reponse->fetch()) { ?>
+        <tr>
+            <th><p class="utilisateur"><?php echo $donnees['email'] ?></p></th>
 
-<?php
-}
-$reponse->closeCursor();
+            <th><p class="Date"><?php echo $donnees['nom'] ?></p></th>
+            <th><p class="Score"><?php echo $donnees['prenom'] ?></p></th>
+            <th><p class="Score"><?php echo $donnees['date_naissance'] ?></p></th>
+            <th><p class="Score"><?php echo $donnees['date_inscription'] ?></p></th>
+        </tr>
+        <?php
+    }
 
+    $reponse->closeCursor();
 } else {
+    require('../Model/rechercheUtilisateur.php');
+    echo '<META HTTP-EQUIV="Refresh" Content="0; URL=../View/HTML_Files/Administrateur/rechercheUtilisateur.php?">';
 
-$reponse_recherche = $bdd->prepare('SELECT * FROM tests WHERE idUtilisateur = :idUtilisateur');
-$reponse_recherche->execute(array(
-    'idUtilisateur' => $_POST['recherche']
-));
+    $var = barreRecherche();
+    while ($donnees = $var->fetch()) { ?>
+        <tr>
+            <th><p class="Date"><?php echo $donnees['nom'] ?></p></th>
+            <th><p class="Score"><?php echo $donnees['prenom'] ?></p></th>
+            <th><p class="Score"><?php echo $donnees['date_naissance'] ?></p></th>
+            <th><p class="Score"><?php echo $donnees['date_inscription'] ?></p></th>
+        </tr>
+        <?php
 
-while ($donnees = $reponse_recherche->fetch()) { ?>
-<tr>
-    <th><p class="utilisateur"><?php echo $donnees['email'] ?></p></th>
-    <th><p class="Type"><?php echo $donnees['type'] ?></p></th>
-    <th><p class="Date"><?php echo $donnees['date'] ?></p></th>
-    <th><p class="Score"><?php echo $donnees['score'] ?></p></th>
-</tr>
 
-<?php
+
+    }
+    $var->closeCursor();
 }
-$reponse_recherche->closeCursor();
-}
-
 ?>
-
-
-<!--/////////////////////////// selectionne les données dans la bdd///////////////////////////////////////-->
-
 
