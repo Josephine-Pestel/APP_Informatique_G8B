@@ -37,9 +37,7 @@ html, body
     font-size:140%;
     background-color:beige;
 }
-.tableau{
-    margin-bottom: 30%;
-}
+
 
 
 .tableau_gestionnaire
@@ -51,7 +49,8 @@ html, body
     height: 18%;
     background: #F1F9FF;
     z-index:2;
-    position:absolute;
+    margin-bottom:5%;
+
 
 
 }
