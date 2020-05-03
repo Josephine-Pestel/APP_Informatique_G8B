@@ -26,7 +26,7 @@ require('ENTETE_MENU_Admin.php');
 <h1 class="titre_moncompte"> Rechercher un membre  </h1>
 
 <div class="barre_recherche">
-    <form action="../../../Controller/rechercheUtilisateur.php" method="GET">
+    <form action="../../../Controller/rechercheUtilisateur.php" method="POST">
         <input class="barreDeRecherche" type="search" name="recherche" placeholder="Rechercher un utilisateur">
         <input class="bouton_recherche" type="submit" />
 

@@ -3,17 +3,22 @@
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link type="text/css" rel="stylesheet" href=../View/CSS_files/P_Connexion.css?t=<? echo time(); ?>
+    <link type="text/css" rel="stylesheet" href=../View/CSS_files/rechercheUtilisateur.css?t=<? echo time(); ?>
 </head>
 
 <!--/////////////////////////// selectionne les données dans la bdd///////////////////////////////////////-->
 <?php
 require('connexion_bdd.php');
-$bdd=connexion_bdd();
-$reponse = $bdd->query('SELECT email, nom, prenom, date_inscription, date_naissance 
+
+
+
+function recupUtilisateurs(){
+    $bdd=connexion_bdd();
+    $reponse = $bdd->query('SELECT email, nom, prenom, date_inscription, date_naissance 
                                     FROM utilisateurs 
                                     ORDER by date_inscription DESC');
-
+    return($reponse);
+}
 
 
 function barreRecherche(){
