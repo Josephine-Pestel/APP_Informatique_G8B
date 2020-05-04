@@ -1,6 +1,6 @@
+<link type="text/css" rel="stylesheet" href=../View/CSS_files/ajoutUtilisateur_Admin.css?t=<? echo time(); ?>
+
 <?php
-
-
 require('../Model/ajoutUtilisateur_Admin.php');
 
 $email_rentre=verificationEmail($_POST['email']);
@@ -11,9 +11,12 @@ if ($email_rentre){
 }
 else{
     ajoututilisateurBDD();
-    echo 'L\'utilisateur a été ajouté à la base de donnée. Il possède désormais un compte';
-} ?>
-
-<a href="../View/HTML_Files/Administrateur/gererUtilisateur.php">
-    <button class="bouton_retour">RETOUR </button>
+    echo 'L\'utilisateur a été ajouté à la base de donnée. Il possède désormais un compte';?>
+    <a href="../View/HTML_Files/Administrateur/gererUtilisateur.php">
+    <button class="retour">RETOUR </button>
 </a>
+
+<?php
+}
+?>
+
