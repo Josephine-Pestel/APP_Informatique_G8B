@@ -5,6 +5,7 @@
     <link type="text/css" rel="stylesheet" href="../../CSS_files/Gestionnaire_Ajout_Resultat.css?t=<? echo time(); ?>" media="all">
     <meta charset="utf-8" />
     <title>WINK FOR INIFINITE MEASURES</title>
+    <script src="../../Javascript_Files/ajoutUtilisateur_Admin.js"></script>
 </head>
 
 <body>
@@ -42,7 +43,7 @@ require('ENTETE_MENU_Admin.php');
         <input type="date" name="naissance"required></label>
         </br>
 
-        <input class="envoyer" type ="submit" value="Ajouter l'utilisateur" onclick="checkForm();"/>
+        <input class="envoyer" type ="submit" value="Ajouter l'utilisateur" onclick="checkForm_Admin();"/>
     </form>
 
 </section>
