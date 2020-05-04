@@ -3,7 +3,7 @@
 
 <head>
     <!-- En-tête de la page -->
-    <link type="text/css" rel="stylesheet" href="../../CSS_files/MonCompteAdmin.css?t=<? echo time(); ?>" media="all">
+    <link type="text/css" rel="stylesheet" href="../../CSS_files/gererUtilisateur.css?t=<? echo time(); ?>" media="all">
     <!--<link rel="stylesheet" href="P_Accueil_Payen.css" />-->
     <meta charset="utf-8" />
     <title>WINK FOR INIFINITE MEASURES</title>
@@ -22,7 +22,7 @@ require('ENTETE_MENU_Admin.php');
 ?>
 
 <!-- Milieu -->
-<h1 class="titre_moncompte"> Gérer les utilisateurs </h1>
+<h1 class="titre_gerer"> Gérer les utilisateurs </h1>
 <div class="fond"> </div>
 <img class="photo_profil" src="../../../images/iconAdmin.png" alt="photo de profil"/>
 
@@ -30,7 +30,7 @@ require('ENTETE_MENU_Admin.php');
     <section class="partie_gauche">
 
         <form name="choix_admin" action="../../../Controller/gererUtilisateur_Admin" method="POST">
-            <p class="boutons"> Que voulez-vous faire ? :
+            <p class="liste_choix"> Que voulez-vous faire ? :
                 <select name="choix">
                     <option value="rechercher">Rechercher un utilisateur</option>
                     <option value="ajouter">Ajouter un utilisateur</option>
@@ -38,7 +38,7 @@ require('ENTETE_MENU_Admin.php');
                     <option value="bannir">Bannir un utilisateur</option>
                     <option value="historique">Afficher l'historique des activités</option>
                 </select></p>
-            <input class="boutons" type ="submit" value="Valider" onclick="checkForm();"/>
+            <input class="boutons_valider" type ="submit" value="Valider" onclick="checkForm();"/>
         </form>
     </section>
 
