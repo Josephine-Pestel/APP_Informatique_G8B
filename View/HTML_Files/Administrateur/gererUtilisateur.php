@@ -25,20 +25,21 @@ require('ENTETE_MENU_Admin.php');
 <h1 class="titre_moncompte"> Gérer les utilisateurs </h1>
 <div class="fond"> </div>
 <img class="photo_profil" src="../../../images/iconAdmin.png" alt="photo de profil"/>
-<section class="deux_parties">
 
+<section class="deux_parties">
     <section class="partie_gauche">
 
-        <section class="boutons">
-            <a href="rechercheUtilisateur.php">
-                <button class="ajoutGestionnaire">RECHERCHE UN UTILISATEUR</button>
-            </a>
-            <a href="gererUtilisateur.php">
-                <button class="gererUtilisateur">HISTORIQUE DES ACTIVITES</button>
-            </a>
-        </section>
-
-
+        <form name="choix_admin" action="../../../Controller/gererUtilisateur_Admin" method="POST">
+            <p class="boutons"> Que voulez-vous faire ? :
+                <select name="choix">
+                    <option value="rechercher">Rechercher un utilisateur</option>
+                    <option value="ajouter">Ajouter un utilisateur</option>
+                    <option value="supprimer">Supprimer un utilisateur</option>
+                    <option value="bannir">Bannir un utilisateur</option>
+                    <option value="historique">Afficher l'historique des activités</option>
+                </select></p>
+            <input class="boutons" type ="submit" value="Valider" onclick="checkForm();"/>
+        </form>
     </section>
 
     <section class="partie_droite">
