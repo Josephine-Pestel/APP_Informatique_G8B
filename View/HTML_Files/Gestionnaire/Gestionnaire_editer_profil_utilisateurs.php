@@ -18,7 +18,7 @@ require('ENTETE_MENU_Gestionnaire.php');
 
     <div class="FormulaireEditer">
         <h1>Veuillez indiquer l'adresse mail de l'utilisateur que vous souhaitez modifier :  </h1>
-        <form action="Gestionnaire_editer_profil_utilisateurs_MODEL.php" method="POST">
+        <form action="Gestionnaire_editer_profil_utilisateurs_CONTROLLER.php" method="POST">
             <p><label>Identifiant de l'utilisateur : <input type ="text" name="email"/></label></p>
             <h1> Remplissez les données que vous souhaitez modifier sur cette utilisateur : </h1>
             <p><label> Nom : <input  type="text" name="nom"></label></p>
@@ -31,7 +31,7 @@ require('ENTETE_MENU_Gestionnaire.php');
 
     <div class="FormulaireSupprimer">
         <h1 class="titre_suppression"> Si vous voulez supprimer un utilisateur rentrez son identifiant :</h1>
-        <form action="Gestionnaire_editer_profil_utilisateurs_MODEL.php" method="POST">
+        <form action="Gestionnaire_editer_profil_utilisateurs_CONTROLLER.php" method="POST">
             <p><label>Identifiant de l'utilisateur : <input type ="text" name="email"/></label></p>
             <p><input type="submit" value="Supprimer cette utilisateur"/></p>
     </div>
