@@ -32,7 +32,7 @@ session_start();
                 <button class="editermonprofil"> Editer mon profil</button>
             </a>
 
-            <a href="#">
+            <a href="Gestionnaire_editer_profil_utilisateurs.php">
                 <button class="editierunprofil"> Editer le profil d'un utilisateur</button>
             </a>
         </section>
