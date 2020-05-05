@@ -32,10 +32,10 @@ if ($donnees['email'] == $_POST['email']) {
         updateDateNaiss($_POST['email']);
         header('Location:MonCompteGestionnaire.php');
     }
-    else{
-        header('location:.php');
-    }
-}
 
+}
+else{
+    header('location:messageErreur.php');
+}
 
 
