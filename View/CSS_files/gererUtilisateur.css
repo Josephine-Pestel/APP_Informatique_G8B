@@ -41,16 +41,16 @@ html, body
 
 
 .boutons_valider{
-    display: flex;
+
     position:absolute;
     z-index:2;
-    justify-content: space-between;
     width:5em;
     height: 2em;
     margin-left:26.5%;
     font-size: 110%;
     color: white;
     background: #1D2043;
+    margin-top:2%;
 
 }
 
