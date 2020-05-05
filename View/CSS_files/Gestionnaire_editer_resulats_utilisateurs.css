@@ -1,4 +1,36 @@
+.all{
+    display: flex;
+    flex-direction: row;
+}
+
 .FormulaireEditer{
-    background-color: beige;
-    margin-bottom: 100%;
+    width: 42%;
+    background-color: aliceblue;
+    margin-left: 5%;
+    margin-top: 1%;
+    padding:2%;
+    margin-right: 2%;
+    height: 20%;
+}
+
+.FormulaireSupprimer{
+    width: 32%;
+    height: 20%;
+    background-color:aliceblue;
+    margin-left: 2%%;
+    margin-top: 1%;
+    margin-right: 2%;
+    padding:2%;
+}
+input[type=submit]{
+    background-color: #1D2043;
+    color: #aba8a8;
+    padding: 1%;
+}
+
+
+.bouton_retour {
+    background-color:beige;
+    margin-left: 73%;
+    margin-bottom: 1%;
 }
