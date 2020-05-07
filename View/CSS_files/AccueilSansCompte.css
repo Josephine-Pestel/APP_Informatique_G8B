@@ -10,14 +10,10 @@ html, body
 /* BANNIERE */
 .banniere_image
 {
-    margin-top: 3%;
-    height: 500px;
-    border-radius: 1em;
-    background: url('../../images/banniere-paris.jpg') no-repeat;
+    height: 620px;
+    background: url('../../images/index.jpg') fixed, no-repeat;
     position: relative;
-    margin-bottom: 2.5%;
-    margin-left: 18%;
-    margin-right: 2.5%;
+    margin-left: 15%;
     background-size: cover; /* permet le responsive de l'image*/
 }
 
@@ -28,9 +24,7 @@ html, body
     margin-top : 18%;
     border-radius: 0.2em 0.2em 0.2em 0.2em;
     width: 100%;
-
     background-color: rgba(29,32,67,0.5);
-
     color: white;
     font-size: 1.3em;
 }

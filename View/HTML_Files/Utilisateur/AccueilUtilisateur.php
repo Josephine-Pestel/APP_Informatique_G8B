@@ -22,8 +22,6 @@ require('ENTETE_MENU_Utilisateur.php');
 ?>
 
 <section>
-    <!-- Milieu -->
-    <!-- Bannière -->
     <p class="bonjour_utilisateur"> Bonjour <?php echo $_SESSION['prenom']. ' '. $_SESSION['nom']?> !</p>
     <div class="banniere_image">
         <div id="banniere_description">
@@ -35,9 +33,10 @@ require('ENTETE_MENU_Utilisateur.php');
 
 
 </body>
+    <?php
+    require('../FOOTER.php');
 
-<?php
-require('../FOOTER.php');
+    ?>
 
-?>
+
 </html>
