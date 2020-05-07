@@ -32,11 +32,11 @@ require('ENTETE_MENU_Admin.php');
         <form name="choix_admin" action="../../../Controller/gererUtilisateur_Admin" method="POST">
                 <label class="texte_choix"> Que voulez-vous faire ? :</label>
                 <select class="liste_choix" name="choix">
+                    <option value="editer">Editer le profil d'un utilisateur</option>
                     <option value="rechercher">Rechercher un utilisateur</option>
                     <option value="ajouter">Ajouter un utilisateur</option>
                     <option value="supprimer">Supprimer un utilisateur</option>
                     <option value="bannir">Bannir un utilisateur</option>
-                    <option value="historique">Afficher l'historique des activités</option>
                 </select>
             <input class="boutons_valider" type ="submit" value="Valider" onclick="checkForm();"/>
         </form>

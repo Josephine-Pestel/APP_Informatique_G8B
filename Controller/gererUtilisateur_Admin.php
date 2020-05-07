@@ -17,6 +17,6 @@ else if($_POST['choix'] == 'bannir'){
     exit();
 }
 else{
-    header("Location: ../View/HTML_Files/Administrateur/historiqueUtilisateur.php");
+    header("Location: ../View/HTML_Files/Administrateur/editerProfilUtilisateur.php");
     exit();
 }
