@@ -23,7 +23,7 @@ require('ENTETE_MENU_Gestionnaire.php');
 
 <div class="formulaire">
 
-    <form action="Ajout_Resultat_versBDD.php" method="POST">
+    <form action="../../../Model/Ajout_Resultat_versBDD.php" method="POST">
         <p><label>Identifiant de l'utilisateur : <input type ="text" name="email"/></label></p>
         <p><label>Type de test : <select name="choix">
                     <option value="Temperature">Temperature</option>
