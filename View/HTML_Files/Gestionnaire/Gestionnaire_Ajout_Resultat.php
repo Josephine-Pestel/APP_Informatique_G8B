@@ -21,7 +21,7 @@ require('ENTETE_MENU_Gestionnaire.php');
 
 <div class="formulaire">
 
-<form action="Ajout_Resultat_versBDD.php" method="POST">
+<form action="../../../Model/Ajout_Resultat_versBDD.php" method="POST">
     <p><label>Identifiant de l'utilisateur : <input type ="text" name="email"/></label></p>
     <p><label>Type de test : <select name="choix">
                 <option value="Temperature">Temperature</option>
@@ -33,13 +33,13 @@ require('ENTETE_MENU_Gestionnaire.php');
     <p><label> Score : <input  type="int" name="score"required></label></p>
     <p><label>Date : <input type="datetime-local" name="date"required></label></p>
     <p><input type="submit" /></p>
-    <a href="MonCompteGestionnaire.php">
-        <button class="bouton_retour">RETOUR </button>
-    </a>
+</form>
+
+
+<a href="MonCompteGestionnaire.php">
+    <button class="bouton_retour">RETOUR </button>
+</a>
 </div>
-
-
-
 
 </body>
 <?php

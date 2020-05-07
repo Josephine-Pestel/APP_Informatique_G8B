@@ -14,9 +14,6 @@ session_start();
 include('ENTETE_MENU_Gestionnaire.php');
 
 ?>
-<p class="recap"> Voici vos données actuelles: </p>
-
-<!-- Milieu -->
 
 <h1 class="titre_connexion"> Editer son profil </h1>
 
@@ -24,7 +21,7 @@ include('ENTETE_MENU_Gestionnaire.php');
 <p class="titre"> Changez les données que vous souhaitez en remplissant le formulaire ci-dessous ! </p>
 
 <section class="bloc_infos">
-    <form name="formulaire_inscription" action="EditerProfilGestionnaireController.php" method="post">
+    <form name="formulaire_inscription" action="../../../Controller/EditerProfilGestionnaireController.php" method="post">
 
         <p class="nom"> Modifier son nom :</p>
         <input class = "rectangle_nom" type="text" name="nom"/> <br/>
@@ -57,8 +54,6 @@ include('ENTETE_MENU_Gestionnaire.php');
 
 
 </body>
-
-<!-- Appel Footer -->
 <?php
 require('../FOOTER.php');
 

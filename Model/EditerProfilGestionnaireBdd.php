@@ -34,7 +34,7 @@ function updateEmail($_emailVar)
 function updateMdp($_emailVar)
 {
     $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
-    $req = $bdd->prepare('UPDATE utilisateurs SET mdp = :mdp WHERE email = :email ');
+    $req = $bdd->prepare('UPDATE gestionnaire SET mdp = :mdp WHERE email = :email ');
     $req->execute(array(
         'mdp' => $_POST['MotdePasse'],
         'email' => $_emailVar));
@@ -45,7 +45,7 @@ function updateMdp($_emailVar)
 function updateTel($_emailVar)
 {
     $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
-    $req = $bdd->prepare('UPDATE utilisateurs SET num_tel = :num_tel WHERE email = :email ');
+    $req = $bdd->prepare('UPDATE gestionnaire SET num_tel = :num_tel WHERE email = :email ');
     $req->execute(array(
         'num_tel' => $_POST['NumeroTel'],
         'email' => $_emailVar));
@@ -55,7 +55,7 @@ function updateTel($_emailVar)
 function updateDomaine($_emailVar)
 {
     $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
-    $req = $bdd->prepare('UPDATE utilisateurs SET domaine = :domaine WHERE email = :email ');
+    $req = $bdd->prepare('UPDATE gestionnaire SET domaine = :domaine WHERE email = :email ');
     $req->execute(array(
         'domaine' => $_POST['Domaine'],
         'email' => $_emailVar));

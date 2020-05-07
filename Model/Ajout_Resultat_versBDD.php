@@ -24,9 +24,9 @@ $donnees = $req -> fetch();
             'date' => $_POST['date'],
             'email' => $_POST['email']
         ));
-        header('location:P_Gestionnaire.php');
+        header('location:../View/HTML_Files/Gestionnaire/P_Gestionnaire.php');
 
     } else {
-        header('location:Gestionnaire_Ajout_Resultat2.php');
+        header('location:../View/HTML_Files/Gestionnaire/Gestionnaire_Ajout_Resultat2.php');
     }
 ?>
