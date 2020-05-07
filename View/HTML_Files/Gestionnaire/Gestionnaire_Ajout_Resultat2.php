@@ -35,6 +35,8 @@ require('ENTETE_MENU_Gestionnaire.php');
         <p><label> Score : <input  type="int" name="score"required></label></p>
         <p><label>Date : <input type="datetime-local" name="date"required></label></p>
         <p><input type="submit" /></p>
+
+    </form>
         <a href="MonCompteGestionnaire.php">
             <button class="bouton_retour">RETOUR </button>
         </a>

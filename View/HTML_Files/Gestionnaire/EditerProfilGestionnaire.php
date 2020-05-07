@@ -14,9 +14,6 @@ session_start();
 include('ENTETE_MENU_Gestionnaire.php');
 
 ?>
-<p class="recap"> Voici vos données actuelles: </p>
-
-<!-- Milieu -->
 
 <h1 class="titre_connexion"> Editer son profil </h1>
 
@@ -57,8 +54,6 @@ include('ENTETE_MENU_Gestionnaire.php');
 
 
 </body>
-
-<!-- Appel Footer -->
 <?php
 require('../FOOTER.php');
 
