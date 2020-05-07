@@ -1,0 +1,120 @@
+html, body
+{
+    width: 100%;
+    height : 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.titre_gerer{
+    margin-top: 2%;
+    text-align: center;
+    color:#1D2043;
+    text-decoration: underline ;
+    text-decoration-color: #1D2043;
+}
+.fond {
+    background: #2699FB;
+    opacity: 0.15;
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    margin-left: 18%;
+    z-index: 1;
+    margin-top: 1%;
+}
+
+.photo_profil{
+    margin-top:5%;
+    margin-left: 16%;
+    background: white;
+    position: absolute;
+    z-index:2;
+
+
+}
+
+.deux_parties{
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.partie_gauche
+{
+    diplay: flex;
+    flex-direction: column;
+    width:60%;
+    margin-top: 25%;
+
+}
+
+
+.texte_choix{
+    display: flex;
+    margin-left: 6%;
+    position:absolute;
+    z-index:2;
+    justify-content: space-between;
+    margin-top:-3.2%;
+    font-size: 130%;
+}
+
+.liste_choix{
+    display: flex;
+    margin-left: 21%;
+    position:absolute;
+    z-index:2;
+    justify-content: space-between;
+    margin-top:-3%;
+    border: solid black;
+    font-size: 100%;
+}
+
+
+.boutons_valider{
+
+    position:absolute;
+    z-index:2;
+    width:5em;
+    height: 2em;
+    margin-left:31.8%;
+    font-size: 110%;
+    color: white;
+    background: #1D2043;
+    margin-top:1%;
+
+}
+
+
+.partie_droite
+{
+    diplay: flex;
+    flex-direction: column;
+    width:40%;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+
+.details1, .details2
+{
+    display: flex;
+    flex-direction: column;
+    color:#2699FB;
+
+}
+
+.nom, .email
+{
+    font-weight: bold;
+    font-size: 150%;
+    margin-bottom:0%;
+}
+
+.separation1 {
+    background-color: #2699FB;
+    height:0.3%;
+    width: 90%;
+    margin-bottom:20%;
+}
+

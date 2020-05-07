@@ -33,6 +33,12 @@ require('ENTETE_MENU_Admin.php');
     </form>
 </div>
 
+</br></br>
+
+<a href="gererUtilisateur.php">
+    <button class="button_back">RETOUR </button>
+</a>
+
 <div>
     <table class="tableau">
         <tr>
@@ -50,9 +56,6 @@ require('ENTETE_MENU_Admin.php');
     </table>
 </div>
 
-<a href="gererUtilisateur.php">
-    <button class="bouton_retour">RETOUR </button>
-</a>
 
 
 

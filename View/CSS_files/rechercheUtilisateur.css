@@ -27,20 +27,24 @@ html, body
 
 .bouton_valider{
     font-size:140%;
-    background-color:beige;
+    width:5em;
+    height: 1.6em;
+    color: white;
+    background: #1D2043;
+
 }
 
 
 .tableau
 {
     border-collapse: collapse;
-    margin-top:5%;
+    margin-top:2%;
     margin-left: 23%;
     width: 70%;
     height: 18%;
     background: #F1F9FF;
     z-index:2;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 
 
 
@@ -54,13 +58,12 @@ tr, th, td /* Mettre une bordure sur les td ET les th */
     width:10%;
 }
 
-.bouton_retour
-{
-    font-size:100%;
+
+
+.button_back{
     background-color:beige;
-    margin-bottom: 5%;
     width:15%;
     height :5%;
-    margin-left: 73%;
-
+    font-size:100%;
+    margin-left: 58.3%;
 }
