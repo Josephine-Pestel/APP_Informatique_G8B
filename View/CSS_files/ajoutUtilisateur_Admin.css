@@ -67,3 +67,12 @@ h1{
     margin-left: 83%;
     margin-bottom: 2%;
 }
+
+.button_back_suppr{
+    background-color:beige;
+    width:15%;
+    height :5%;
+    font-size:100%;
+    margin-left: 42%;
+    margin-bottom: 2%;
+}
