@@ -21,7 +21,7 @@
     <div id="description_forum">
         <p>Bienvenue sur le forum, profitez-en pour poser vos questions sur notre système ou sur notre site internet !</p>
     </div>
-    <a href="../Forum_Ajouter_discussion.php">
+    <a href="Forum_Ajouter_discussion.php">
         <button class="bouton_discussion">Ajouter une discussion</button>
     </a>
 

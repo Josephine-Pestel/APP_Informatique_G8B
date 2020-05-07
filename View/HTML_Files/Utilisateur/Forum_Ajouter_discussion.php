@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../CSS_files/Ajouter_discussion.css" />
+    <link rel="stylesheet" href="../../CSS_files/Ajouter_discussion.css" />
     <title>WINK FOR INIFINITE MEASURES</title>
 </head>
 
 <body>
 <!-- header et menu -->
-<?php include("ENTETE_MENU.php"); ?>
+<?php include("ENTETE_MENU_Utilisateur.php"); ?>
 
 
 <!--  ---------------------- FORMULAIRE DE DISCUSSION---------------------------------------   -->
@@ -55,7 +55,7 @@
 
 <!------------------------------Fin de la section ------------------------------------->
 <footer>
-    <?php include("FOOTER.php"); ?>
+    <?php include("../FOOTER.php"); ?>
 </footer>
 
 
