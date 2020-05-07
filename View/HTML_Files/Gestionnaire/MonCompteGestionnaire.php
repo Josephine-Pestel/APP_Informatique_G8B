@@ -15,7 +15,7 @@
 
 <?php
 require('ENTETE_MENU_Gestionnaire.php');
-
+session_start();
 ?>
 
 
@@ -28,13 +28,10 @@ require('ENTETE_MENU_Gestionnaire.php');
 
     <section class="partie_gauche">
         <section class="boutons1">
-            <a href="#">
+            <a href="EditerProfilGestionnaire.php">
                 <button class="editermonprofil"> Editer mon profil</button>
             </a>
 
-            <a href="#">
-                <button class="editierunprofil"> Editer le profil d'un utilisateur</button>
-            </a>
         </section>
 
         </br></br></br></br></br>
@@ -62,18 +59,15 @@ require('ENTETE_MENU_Gestionnaire.php');
     ?>
     <section class="partie_droite">
         <section class="details1">
-            <p class="nom"> josephine PESTEL</p>
-            <p class="date_inscription"> Incris le ??? </p>
+            <p class="nom"><?php echo $_SESSION['nom']?> </p>
+            <p class="email"> Email:<?php echo $_SESSION['email']?> </p>
         </section>
-        <div class="separation1"></div>
-
 
         <section class="details2">
-            <p class="naissance"> 23 mars 1999</p>
-            <p class="email_utilisateur"> E: nale.surname@gmail.com</p>
+            <p class="num_tel"> numero de Tel : <?php echo $_SESSION['num_tel']?></p>
+            <p class="domaine"> Domaine : <?php echo $_SESSION['domaine']?></p>
 
         </section>
-        <div class="separation2"></div>
 
     </section>
 

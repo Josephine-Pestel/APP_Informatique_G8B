@@ -21,21 +21,8 @@ require('ENTETE_MENU_Admin.php');
 
 ?>
 
-
-<!-- Milieu -->
-<h1 class="titre_page"> Rechercher un membre  </h1>
-
-<div class="barre_recherche">
-    <form action="barreRecherche.php" method="POST">
-        <input class="barreDeRecherche" type="search" name="recherche" placeholder="Rechercher un utilisateur">
-        <input class="bouton_valider" type="submit" />
-
-    </form>
-</div>
-
-</br></br>
-
-<a href="gererUtilisateur.php">
+<h1 class="titre_page"> Recherche des membres "<?php echo $_POST['recherche']?>" : </h1>
+<a href="rechercheUtilisateur.php">
     <button class="button_back">RETOUR </button>
 </a>
 
@@ -49,15 +36,13 @@ require('ENTETE_MENU_Admin.php');
             <th><p class="Score">Date d'inscription</p></th>
 
         </tr>
-        <?php
-        require('../../../Controller/rechercheUtilisateur_Admin.php');
 
+        <?php
+        require('../../../Controller/barreRecherche_Admin.php');
         ?>
     </table>
+
 </div>
-
-
-
 
 
 </body>

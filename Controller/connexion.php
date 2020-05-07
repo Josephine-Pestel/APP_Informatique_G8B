@@ -67,6 +67,9 @@ $recup_NumTel_gestionnaire = ($donneesNum_TelGestionnaire['num_tel']);
 $donneesDomaineGestionnaire = getDonneesGestionnaire();
 $recup_domaine_gestionnaire = ($donneesDomaineGestionnaire['domaine']);
 
+//appel du model ppur vérifier si l'utilisateur est banni ou non
+
+$Verif_email_banis = verifEmail_tableUtilisateursBanis_connexion($_POST['email']);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -99,7 +102,10 @@ if (empty($_POST['email']) || empty($_POST['mdp']))
     header('Refresh:8; url=../View/HTML_Files/SansCompte/P_Connexion.php');
 }
 
-
+else if ($Verif_email_banis){
+    echo '<p class="ERREURS"> Impossible de vous connecter, vous avez été banni de ce site internet.</p>';
+    header('Refresh:8; url=../View/HTML_Files/SansCompte/P_Connexion.php');
+}
 
 //sinon : CONNEXION ADMINISTRATEUR
 else if($_POST['email'] == $recup_email_admin){

@@ -2,9 +2,7 @@
 <html lang="fr">
 
 <head>
-    <!-- En-tête de la page -->
     <link type="text/css" rel="stylesheet" href="../../CSS_files/P_Gestionnaire.css?t=<? echo time(); ?>" media="all">
-    <!--<link rel="stylesheet" href="P_Accueil_Payen.css" />-->
     <meta charset="utf-8" />
     <title>WINK FOR INIFINITE MEASURES</title>
 </head>
@@ -22,7 +20,7 @@ require('ENTETE_MENU_Gestionnaire.php');
 <?php
 
 $bdd = new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
-$reponse = $bdd->query('SELECT * FROM `tests` ORDER by date DESC');
+$reponse = $bdd->query('SELECT `idTest`, `type`, `score`, DATE_FORMAT(`date`, "%d/%m/%Y"), `email` FROM `tests` ORDER by date DESC');
 
 
 
@@ -64,9 +62,9 @@ $reponse = $bdd->query('SELECT * FROM `tests` ORDER by date DESC');
 
             while ($donnees = $reponse->fetch()) { ?>
                 <tr>
-                    <th><p class="utilisateur"><?php echo $donnees['idUtilisateur'] ?></p></th>
+                    <th><p class="utilisateur"><?php echo $donnees['email'] ?></p></th>
                     <th><p class="Type"><?php echo $donnees['type'] ?></p></th>
-                    <th><p class="Date"><?php echo $donnees['date'] ?></p></th>
+                    <th><p class="Date"><?php echo $donnees['DATE_FORMAT(`date`, "%d/%m/%Y")'] ?></p></th>
                     <th><p class="Score"><?php echo $donnees['score'] ?></p></th>
                 </tr>
 
@@ -76,16 +74,16 @@ $reponse = $bdd->query('SELECT * FROM `tests` ORDER by date DESC');
 
         } else {
 
-            $reponse_recherche = $bdd->prepare('SELECT * FROM tests WHERE idUtilisateur = :idUtilisateur');
+            $reponse_recherche = $bdd->prepare('SELECT `idTest`, `type`, `score`, DATE_FORMAT(`date`, "%d/%m/%Y"), `email` FROM `tests` WHERE idUtilisateur = :idUtilisateur');
             $reponse_recherche->execute(array(
                 'idUtilisateur' => $_POST['recherche']
             ));
 
             while ($donnees = $reponse_recherche->fetch()) { ?>
                 <tr>
-                    <th><p class="utilisateur"><?php echo $donnees['idUtilisateur'] ?></p></th>
+                    <th><p class="utilisateur"><?php echo $donnees['email'] ?></p></th>
                     <th><p class="Type"><?php echo $donnees['type'] ?></p></th>
-                    <th><p class="Date"><?php echo $donnees['date'] ?></p></th>
+                    <th><p class="Date"><?php echo $donnees['DATE_FORMAT(`date`, "%d/%m/%Y")'] ?></p></th>
                     <th><p class="Score"><?php echo $donnees['score'] ?></p></th>
                 </tr>
 

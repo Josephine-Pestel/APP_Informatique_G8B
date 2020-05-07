@@ -18,7 +18,6 @@ html, body
 
 .fond
 {
-    background: #2699FB;
     opacity: 0.3;
     width: 77%;
     height: 60%;
@@ -30,9 +29,9 @@ html, body
 {
     border-collapse: collapse;
     margin-top:5%;
-    margin-left: 23%;
-    width: 70%;
-    height: 30%;
+    margin-left: 35%;
+    width: 50%;
+    height: 15%;
     background: #F1F9FF;
     z-index:2;
     position:absolute;
@@ -50,12 +49,12 @@ tr, th, td /* Mettre une bordure sur les td ET les th */
 
 .bouton_retour
 {
-    margin-top: 33%;
+    margin-top: 20%;
     margin-bottom: 3%;
-    width:20%;
-    height :5%;
+    width:8%;
+    height :3%;
     margin-left: 57%;
-    font-size: larger;
+    font-size: medium;
     border: 1px solid #1D2043;
 
 
