@@ -24,11 +24,11 @@ require('ENTETE_MENU_Gestionnaire.php');
 <form action="../../../Model/Ajout_Resultat_versBDD.php" method="POST">
     <p><label>Identifiant de l'utilisateur : <input type ="text" name="email"/></label></p>
     <p><label>Type de test : <select name="choix">
-                <option value="Temperature">Temperature</option>
-                <option value="Frequence cardiaque">frequence_cardiaque</option>
-                <option value="reconnaissance de tonalité">Mesure de reconnaissance de tonalite</option>
+                <option value="Temperature">Température</option>
+                <option value="Frequence cardiaque">frequence cardiaque</option>
+                <option value="reconnaissance de tonalité">Mesure de reconnaissance de tonalité</option>
                 <option value="stimulus sonore">Temps de réaction à un stimulus sonore</option>
-                <option value="stimulus visuel">Temps de réaction à un stimulus_visuel</option>
+                <option value="stimulus visuel">Temps de réaction à un stimulus visuel</option>
             </select></label></p>
     <p><label> Score : <input  type="int" name="score"required></label></p>
     <p><label>Date : <input type="datetime-local" name="date"required></label></p>

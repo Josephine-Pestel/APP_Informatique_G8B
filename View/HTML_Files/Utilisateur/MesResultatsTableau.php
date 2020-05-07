@@ -21,12 +21,12 @@ require('ENTETE_MENU_Utilisateur.php');
 <?php
 session_start();
 $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
-    $req = $bdd->prepare('SELECT `type`, `score`, `date` FROM `tests` WHERE email=:email');
+    $req = $bdd->prepare('SELECT `idTest`, `type`, `score`, DATE_FORMAT(`date`, "%d/%m/%Y"), `email` FROM `tests` WHERE email=:email');
     $req->execute(array(
         'email' => $_SESSION['email']));
 ?>
 
-<h1 class="titre_tableau"> TABLEAU DE RESULTATS </h1>
+<h1 class="titre_tableau"> Mes résultats Tableau </h1>
 
 
 <div class="fond"> </div>
@@ -40,7 +40,7 @@ $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root',
     <?php while ($donnees = $req->fetch()) { ?>
     <tr>
         <th><p class="Type"><?php echo $donnees['type'] ?></p></th>
-        <th><p class="Date"><?php echo $donnees['date'] ?></p></th>
+        <th><p class="Date"><?php echo $donnees['DATE_FORMAT(`date`, "%d/%m/%Y")'] ?></p></th>
         <th><p class="Score"><?php echo $donnees['score'] ?></p></th>
     </tr>
 

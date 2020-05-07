@@ -20,7 +20,7 @@ require('ENTETE_MENU_Gestionnaire.php');
 <?php
 
 $bdd = new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
-$reponse = $bdd->query('SELECT * FROM `tests` ORDER by date DESC');
+$reponse = $bdd->query('SELECT `idTest`, `type`, `score`, DATE_FORMAT(`date`, "%d/%m/%Y"), `email` FROM `tests` ORDER by date DESC');
 
 
 
@@ -64,7 +64,7 @@ $reponse = $bdd->query('SELECT * FROM `tests` ORDER by date DESC');
                 <tr>
                     <th><p class="utilisateur"><?php echo $donnees['email'] ?></p></th>
                     <th><p class="Type"><?php echo $donnees['type'] ?></p></th>
-                    <th><p class="Date"><?php echo $donnees['date'] ?></p></th>
+                    <th><p class="Date"><?php echo $donnees['DATE_FORMAT(`date`, "%d/%m/%Y")'] ?></p></th>
                     <th><p class="Score"><?php echo $donnees['score'] ?></p></th>
                 </tr>
 
@@ -74,7 +74,7 @@ $reponse = $bdd->query('SELECT * FROM `tests` ORDER by date DESC');
 
         } else {
 
-            $reponse_recherche = $bdd->prepare('SELECT * FROM tests WHERE idUtilisateur = :idUtilisateur');
+            $reponse_recherche = $bdd->prepare('SELECT `idTest`, `type`, `score`, DATE_FORMAT(`date`, "%d/%m/%Y"), `email` FROM `tests` WHERE idUtilisateur = :idUtilisateur');
             $reponse_recherche->execute(array(
                 'idUtilisateur' => $_POST['recherche']
             ));
@@ -83,7 +83,7 @@ $reponse = $bdd->query('SELECT * FROM `tests` ORDER by date DESC');
                 <tr>
                     <th><p class="utilisateur"><?php echo $donnees['email'] ?></p></th>
                     <th><p class="Type"><?php echo $donnees['type'] ?></p></th>
-                    <th><p class="Date"><?php echo $donnees['date'] ?></p></th>
+                    <th><p class="Date"><?php echo $donnees['DATE_FORMAT(`date`, "%d/%m/%Y")'] ?></p></th>
                     <th><p class="Score"><?php echo $donnees['score'] ?></p></th>
                 </tr>
 
