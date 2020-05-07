@@ -13,6 +13,26 @@ html, body
     text-decoration: underline ;
     text-decoration-color: #1D2043;
 }
+.fond {
+    background: #2699FB;
+    opacity: 0.15;
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    margin-left: 18%;
+    z-index: 1;
+    margin-top: 1%;
+}
+
+.photo_profil{
+    margin-top:5%;
+    margin-left: 16%;
+    background: white;
+    position: absolute;
+    z-index:2;
+
+
+}
 
 .deux_parties{
     display:flex;
@@ -29,14 +49,26 @@ html, body
 
 }
 
+
+.texte_choix{
+    display: flex;
+    margin-left: 6%;
+    position:absolute;
+    z-index:2;
+    justify-content: space-between;
+    margin-top:-3.2%;
+    font-size: 130%;
+}
+
 .liste_choix{
     display: flex;
-    margin-left: 7.5%;
+    margin-left: 21%;
     position:absolute;
     z-index:2;
     justify-content: space-between;
     margin-top:-3%;
-
+    border: solid black;
+    font-size: 100%;
 }
 
 
@@ -46,7 +78,7 @@ html, body
     z-index:2;
     width:5em;
     height: 2em;
-    margin-left:26.5%;
+    margin-left:31.8%;
     font-size: 110%;
     color: white;
     background: #1D2043;
@@ -54,16 +86,6 @@ html, body
 
 }
 
-
-
-.photo_profil{
-    margin-top:5%;
-    margin-left: 16%;
-    background: white;
-    position: absolute;
-    z-index:2;
-
-}
 
 .partie_droite
 {
@@ -96,13 +118,3 @@ html, body
     margin-bottom:20%;
 }
 
-.fond {
-    background: #2699FB;
-    opacity: 0.15;
-    width: 80%;
-    height: 60%;
-    position: absolute;
-    margin-left: 18%;
-    z-index: 1;
-    margin-top: 1%;
-}
