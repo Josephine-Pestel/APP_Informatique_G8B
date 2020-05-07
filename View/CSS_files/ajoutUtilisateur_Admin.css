@@ -42,7 +42,7 @@ h1{
     height: 3em;
     margin-left:9%;
     margin-top:7%;
-    margin-bottom:7%;
+    margin-bottom:2%;
     font-size: 120%;
     color: white;
     background: #1D2043;
@@ -51,7 +51,6 @@ h1{
 
 .ERREUR_donnees_absente, .ERREUR_mail_existe, .ERREURS {
     font-size: 190%;
-
     text-align: center;
     color:#1D2043;
     color:red;
@@ -59,14 +58,12 @@ h1{
     text-decoration-color: #1D2043;
 }
 
-.retour
-{
-    width:25em;
-    height: 3em;
-    margin-left:40%;
-    margin-top:7%;
-    margin-bottom:7%;
-    font-size: 120%;
-    color: white;
-    background: #1D2043;
+
+.button_back{
+    background-color:beige;
+    width:15%;
+    height :5%;
+    font-size:100%;
+    margin-left: 83%;
+    margin-bottom: 2%;
 }

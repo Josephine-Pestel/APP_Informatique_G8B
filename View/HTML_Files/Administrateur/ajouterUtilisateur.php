@@ -48,6 +48,10 @@ require('ENTETE_MENU_Admin.php');
 
 </section>
 
+<a href="gererUtilisateur.php">
+    <button class="button_back">RETOUR </button>
+</a>
+
 
 
 

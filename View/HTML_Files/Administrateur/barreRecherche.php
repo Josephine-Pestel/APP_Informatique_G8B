@@ -22,6 +22,9 @@ require('ENTETE_MENU_Admin.php');
 ?>
 
 <h1 class="titre_page"> Recherche des membres "<?php echo $_POST['recherche']?>" : </h1>
+<a href="rechercheUtilisateur.php">
+    <button class="button_back">RETOUR </button>
+</a>
 
 <div>
     <table class="tableau">
@@ -40,12 +43,6 @@ require('ENTETE_MENU_Admin.php');
     </table>
 
 </div>
-
-<a href="rechercheUtilisateur.php">
-    <button class="bouton_retour">RETOUR </button>
-</a>
-
-
 
 
 </body>
