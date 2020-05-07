@@ -2,9 +2,7 @@
 <html lang="fr">
 
 <head>
-    <!-- En-tête de la page -->
     <link type="text/css" rel="stylesheet" href="../../CSS_files/P_ResultatTableau.css?t=<? echo time(); ?>" media="all">
-    <!--<link rel="stylesheet" href="P_Accueil_Payen.css" />-->
     <meta charset="utf-8" />
     <title>WINK FOR INIFINITE MEASURES</title>
 </head>
@@ -13,14 +11,20 @@
 
 <body>
 
-<!-- Appel En-Tete et Menu -->
 
 <?php
 require('ENTETE_MENU_Utilisateur.php');
 
 ?>
 
-<!-- Milieu -->
+
+<?php
+session_start();
+$bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
+    $req = $bdd->prepare('SELECT `type`, `score`, `date` FROM `tests` WHERE email=:email');
+    $req->execute(array(
+        'email' => $_SESSION['email']));
+?>
 
 <h1 class="titre_tableau"> TABLEAU DE RESULTATS </h1>
 
@@ -28,61 +32,22 @@ require('ENTETE_MENU_Utilisateur.php');
 <div class="fond"> </div>
 <table class="resultat_tableau">
     <tr>
-        <th> TEST </th>
-        <th> DATE </th>
-        <th> TEMPS </th>
-        <th> POURCENTAGE </th>
-        <th> NIVEAU </th>
+        <th> Test effectué  </th>
+        <th> Date </th>
+        <th> Score / 100</th>
     </tr>
 
+    <?php while ($donnees = $req->fetch()) { ?>
     <tr>
-        <td> température </td>
-        <td> ajd </td>
-        <td> 40s </td>
-        <td> 20% </td>
-        <td> 4/10 </td>
+        <th><p class="Type"><?php echo $donnees['type'] ?></p></th>
+        <th><p class="Date"><?php echo $donnees['date'] ?></p></th>
+        <th><p class="Score"><?php echo $donnees['score'] ?></p></th>
     </tr>
 
-    <tr>
-        <td> sonore </td>
-        <td> hier </td>
-        <td> 40s </td>
-        <td> 20% </td>
-        <td> 4/10 </td>
-    </tr>
-
-    <tr>
-        <td> visuel </td>
-        <td> ajd </td>
-        <td> 40s </td>
-        <td> 20% </td>
-        <td> 4/10 </td>
-    </tr>
-
-    <tr>
-        <td> sonore </td>
-        <td> octobre </td>
-        <td> 40s </td>
-        <td> 20% </td>
-        <td> 4/10 </td>
-    </tr>
-
-    <tr>
-        <td> température </td>
-        <td> septembre </td>
-        <td> 40s </td>
-        <td> 20% </td>
-        <td> 4/10 </td>
-    </tr>
-
-    <tr>
-        <td> visuel </td>
-        <td> demain </td>
-        <td> 40s </td>
-        <td> 20% </td>
-        <td> 4/10 </td>
-    </tr>
-
+    <?php
+            }
+            $req->closeCursor();
+?>
 
 </table>
 
@@ -93,7 +58,6 @@ require('ENTETE_MENU_Utilisateur.php');
 
 </body>
 
-<!-- Appel Footer -->
 <?php
 require('../FOOTER.php');
 
