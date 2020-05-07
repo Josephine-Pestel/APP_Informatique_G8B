@@ -17,6 +17,7 @@ html, body
 .deux_parties{
     display:flex;
     justify-content: space-between;
+    margin-bottom: 5%;
 
 }
 
@@ -88,10 +89,10 @@ html, body
 
 }
 
-.nom, .naissance
+.nom, .naissance, .date_inscription,.email_utilisateur
 {
     font-weight: bold;
-    font-size: 150%;
+    font-size: 170%;
     margin-bottom:0%;
 }
 
@@ -112,4 +113,5 @@ html, body
     margin-left:18%;
     z-index:1;
     margin-top:1%;
+    margin-bottom: 10%;
 }
