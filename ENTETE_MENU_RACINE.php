@@ -15,11 +15,7 @@
 <header>
 
     <a href="" class="bouton_langue" alt="Changer la langue" target="_blank">ENGLISH</a>
-<<<<<<< HEAD:ENTETE_MENU.php
-    <h1 class="titre">INFINITE MEASURES BONJOUR</h1>
-=======
     <h1 class="titre">INFINITE MEASURES</h1>
->>>>>>> master:ENTETE_MENU_RACINE.php
 
     <!-- Petits icones -->
 
