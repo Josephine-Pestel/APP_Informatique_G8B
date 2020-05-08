@@ -3,20 +3,22 @@ html, body
     width: 100%;
 }
 .canvas{
-    background-color: #D0EDF7;
-    width: 35%;
-    height: 35%;
+
+    width: 70%;
+    height: 60%;
     border-radius: 30px;
     position: absolute;
-    left: 38%;
+    left: 22%;
     top: 200px;
-    margin-bottom: 150px;
+    margin-bottom:10%
     padding-bottom: 75px;
 }
 h2 {
     text-align: center;
     font-family: Arial;
-    color: darkblue;
+    color: black;
+    font-size: 160%;
+    color: midnightblue;
 }
 .bargraph {
     height: 229px;
@@ -139,40 +141,36 @@ ul.y-axis li.units {
 }
 .bargraph p.centered {
     text-align: center;
-    font-size: 15px;
+    font-size: 110%;
 }
 
-h3{
-    text-align: center;
-    font-family: Georgia;
-    font-size: 2em;
-    position: absolute;
-    left: 53%;
-    top: 180px;
-}
+
 div.tabbed {
     position: absolute;
     top: 20%;
-    left: 25%;
+    left: 10%;
+    right: 10%;
 }
+
 
 div.tabs a {
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    color: darkblue;
-    margin-right: 2px;
-    padding: 0px 2px;
-    border-radius: 3px;
+    text-decoration: none;
+    background-color: beige;
+    color: black;
+    padding:1%;
+    margin: 1%;
 }
 
 div.tab {
     display: none;
-    height: 250px;
-    border-radius: 5px;
-    text-align: center;
+    margin-top: 10%;
+
 }
 
 div.tab:target {
     display: block;
+
 }
 
 :target div.tab {
@@ -190,11 +188,11 @@ footer {
 {
     margin-top: 33%;
     margin-bottom: 7%;
-    width:20%;
-    height :5%;
-    margin-left: 54%;
-    font-size: larger;
-    border: 1px solid #1D2043;
+    width:5%;
+    height :2%;
+    margin-left: 60%;
+    font-size: small;
+    background-color: beige;
 
 
 }
