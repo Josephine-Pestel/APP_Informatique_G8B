@@ -4,7 +4,7 @@
 
 <head>
     <!-- En-tête de la page -->
-    <link type="text/css" rel="stylesheet" href="FOOTER.css?t=<? echo time(); ?>" media="all">
+    <link type="text/css" rel="stylesheet" href="FOOTER_RACINE.css?t=<? echo time(); ?>" media="all">
     <!--<link rel="stylesheet" href="P_Accueil_Payen.css" />-->
     <meta charset="utf-8" />
     <title>WINK FOR INIFINITE MEASURES</title>

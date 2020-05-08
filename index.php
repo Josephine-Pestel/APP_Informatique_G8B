@@ -32,7 +32,7 @@ require('ENTETE_MENU_RACINE.php');
 </body>
 
 <?php
-require('FOOTER.php');
+require('FOOTER_RACINE.php');
 
 ?>
 </html>
