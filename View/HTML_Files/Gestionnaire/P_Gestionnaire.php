@@ -74,9 +74,9 @@ $reponse = $bdd->query('SELECT `idTest`, `type`, `score`, DATE_FORMAT(`date`, "%
 
         } else {
 
-            $reponse_recherche = $bdd->prepare('SELECT `idTest`, `type`, `score`, DATE_FORMAT(`date`, "%d/%m/%Y"), `email` FROM `tests` WHERE idUtilisateur = :idUtilisateur');
+            $reponse_recherche = $bdd->prepare('SELECT `idTest`, `type`, `score`, DATE_FORMAT(`date`, "%d/%m/%Y"), `email` FROM `tests` WHERE email = :email');
             $reponse_recherche->execute(array(
-                'idUtilisateur' => $_POST['recherche']
+                'email' => $_POST['recherche']
             ));
 
             while ($donnees = $reponse_recherche->fetch()) { ?>

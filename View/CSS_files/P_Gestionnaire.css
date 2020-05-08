@@ -65,12 +65,12 @@ tr, th, td /* Mettre une bordure sur les td ET les th */
 
 .bouton_retour
 {
+    margin-top: 2%;
     font-size:100%;
     background-color:beige;
+    margin-left: 80%;
     margin-bottom: 5%;
-    width:15%;
-    height :5%;
-    margin-left: 73%;
+
 
 
 }
