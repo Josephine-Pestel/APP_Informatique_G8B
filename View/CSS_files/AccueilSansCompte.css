@@ -10,8 +10,8 @@ html, body
 /* BANNIERE */
 .banniere_image
 {
-    width: 1920px;
-    height: 750px;
+    width: 85%;
+    height: 32em;
     background: url('../../images/index.jpg') fixed, no-repeat;
     position: relative;
     margin-left: 15%;

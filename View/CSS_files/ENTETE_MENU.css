@@ -23,6 +23,7 @@ header /* balise */
 
 .taille_menu{
     width:0%;
+    margin-left: 40%;
 }
 
 .titre /* classe */
@@ -140,4 +141,13 @@ nav a:hover
 {
     color: #2699FB;
     border-bottom: 3px solid #F1F9FF;
+}
+
+.anglais{
+    width : 30%;
+    height:auto;
+    margin-left: 60%;
+}
+.email{
+    width : 35%;
 }

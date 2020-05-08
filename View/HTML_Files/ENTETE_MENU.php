@@ -14,17 +14,15 @@
 
 <header>
     <div class="taille_menu"> </div>
-    <a href="" class="bouton_langue" alt="Changer la langue" target="_blank">ENGLISH</a>
+
+
     <h1 class="titre">INFINITE MEASURES</h1>
-
-
-    <!-- Petits icones -->
-    <div class="icones">
-        <a href="#" class="bouton_user"><img src="../../../images/iconuser.png" alt="" /></a>
-        <a href="mailto:alexandre.payen@lilalions.com" class="bouton_contact"><img src="../../../images/iconmail.png" alt="" /></a>
-
-    </div>
-    <a href="../deconnexion" class="bouton_deconnexion" alt="Changer la langue">DECONNEXION</a>
+    <a href="http://localhost/APP_Informatique_G8B_ANGLAIS/indexxxx.php" target="_blank">
+        <img class= "anglais" src="../../../images/anglais.png" alt= "nom de ton image">
+    </a>
+    <a href="http://localhost/APP_Informatique_G8B_ANGLAIS/indexxxx.php" target="_blank">
+        <img class= "email" src="../../../images/iconmail.png" alt= "nom de ton image">
+    </a>
 </header>
 
 <div class="trait_fin_menu"></div>
