@@ -20,7 +20,7 @@
     <a href="http://localhost/APP_Informatique_G8B_ANGLAIS/indexxxx.php" target="_blank">
         <img class= "anglais" src="../../../images/anglais.png" alt= "nom de ton image">
     </a>
-    <a href="http://localhost/APP_Informatique_G8B_ANGLAIS/indexxxx.php" target="_blank">
+    <a href="mailto:infinitemeasures@gmail.com">
         <img class= "email" src="../../../images/iconmail.png" alt= "nom de ton image">
     </a>
 </header>
