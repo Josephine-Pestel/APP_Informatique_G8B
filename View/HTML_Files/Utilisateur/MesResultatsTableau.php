@@ -29,8 +29,14 @@ $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root',
 <h1 class="titre_tableau"> Mes résultats Tableau </h1>
 
 
-<div class="fond"> </div>
-<table class="resultat_tableau">
+
+<div class="all">
+
+    <a href="MonCompteUtilisateur.php">
+        <button class="bouton_retour"> RETOUR</button>
+    </a>
+
+    <table class="resultat_tableau">
     <tr>
         <th> Test effectué  </th>
         <th> Date </th>
@@ -51,10 +57,10 @@ $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root',
 
 </table>
 
-<a href="MonCompteUtilisateur.php">
-    <button class="bouton_retour"> RETOUR</button>
-</a>
 
+
+
+</div>
 
 </body>
 

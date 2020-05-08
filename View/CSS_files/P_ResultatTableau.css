@@ -16,15 +16,7 @@ html, body
 }
 
 
-.fond
-{
-    opacity: 0.3;
-    width: 77%;
-    height: 60%;
-    position:absolute;
-    margin-left:20%;
-    z-index:1;
-}
+
 .resultat_tableau
 {
     border-collapse: collapse;
@@ -35,6 +27,7 @@ html, body
     background: #F1F9FF;
     z-index:2;
     position:absolute;
+    margin-bottom: 50%;
 
 
 }
@@ -49,13 +42,14 @@ tr, th, td /* Mettre une bordure sur les td ET les th */
 
 .bouton_retour
 {
-    margin-top: 20%;
-    margin-bottom: 3%;
-    width:8%;
+
+    width:6%;
     height :3%;
-    margin-left: 57%;
+    margin-left: 10%;
     font-size: medium;
-    border: 1px solid #1D2043;
+    background-color: beige;
+}
 
-
+.all{
+    margin-bottom: 30%;
 }
