@@ -32,9 +32,10 @@
 
     <div class="trait_fin_footer"></div>
 
+
     <div class="bloc_footer2">
-        <a href="../CGU.php" class="conditions"><p>CONDITIONS</p></a>
-        <a href="../mentionsLegales.php" class="mentions"><p>MENTIONS LEGALES</p></a>
+        <a href="CGU_SansCompte.php" class="conditions"><p>CONDITIONS</p></a>
+        <a href="mentionsLegales_SansCompte.php" class="mentions"><p>MENTIONS LEGALES</p></a>
     </div>
 
 </footer>

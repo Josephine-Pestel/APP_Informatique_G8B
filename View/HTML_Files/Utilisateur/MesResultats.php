@@ -26,6 +26,9 @@
 </section>
 </body>
 <footer>
-<?php include("../FOOTER.php"); ?>
+    <?php
+    require('FOOTER_Utilisateur.php');
+
+    ?>
 </footer>
 </html>

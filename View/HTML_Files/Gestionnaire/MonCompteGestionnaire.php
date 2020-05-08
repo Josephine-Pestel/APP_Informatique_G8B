@@ -78,7 +78,10 @@ session_start();
 </body>
 
 <footer>
-    <?php include("../FOOTER.php"); ?>
+    <?php
+    require('FOOTER_Gestionnaire.php');
+
+    ?>
 </footer>
 
 </html>

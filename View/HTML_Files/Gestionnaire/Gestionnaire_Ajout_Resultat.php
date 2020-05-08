@@ -43,7 +43,7 @@ require('ENTETE_MENU_Gestionnaire.php');
 
 </body>
 <?php
-require('../FOOTER.php');
+require('FOOTER_Gestionnaire.php');
 
 ?>
 

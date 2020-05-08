@@ -57,7 +57,7 @@ require('ENTETE_MENU_Admin.php');
 
 </body>
 <?php
-require('../FOOTER.php');
+require('FOOTER_Admin.php');
 
 ?>
 

@@ -81,5 +81,8 @@
 
 
 </body>
-<?php include('../FOOTER.php'); ?>
+<?php
+require('FOOTER_Utilisateur.php');
+
+?>
 </html>

@@ -12,7 +12,7 @@
 <?php
 //on démarre la session de l'utilisateur
 session_start();
-require('ENTETE_MENU_Admin.php');
+require('ENTETE_MENU_Utilisateur.php');
 
 ?>
 
@@ -43,7 +43,7 @@ require('ENTETE_MENU_Admin.php');
 
 <footer>
     <?php
-    require('FOOTER_Admin.php');
+    require('FOOTER_Utilisateur.php');
 
     ?>
 </footer>

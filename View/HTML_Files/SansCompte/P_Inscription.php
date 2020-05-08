@@ -58,7 +58,7 @@ require('ENTETE_MENU_SansCompte.php');
 
 <!-- Appel Footer -->
 <?php
-require('../FOOTER.php');
+require('FOOTER_SansCompte.php');
 
 ?>
 

@@ -36,9 +36,8 @@ require('ENTETE_MENU_Admin.php');
 
 <!-- Appel Footer -->
 <?php
-require('../FOOTER.php');
+require('FOOTER_Admin.php');
 
 ?>
-
 </html>
 

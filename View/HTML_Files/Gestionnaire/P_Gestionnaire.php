@@ -110,7 +110,7 @@ $reponse = $bdd->query('SELECT `idTest`, `type`, `score`, DATE_FORMAT(`date`, "%
 </body>
 
 <?php
-require('../FOOTER.php');
+require('FOOTER_Gestionnaire.php');
 
 ?>
 

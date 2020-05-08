@@ -15,11 +15,3 @@ require('../ENTETE_MENU.php'); ?>
     </nav>
 
 </div>
-
-
-
-
-
-
-</body>
-</html>

@@ -12,7 +12,7 @@
 <?php
 //on démarre la session de l'utilisateur
 session_start();
-require('ENTETE_MENU_Admin.php');
+require('ENTETE_MENU_Gestionnaire.php');
 
 ?>
 
@@ -23,20 +23,20 @@ require('ENTETE_MENU_Admin.php');
     <div class="Para1">
         <p>1.1. La Société EVS Auto-Ecole, Société par Actions Simplifiée, au capital de 10 000 euros, dont le siège social est situé 44, rue des Dames – 75017 Paris, immatriculée sous le numéro d’identification unique 805 128 949 RCS Paris, (« EVS ») édite un site internet disponible à l’adresse www.envoituresimone.com (le « Site​») et son application mobile éponyme (l’ « Application ») mettent notamment à disposition des contenus informatifs généraux relatifs à l’apprentissage de la conduite de véhicules automobiles (les « Contenus​») et, s’il y a lieu, des informations personnalisées (les « Services​»).
 
-            1.2. En se connectant au Site, à l’Application, en accédant aux Contenus et Services, ainsi qu’aux espaces communautaires présents sur le Site et aux réseaux sociaux sur lesquels EVS est présent, l’internaute accepte en qualité d’utilisateur (l’« Utilisateur​») de se soumettre aux présentes Conditions Générales d’Utilisation (Les « CGU​»), et à la loi française. Les CGU s’appliquent au Site, à chacune de ses pages et URL, ainsi qu’à l’ensemble de ses sous-domaines quel qu’en soit leur niveau de hiérarchie.
+        1.2. En se connectant au Site, à l’Application, en accédant aux Contenus et Services, ainsi qu’aux espaces communautaires présents sur le Site et aux réseaux sociaux sur lesquels EVS est présent, l’internaute accepte en qualité d’utilisateur (l’« Utilisateur​») de se soumettre aux présentes Conditions Générales d’Utilisation (Les « CGU​»), et à la loi française. Les CGU s’appliquent au Site, à chacune de ses pages et URL, ainsi qu’à l’ensemble de ses sous-domaines quel qu’en soit leur niveau de hiérarchie.
 
-            1.3. Les CGU sont destinées à encadrer la navigation et l'utilisation du Site et de l’Application. La consommation de produits ou services payants est soumis aux conditions générales d’aide à l’apprentissage de la conduite (Les « CGAAC​») et, le cas échéant, aux conditions particulières des produits et services concernés.
+        1.3. Les CGU sont destinées à encadrer la navigation et l'utilisation du Site et de l’Application. La consommation de produits ou services payants est soumis aux conditions générales d’aide à l’apprentissage de la conduite (Les « CGAAC​») et, le cas échéant, aux conditions particulières des produits et services concernés.
 
-            1.4. L’utilisation des Contenus et Services sur les réseaux sociaux (Facebook®, Twitter®, LinkedIn ®, Google+®, Tumblr®, Instagram®, etc.) est soumise à la fois au respect par l’Utilisateur des CGU mais aussi aux conditions générales d’utilisation telles que fixées par les exploitants des réseaux sociaux.
+        1.4. L’utilisation des Contenus et Services sur les réseaux sociaux (Facebook®, Twitter®, LinkedIn ®, Google+®, Tumblr®, Instagram®, etc.) est soumise à la fois au respect par l’Utilisateur des CGU mais aussi aux conditions générales d’utilisation telles que fixées par les exploitants des réseaux sociaux.
 
-            1.5. Les CGU applicables sont celles qui sont accessibles en ligne sur le Site. La date de dernière mise à jour des CGU y est précisée. EVS peut modifier à tout moment les CGU. Au cas où postérieurement à leur modification, les CGU resteraient néanmoins accessibles au public via d’autres sites internet ou par tout autre moyen, elles ne seraient pas opposables à EVS. L’Utilisateur est donc invité à consulter les dernières CGU sur le Site.
+        1.5. Les CGU applicables sont celles qui sont accessibles en ligne sur le Site. La date de dernière mise à jour des CGU y est précisée. EVS peut modifier à tout moment les CGU. Au cas où postérieurement à leur modification, les CGU resteraient néanmoins accessibles au public via d’autres sites internet ou par tout autre moyen, elles ne seraient pas opposables à EVS. L’Utilisateur est donc invité à consulter les dernières CGU sur le Site.
 
-            1.6. L’Utilisateur déclare avoir la capacité juridique pour accepter les CGU, en d’autres termes, avoir atteint l’âge de la majorité et ne pas être sous tutelle ou curatelle. Dans l'hypothèse où l’internaute est une personne physique mineure, il déclare et reconnaît avoir recueilli l'autorisation auprès de ses parents ou du (ou des) titulaire(s) de l'autorité parentale, lesquels acceptent d'être garants du respect de l'ensemble des dispositions des CGU, et responsables de l'utilisation faite par leurs enfants des Contenus et Services, conscients que les informations présentes sur le Site et l’Application sont destinées à toucher un large public.</p>
+        1.6. L’Utilisateur déclare avoir la capacité juridique pour accepter les CGU, en d’autres termes, avoir atteint l’âge de la majorité et ne pas être sous tutelle ou curatelle. Dans l'hypothèse où l’internaute est une personne physique mineure, il déclare et reconnaît avoir recueilli l'autorisation auprès de ses parents ou du (ou des) titulaire(s) de l'autorité parentale, lesquels acceptent d'être garants du respect de l'ensemble des dispositions des CGU, et responsables de l'utilisation faite par leurs enfants des Contenus et Services, conscients que les informations présentes sur le Site et l’Application sont destinées à toucher un large public.</p>
     </div>
 
     <p class="config">Configurations Minimales Requises</p>
     <div class="Para2">
-        <p>Pour accéder au Site, à l’Application, aux Contenus et Services, il incombe à l’Utilisateur de vérifier que cet accès et l’utilisation qu’il entend en faire soient rendus possibles dans les meilleures conditions en installant les logiciels nécessaires et appropriés.</p>
+    <p>Pour accéder au Site, à l’Application, aux Contenus et Services, il incombe à l’Utilisateur de vérifier que cet accès et l’utilisation qu’il entend en faire soient rendus possibles dans les meilleures conditions en installant les logiciels nécessaires et appropriés.</p>
     </div>
 
 
@@ -63,7 +63,7 @@ require('ENTETE_MENU_Admin.php');
 
 <footer>
     <?php
-    require('FOOTER_Admin.php');
+    require('FOOTER_Gestionnaire.php');
 
     ?>
 </footer>

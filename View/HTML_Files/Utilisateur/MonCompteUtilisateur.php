@@ -75,7 +75,7 @@ require('ENTETE_MENU_Utilisateur.php');
 
 <!-- Appel Footer -->
 <?php
-require('../FOOTER.php');
+require('FOOTER_Utilisateur.php');
 
 ?>
 

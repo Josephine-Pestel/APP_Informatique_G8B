@@ -38,9 +38,8 @@ require('ENTETE_MENU_SansCompte.php');
 
 
 </body>
-
 <?php
-require('../FOOTER.php');
+require('FOOTER_SansCompte.php');
 
 ?>
 </html>

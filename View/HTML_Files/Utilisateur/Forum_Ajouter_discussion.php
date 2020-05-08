@@ -55,7 +55,10 @@
 
 <!------------------------------Fin de la section ------------------------------------->
 <footer>
-    <?php include("../FOOTER.php"); ?>
+    <?php
+    require('FOOTER_Utilisateur.php');
+
+    ?>
 </footer>
 
 

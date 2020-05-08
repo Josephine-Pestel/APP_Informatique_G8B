@@ -1,59 +1,63 @@
 html,body
-h1{
-    text-align:center;
-    font-size:130%;
-    font-family: "Times New Roman";
-    color:midnightblue;
-}
-h2{
-    font-family: "Times New Roman";
-    font-size: 100%;
+
+.texte_entier{
     text-align: left;
+    font-family: "Times New Roman";
+    text-align: justify;
+
+}
+
+.titre_C{
+    font-family: "Times New Roman";
+    text-align:center;
+    font-size: 250%;
+    color: #1D2043;
+}
+.deuxieme_titre{
+    font-family: "Times New Roman";
+    font-size: 120%;
+    color: #1D2043;
+    text-decoration: underline;
+
 }
 .Para1{
-    font-family: "Times New Roman";
-    text-align:left;
-    text-align: justify;
     margin-right: 2%;
-
   }
-h3{
-    font-family: "Times New Roman";
-    font-size: 100%;
-    text-align: left;
 
+.config{
+    font-family: "Times New Roman";
+    font-size: 120%;
+    color: #1D2043;
+    text-decoration: underline;
 }
+
 .Para2{
-    font-family: "Times New Roman";
-    text-align:left;
-    text-align: justify;
     margin-right: 2%;
-
 }
 
-H4{
+.acces{
     font-family: "Times New Roman";
-    font-size: 100%;
-    text-align: left;
+    font-size: 120%;
+    color: #1D2043;
+    text-decoration: underline;
+    margin-left: 20%;
+
 }
+
 .Para3{
     margin-left: 20%;
-    font-family: "Times New Roman";
-    text-align:left;
-    text-align: justify;
     margin-right: 2%;
 }
-h5{
+
+.inscription{
     margin-left:20%;
     font-family: "Times New Roman";
-    font-size: 100%;
-    text-align: left;
+    font-size: 120%;
+    color: #1D2043;
+    text-decoration: underline;
 }
 
 .Para4{
     margin-left:20%;
-    font-family: "Times New Roman";
-    text-align:left;
-    text-align: justify;
     margin-right: 2%;
 }

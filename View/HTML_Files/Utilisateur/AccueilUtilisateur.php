@@ -33,10 +33,9 @@ require('ENTETE_MENU_Utilisateur.php');
 
 
 </body>
-    <?php
-    require('../FOOTER.php');
+<?php
+require('FOOTER_Utilisateur.php');
 
-    ?>
-
+?>
 
 </html>

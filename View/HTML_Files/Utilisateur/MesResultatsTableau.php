@@ -65,7 +65,7 @@ $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root',
 </body>
 
 <?php
-require('../FOOTER.php');
+require('FOOTER_Utilisateur.php');
 
 ?>
 

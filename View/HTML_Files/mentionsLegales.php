@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <link rel="Stylesheet" href="../../CSS_files/Mnetions_Legales.css"/>
+    <link rel="Stylesheet" href="../CSS_files/mentionsLegales.css"/>
     <title>Infinite_Measures</title>
 </head>
 
 <body>
 
 
-<?php include("ENTETE_MENU_Utilisateur.php"); ?>
+<?php require("ENTETE_MENU.php"); ?>
 <section>
     <h1>Mentions légales</h1>
     <div class="texte">
@@ -35,7 +35,7 @@
 </section>
 
 <footer>
-    <?php include("../FOOTER.php"); ?>
+    <?php include("FOOTER.php"); ?>
 </footer>
 </body>
 </html>
