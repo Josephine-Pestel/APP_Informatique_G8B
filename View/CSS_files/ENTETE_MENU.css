@@ -74,9 +74,9 @@ header /* balise */
 }
 
 .bouton_deconnexion{
-    border: 0;
-    padding: 1% 1%;
-    font-size: 100%;
+    width:70%;
+    padding: 0.2em 0.2em;
+    font-size: 90%;
     text-align: center;
     color: #fff;
     border-radius: 8%;
@@ -85,9 +85,14 @@ header /* balise */
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
     inset -2px -2px 3px rgba(0, 0, 0, .6);
     text-decoration: none;
-    margin-right:4%;
+    margin-top:5%;
+    margin-left:-74%;
 }
 
+.test{
+    display:flex;
+    flex-direction:column;
+}
 .bouton_deconnexion:hover
 {
     background-color:  #F1F9FF/*rgba(255, 0, 0, 1)*/;
