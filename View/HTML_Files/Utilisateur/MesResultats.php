@@ -21,7 +21,7 @@
         <div class="texte_milieu">
             <p>Les résultats sous forme de graphiques vous permettant d'avoir une vision détaillée de vos scores depuis votre inscription</p>
         </div>
-        <a href="MesResultatsGraphique.php" class="quatrieme_bouton" alt="Accéder au graphique" target="_blank">GRAPHIQUE</a>
+        <a href="MesResultatsGraphiquebis.php" class="quatrieme_bouton" alt="Accéder au graphique" target="_blank">GRAPHIQUE</a>
     </aside>
 </section>
 </body>
