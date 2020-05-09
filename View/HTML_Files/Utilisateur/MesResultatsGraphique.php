@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php include("ENTETE_MENU_Utilisateur.php"); ?>
+<?php include("ENTETE_MENU_Utilisateur.php"); ?>
 
 
 
@@ -20,47 +20,42 @@
 
 
         <div id="ReactS" class="tab">
-            <?php
-            session_start();
-            $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
-            $req = $bdd->prepare('SELECT `idTest`, `type`, score:score, `date`, `email` FROM `tests` WHERE email=:email AND type=\'stimulus sonore\'');
-            $req->execute(array(
-                'email' => $_SESSION['email'],
-                'score'=>$_POST['score'],
-                'date'=>$_POST['date'],
-
+            <div class="bargraph" style= "width: 365px;">
+                <?php
+                session_start();
+                $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
+                $req = $bdd->prepare('SELECT `idTest`, `type`, `score`, `date`, `email` FROM `tests` WHERE `email`= :email AND `type`="stimulus sonore"');
+                $req->execute(array(
+                    'email' => $_SESSION['email']
                 ));
 
-            ?>
+                while ($donnees = $req->fetch()) { ?>
+                    <ul class="bars">
+                        <li class="bar1 purplebar" style="height: 136px;"><span><?php echo $donnees['score'] ?></span></li>
+                    </ul>
+                    <ul class="label"><li><?php echo $donnees['date'] ?></li></ul>
+                    <ul class="y-axis"><li>100</li><li>60</li><li>30</li><li>10</li><li>0</li></ul>
+                    <p class="centered">Résultats aux tests de réaction à un stimulus sonore</p>
 
-            <?php while ($donnees = $req->fetch()) { ?>
-            <div class="bargraph" style= "width: 365px;">
-            <ul class="bars">
-                <li class="bar1 purplebar" style="height: 136px;"><span><?php $_POST['score'] ?></span></li>
-                <li class="bar2 redbar" style="height: 131px;"><span>0.327</span></li>
-                <li class="bar3 bluebar" style="height: 116px;"><span>0.289</span></li>
-                <li class="bar4 greenbar" style="height: 124px;"><span>0.311</span></li>
-                <li class="bar5 orangebar" style="height: 118px;"><span>0.294</span></li>
-            </ul>
-            <ul class="label"><li>13/01</li><li>24/01</li><li>07/02</li><li>21/02</li><li>01/03</li></ul>
-            <ul class="y-axis"><li>100</li><li>60</li><li>30</li><li>10</li><li>0</li></ul>
-            <p class="centered">Résultats aux tests de réaction à un stimulus sonore</p>
-        </div>
-            <?php } ?>
+                <?php }
+                $req->closeCursor();
+                ?>
+
+            </div>
         </div>
         <div id="FC" class="tab">
             <div class="bargraph" style= "width: 365px;">
-            <ul class="bars">
-                <li class="bar1 purplebar" style="height: 92px;"><span>92</span></li>
-                <li class="bar2 redbar" style="height: 86px;"><span>86</span></li>
-                <li class="bar3 bluebar" style="height: 90px;"><span>90</span></li>
-                <li class="bar4 greenbar" style="height: 75px;"><span>75</span></li>
-                <li class="bar5 orangebar" style="height: 82px;"><span>82</span></li>
-            </ul>
-            <ul class="label"><li>13/01</li><li>24/01</li><li>07/02</li><li>21/02</li><li>01/03</li></ul>
-            <ul class="y-axis"><li>200</li><li>150</li><li>100</li><li>50</li><li>0</li></ul>
-            <p class="centered">Résultats aux tests de fréquence cardiaque</p>
-        </div>
+                <ul class="bars">
+                    <li class="bar1 purplebar" style="height: 92px;"><span>92</span></li>
+                    <li class="bar2 redbar" style="height: 86px;"><span>86</span></li>
+                    <li class="bar3 bluebar" style="height: 90px;"><span>90</span></li>
+                    <li class="bar4 greenbar" style="height: 75px;"><span>75</span></li>
+                    <li class="bar5 orangebar" style="height: 82px;"><span>82</span></li>
+                </ul>
+                <ul class="label"><li>13/01</li><li>24/01</li><li>07/02</li><li>21/02</li><li>01/03</li></ul>
+                <ul class="y-axis"><li>200</li><li>150</li><li>100</li><li>50</li><li>0</li></ul>
+                <p class="centered">Résultats aux tests de fréquence cardiaque</p>
+            </div>
         </div>
         <div id="ReactV" class="tab">
             <div class="bargraph" style= "width: 365px;">
@@ -107,9 +102,9 @@
     </div>
 </div>
 
-    <a href="MonCompteUtilisateur.php">
-        <button class="bouton_retour"> RETOUR</button>
-    </a>
+<a href="MonCompteUtilisateur.php">
+    <button class="bouton_retour"> RETOUR</button>
+</a>
 
 </body>
 <footer>
