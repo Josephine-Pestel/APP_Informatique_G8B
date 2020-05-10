@@ -1,0 +1,43 @@
+.button_back
+{
+    width:6em;
+    height :1.7em;
+    margin-left:70%;
+    margin-top:1.5%;
+    border:0.05em solid #1D2043;
+    font-size: 100%;
+    background: #d1eaff;
+    color: #1D2043;
+}
+
+.ajouter{
+    width:12em;
+    height: 2em;
+
+
+    font-size: 90%;
+    color: white;
+    background: #1D2043;
+}
+
+.donnes_page{
+    margin-left:20%;
+    margin-bottom:3%;
+}
+
+.en_tete{
+    background:#d1eaff;
+}
+
+.design_theme{
+    text-align:center;
+    font-size: 200%;
+    color:#1D2043;
+}
+
+.design_createur{
+    text-align:center;
+    font-size: 120%;
+    color:#1D2043;
+    font-style: italic;
+}

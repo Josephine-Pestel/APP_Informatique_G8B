@@ -1,4 +1,4 @@
-<link type="text/css" rel="stylesheet" href="../CSS_files/#.css?t=<? echo time(); ?>" media="all">
+<link type="text/css" rel="stylesheet" href="../CSS_files/forumQR.css?t=<? echo time(); ?>" media="all">
 
 <?php
 require('../../../Model/forumQR.php');
@@ -13,19 +13,19 @@ if(empty($donnees)){
 else
 {?>
     <!-- Affichage du billet -->
-    <div class="news">
-        <h3>
+    <div>
+        <p class="design_theme">
             Thème  :
             <?php echo htmlspecialchars($donnees['theme'])?>
-        </h3>
-        <h4>
+        </p>
+        <p class="design_createur">
             Créateur :
             <?php echo htmlspecialchars($donnees['originaire'])?>
             le <em><?php echo $donnees['date_discussion']?></em>
-        </h4>
+        </p>
 
     </div>
-    </br>
+
 
 
     <!-- On arrête la requête -->
