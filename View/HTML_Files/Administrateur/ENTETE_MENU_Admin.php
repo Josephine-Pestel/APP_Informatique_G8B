@@ -8,7 +8,7 @@ require('../ENTETE_MENU_SESSION.php'); ?>
         <ul>
             <li><a href="AccueilAdmin.php">Accueil</a></li>
             <li><a href="Systeme_Admin.php">Notre Système</a></li>
-            <li><a href="ForumAdmin.php">Forum</a></li>
+            <li><a href="forumDiscussion.php">Forum</a></li>
             <li><a href="MonCompteAdmin.php">Mon compte</a></li>
             <li><a href="FAQ_Admin.php">FAQ</a></li>
         </ul>

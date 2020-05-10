@@ -19,7 +19,7 @@
 session_start();
 require('ENTETE_MENU_Admin.php'); ?>
 
-<a href="ForumAdmin.php">
+<a href="forumDiscussion.php">
     <button class="button_back">Retour </button>
 </a>
 <h1 class="titre_page"> Ajouter une discusssion au forum </h1>

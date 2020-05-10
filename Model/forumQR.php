@@ -15,19 +15,25 @@ function recupFAQ_discussion(){
     return($req);
 }
 
-function ajoutForumQR()
-{
-    //connexion à la base de données
 
+function recupComDiscussion(){
+    //préparation de la requete : récupérer seulement les commentaires qui sont liés au billet
     $bdd=connexion_bdd();
 
-    //Requete pour insérer les données dans la bdd
-    $req = $bdd->prepare('INSERT INTO forum_qr(auteur, post, date_discussion) VALUES(:email_auteur, :post, CURDATE())');
+    $req = $bdd->prepare('
+        SELECT *
+        FROM forum_qr
+        INNER JOIN forum 
+        ON forum_qr.idDiscussion = forum.idDiscussion
+        WHERE forum_qr.idDiscussion = :num');
     $req->execute(array(
-        'email_auteur' => $_POST['auteur'],
-        'post' => $_POST['post']));
-    //fermeture de la requête
-    $req->closeCursor();
+        'num' => $_GET['num_de_la_discussion']));
+
+    return($req);
+//Préparation à l'affichage du billet grâce à la fonction fetch()
+
 }
+
+
 
 

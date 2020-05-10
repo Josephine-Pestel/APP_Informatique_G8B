@@ -14,15 +14,10 @@
 session_start();
 require('ENTETE_MENU_Admin.php'); ?>
 
-
-
 <!-- Récupération de la discussion -->
 <?php
-
-//Récupération du contenu du billet grâce à une requête en fonction de paramètres
+//Récupération de la discussion
 require('../../../Controller/forumQR.php');
-
-
 ?>
 
 <p>--------------------------------------------------------------------------------------------------------------------</p>
@@ -47,46 +42,14 @@ require('../../../Controller/forumQR.php');
 
 <p>Voici les échanges des internautes sur cette discussion :</p>
 
-<?php
-//préparation de la requete : récupérer seulement les commentaires qui sont liés au billet
+<?php recup(); ?>
 
-
-$bdd=connexion_bdd();
-
-$req = $bdd->prepare('
-        SELECT *
-        FROM forum_qr
-        INNER JOIN forum 
-        ON forum_qr.idDiscussion = forum.idDiscussion
-        WHERE forum_qr.idDiscussion = :num');
-$req->execute(array(
-    'num' => $_GET['num_de_la_discussion']));
-//Préparation à l'affichage du billet grâce à la fonction fetch()
-
-//On fait une boucle pour tout afficher
-while($donnees = $req->fetch()){
-?>
-
-<p>
-    <p class="titre_question"> &#11166; de <em> <?php echo $donnees['auteur'] ?></em> le
-    <?php echo htmlspecialchars($donnees['date_post']); ?></p>
-    <?php echo htmlspecialchars($donnees['post']); ?>
-</p>
-
-<?php
-    }
-//On arrête la requête
-$req->closeCursor();
-
-
-?>
 </body>
 
 <!-- Appel Footer -->
 <?php
 require('FOOTER_Admin.php');
-
 ?>
 
 </html>
-<?php
+

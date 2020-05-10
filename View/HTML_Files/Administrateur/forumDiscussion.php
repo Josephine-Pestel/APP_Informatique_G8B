@@ -19,6 +19,10 @@
 session_start();
 require('ENTETE_MENU_Admin.php'); ?>
 
+<a href="ajouterDiscussion_Forum.php">
+    <button class="ajouter">Ajouter une discussion </button>
+</a>
+
 <div>
     <table class="tableau">
         <tr>
@@ -26,12 +30,10 @@ require('ENTETE_MENU_Admin.php'); ?>
             <th><p class="theme">Thème</p></th>
             <th><p class="date">Date</p></th>
             <th><p class="lancement">Lancée par</p></th>
-            <th><p class="dernier_message">Dernier message de </p></th>
         </tr>
 
         <?php
         require('../../../Model/Forum.php');
-
 
         $recupDiscussionForum=recupDiscussionForum();
 
@@ -50,17 +52,18 @@ require('ENTETE_MENU_Admin.php'); ?>
         $recupDiscussionForum->closeCursor();
         ?>
 
-
-
-
-
     </table>
 
 </div>
 
+</body>
+<?php
+require('FOOTER_Admin.php');
+
+?>
+
+</html>
 
 
-<a href="ajouterDiscussion_Forum.php">
-    <button class="button_back">Ajouter une discussion </button>
-</a>
+
 

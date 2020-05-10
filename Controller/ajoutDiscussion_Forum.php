@@ -10,4 +10,4 @@ require('../Model/ajoutDiscussion_Forum.php');
 
 
 ajoutdiscussionBDD();
-header("Refresh:0; url=../View/HTML_Files/Administrateur/ForumAdmin.php");
+header("Refresh:0; url=../View/HTML_Files/Administrateur/forumDiscussion.php");

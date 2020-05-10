@@ -60,10 +60,12 @@ tr, th, td /* Mettre une bordure sur les td ET les th */
 
 
 
-.button_back{
-    background-color:beige;
-    width:15%;
-    height :5%;
-    font-size:100%;
-    margin-left: 58.3%;
+.ajouter{
+    width:12em;
+    height: 2em;
+    margin-left:59.1%;
+    margin-top:3%;
+    font-size: 110%;
+    color: white;
+    background: #1D2043;
 }

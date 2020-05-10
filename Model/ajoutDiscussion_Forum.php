@@ -16,3 +16,6 @@ function ajoutdiscussionBDD()
     //fermeture de la requête
     $req->closeCursor();
 }
+
+
+
