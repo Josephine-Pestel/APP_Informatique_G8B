@@ -30,6 +30,7 @@ require('ENTETE_MENU_Admin.php'); ?>
             <th><p class="theme">Thème</p></th>
             <th><p class="date">Date</p></th>
             <th><p class="lancement">Lancée par</p></th>
+            <th><p class="Go">Go</p></th>
         </tr>
 
         <?php
@@ -39,12 +40,15 @@ require('ENTETE_MENU_Admin.php'); ?>
 
         while ($donnees = $recupDiscussionForum->fetch()) { ?>
             <tr>
-                <th>
-                    <a href="forumQR.php?num_de_la_discussion=<?php echo $donnees['idDiscussion']; ?>" class="Date"><?php echo $donnees['idDiscussion'] ?></a>
-                </th>
+                <th><p class="Score"><?php echo $donnees['idDiscussion'] ?></p></th>
                 <th><p class="Score"><?php echo $donnees['theme'] ?></p></th>
                 <th><p class="Score"><?php echo $donnees['date_discussion'] ?></p></th>
                 <th><p class="Date"><?php echo $donnees['originaire'] ?></p></th>
+                <th>
+                    <a class="Go" href="forumQR.php?num_de_la_discussion=<?php echo $donnees['idDiscussion']; ?>" class="Date">
+                        <p >&#8594;</p>
+                    </a>
+                </th>
             </tr>
             <?php
         }

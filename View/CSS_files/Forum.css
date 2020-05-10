@@ -69,3 +69,7 @@ tr, th, td /* Mettre une bordure sur les td ET les th */
     color: white;
     background: #1D2043;
 }
+
+.Go{
+    text-decoration:none;
+}
