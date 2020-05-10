@@ -17,7 +17,7 @@ require('ENTETE_MENU_Admin.php');
 <h1>Remplissez pour ajouter du contenu à la FAQ </h1>
 
 <section class="bloc_infos">
-    <form name="formulaire_ajout_faq" action="../../../Controller/FAQ_Admin.php" method="post">
+    <form name="formulaire_ajout_faq" action="../../../Controller/ajoutFAQ_Admin.php" method="post">
 
         <p class="question"> Entrez votre question :</p>
         <textarea class = "rectangle_prenom" type="text" name="question" required ></textarea>
