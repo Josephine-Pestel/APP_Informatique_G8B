@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <link type="text/css" rel="stylesheet" href="../../CSS_files/ajoutUtilisateur_Admin.css?t=<? echo time(); ?>" media="all">
+    <link type="text/css" rel="stylesheet" href="../../CSS_files/gererFAQ.css?t=<? echo time(); ?>" media="all">
     <meta charset="utf-8" />
     <title>WINK FOR INIFINITE MEASURES</title>
     <script src="../../Javascript_Files/ajoutUtilisateur_Admin.js"></script>
@@ -14,7 +14,12 @@
 require('ENTETE_MENU_Admin.php');
 
 ?>
-<h1>Remplissez pour ajouter du contenu à la FAQ </h1>
+
+<a href="gererUtilisateur.php">
+    <button class="button_back">Retour </button>
+</a>
+
+<h1 class="titre_remplisser">Remplissez pour ajouter du contenu à la FAQ </h1>
 
 <section class="bloc_infos">
     <form name="formulaire_ajout_faq" action="../../../Controller/ajoutFAQ_Admin.php" method="post">
@@ -31,9 +36,7 @@ require('ENTETE_MENU_Admin.php');
 
 </section>
 
-<a href="gererUtilisateur.php">
-    <button class="button_back">RETOUR </button>
-</a>
+
 
 
 

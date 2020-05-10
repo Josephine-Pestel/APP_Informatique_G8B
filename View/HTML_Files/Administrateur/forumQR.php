@@ -68,7 +68,7 @@ while($donnees = $req->fetch()){
 ?>
 
 <p>
-    <p class="titre_question"> &#11166; de <em> <?php echo $_SESSION['email'] ?></em> le
+    <p class="titre_question"> &#11166; de <em> <?php echo $donnees['auteur'] ?></em> le
     <?php echo htmlspecialchars($donnees['date_post']); ?></p>
     <?php echo htmlspecialchars($donnees['post']); ?>
 </p>
@@ -80,6 +80,13 @@ $req->closeCursor();
 
 
 ?>
-
 </body>
+
+<!-- Appel Footer -->
+<?php
+require('FOOTER_Admin.php');
+
+?>
+
 </html>
+<?php

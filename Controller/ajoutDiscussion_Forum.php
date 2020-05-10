@@ -10,9 +10,4 @@ require('../Model/ajoutDiscussion_Forum.php');
 
 
 ajoutdiscussionBDD();
-echo 'Discussion ajoutée à la bdd';?>
-
-<a href="../View/HTML_Files/Administrateur/gererUtilisateur.php">
-    <button class="retour">RETOUR </button>
-</a>
-
+header("Refresh:0; url=../View/HTML_Files/Administrateur/ForumAdmin.php");
