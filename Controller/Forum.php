@@ -9,7 +9,7 @@ $recupDiscussionForum=recupDiscussionForum();
 while ($donnees = $recupDiscussionForum->fetch()) { ?>
     <tr>
             <th>
-                <a href="#" class="Date"><?php echo $donnees['idDiscussion'] ?></a>
+                <a href="forumQR.php?idDiscussion=<?php echo $donnees['idDiscussion']; ?>" class="Date"><?php echo $donnees['idDiscussion'] ?></a>
             </th>
             <th><p class="Score"><?php echo $donnees['theme'] ?></p></th>
             <th><p class="Score"><?php echo $donnees['date_discussion'] ?></p></th>

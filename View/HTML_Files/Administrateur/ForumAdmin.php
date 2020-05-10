@@ -30,8 +30,27 @@ require('ENTETE_MENU_Admin.php'); ?>
         </tr>
 
         <?php
-        require('../../../Controller/Forum.php');
+        require('../../../Model/Forum.php');
+
+
+        $recupDiscussionForum=recupDiscussionForum();
+
+        while ($donnees = $recupDiscussionForum->fetch()) { ?>
+            <tr>
+                <th>
+                    <a href="forumQR.php?num_de_la_discussion=<?php echo $donnees['idDiscussion']; ?>" class="Date"><?php echo $donnees['idDiscussion'] ?></a>
+                </th>
+                <th><p class="Score"><?php echo $donnees['theme'] ?></p></th>
+                <th><p class="Score"><?php echo $donnees['date_discussion'] ?></p></th>
+                <th><p class="Date"><?php echo $donnees['originaire'] ?></p></th>
+            </tr>
+            <?php
+        }
+
+        $recupDiscussionForum->closeCursor();
         ?>
+
+
 
 
 
