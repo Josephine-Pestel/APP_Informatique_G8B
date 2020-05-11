@@ -8,7 +8,7 @@ require('../ENTETE_MENU_SESSION.php'); ?>
         <ul>
             <li><a href="AccueilGestionnaire.php">Accueil</a></li>
             <li><a href="Systeme_Gestionnaire.php">Notre Système</a></li>
-            <li><a href="Forum_Gestionnaire.php">Forum</a></li>
+            <li><a href="forumDiscussion.php">Forum</a></li>
             <li><a href="MonCompteGestionnaire.php">Mon compte</a></li>
             <li><a href="FAQ_Gestionnaire.php">FAQ</a></li>
         </ul>
