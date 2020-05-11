@@ -31,11 +31,16 @@ require('ENTETE_MENU_SansCompte.php');
 </section>
 
 
+        <?php
+        require('FOOTER_SansCompte.php');
+
+        ?>
+
+
+
+
 
 </body>
 
-<?php
-require('FOOTER_SansCompte.php');
 
-?>
 </html>
