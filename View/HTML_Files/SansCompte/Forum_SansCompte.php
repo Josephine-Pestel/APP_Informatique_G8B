@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../CSS_files/Forum.css" />
+    <link type="text/css" rel="stylesheet" href="../../CSS_files/forum_sansCompte.css?t=<? echo time(); ?>" media="all">
     <title>WINK FOR INIFINITE MEASURES</title>
 </head>
 
@@ -15,40 +15,19 @@
 
 
 <!--  ---------------------- FORUM ---------------------------------------   -->
-<section>
+<div class="page_forum">
 
-    <h1 id="titre_forum"> FORUM </h1>
+    <h1 class="titre_forum"> FORUM </h1>
+    </br>
     <div id="description_forum">
-        <p>Bienvenue sur le forum, profitez-en pour poser vos questions sur notre système ou sur notre site internet !</p>
+        <p class="text_forum">Vous souhaitez accéder au forum mais vous n'avez pas de compte ?</p>
+        <p class="text_forum">Alors inscrivez-vous au plus vite pour y accéder et discuter !</p>
     </div>
-    <a href="../Utilisateur/Forum_Ajouter_discussion.php">
-        <button class="bouton_discussion">Ajouter une discussion</button>
+
+    <a href="P_Inscription.php">
+        <button class="button_back"> S'inscrire </button>
     </a>
-
-
-
-
-    <table>
-        <tr>
-            <td>Fil de discussion </td>
-            <td>Thème</td>
-            <td>Date</td>
-            <td>Lancée par</td>
-            <td>Dernier message de</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>température</td>
-            <td>01/02/2020</td>
-            <td>linaelle</td>
-            <td>josephine</td>
-        </tr>
-
-    </table>
-
-
-</section>
-
+</div>
 
 <footer>
     <?php

@@ -1,0 +1,42 @@
+html, body
+{
+    width: 100%;
+    height : 100%;
+    margin: 0;
+    padding: 0;
+}
+.page_forum {
+    background: url('../../images/forum_fond.jpg') fixed no-repeat center;
+    background-size: cover;
+    width: 99.8%;
+    height: 75%;
+    border: white solid 1px;
+}
+
+.titre_forum{
+    text-align: center;
+    color:#1D2043;
+    font-size: 220%;
+}
+.text_forum{
+    text-align: center;
+}
+
+.button_back {
+    width: 10em;
+    height: 2em;
+    margin-left: 33%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-size: 110%;
+    background: #d1eaff;
+    border-radius: 1em;
+}
+
+.text_forum{
+
+    font-size: 150%;
+    text-decoration: none;
+    color: #0b2752;
+    font-weight: bold;
+}
