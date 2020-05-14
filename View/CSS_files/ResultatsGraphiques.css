@@ -16,8 +16,9 @@
     list-style-type: none;
     margin-left:20%;
     margin-top:2%;
-    margin-right: 43%;
-    padding: 0.8%;
+    margin-right: 45.3%;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
     overflow: hidden;
     background-color: beige;
 }
@@ -33,11 +34,11 @@ li a {
 }
 
 a:hover {
-    background-color: lightslategrey;
+    background-color: grey;
 }
 
 .actif {
-    background-color: lightslategrey;
+    background-color: grey;
 }
 p{
     font-size: 60%;
