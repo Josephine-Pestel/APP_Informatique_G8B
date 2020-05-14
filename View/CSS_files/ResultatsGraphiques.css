@@ -1,8 +1,8 @@
 .graphique{
     display: flex;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
     justify-content:space-around;
-    margin-top: 5%;
+    margin-top: 2%%;
 }
 .canvas2{
     width: 40%;
@@ -38,4 +38,12 @@ a:hover {
 
 .actif {
     background-color: lightslategrey;
+}
+p{
+    font-size: 60%;
+}
+.titre{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
 }

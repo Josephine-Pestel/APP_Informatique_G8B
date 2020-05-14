@@ -18,6 +18,22 @@
 
 </div>
 
+<div class="titre">
+    <p> Graphique temps de réaction stimulus sonore</p>
+    <p>Graphique temps de réaction stimulus visuel</p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
 <div class="graphique">
 
 <div class="canvas1">
