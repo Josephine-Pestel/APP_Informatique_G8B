@@ -1,0 +1,50 @@
+.graphique{
+    display: flex;
+    margin-bottom: 10%;
+    justify-content:space-around;
+    margin-top: 2%%;
+}
+.canvas2{
+    width: 40%;
+
+}
+.canvas1{
+    width: 40%;
+}
+
+.type_test {
+    list-style-type: none;
+    margin-left:20%;
+    margin-top:2%;
+    margin-right: 45.3%;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+    overflow: hidden;
+    background-color: beige;
+}
+
+.type_test li {
+    float: left;
+}
+.type_test li a {
+    color: black;
+    text-align: center;
+    padding: 20px 14px;
+    text-decoration: none;
+}
+
+.type_test a:hover {
+    background-color: grey;
+}
+
+.actif {
+    background-color: grey;
+}
+. titre p{
+    font-size: 60%;
+}
+.titre{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+}
