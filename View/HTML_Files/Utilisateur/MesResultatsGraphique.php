@@ -18,7 +18,7 @@
 
 </div>
 
-<div class="titre">
+<div class="titre1">
     <p> Graphique temps de réaction stimulus sonore</p>
     <p>Graphique temps de réaction stimulus visuel</p>
 
@@ -40,6 +40,17 @@
     <canvas id="myChart1"></canvas>
 </div>
 
+    <?php session_start();
+    $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
+    $req = $bdd->prepare('SELECT `idTest`, `type`, `score`, `date`, `email` FROM `tests` WHERE `email`= :email AND `type`="stimulus sonore"');
+    $req->execute(array(
+    'email' => $_SESSION['email']
+    ));
+
+
+    while ($donnees = $req->fetch()) { ?>
+
+
 <script>
 
     var ctx = document.getElementById('myChart1').getContext('2d');
@@ -54,19 +65,20 @@
                 label: 'My First dataset',
                 backgroundColor: 'rgb(176,196,222)',
                 borderColor: 'rgb(176,196,222)',
-                data: [0, 10, 5, 2, 20, 30, 45]
+                data: [<?php $_POST['score'] ?>]
             }]
         },
 
-        // Configuration options go here
-        options: {
-            title:{
-                text:"Résulats du temps de réaction à un stimulus sonore"
-            }
-        }
-
     });
 </script>
+
+    <?php }
+    $req->closeCursor();
+    ?>
+
+
+
+
 <div class="canvas2">
     <canvas id="myChart2"></canvas>
 </div>

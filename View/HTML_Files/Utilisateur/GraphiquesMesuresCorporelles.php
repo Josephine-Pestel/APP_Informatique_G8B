@@ -18,7 +18,7 @@
 
 </div>
 
-<div class="titre">
+<div class="titre1">
     <p> Mesure température corporelle</p>
     <p>Mesure de la fréquence cardiaque</p>
 

@@ -18,7 +18,7 @@
 
 </div>
 
-<div class="titre">
+<div class="titre1">
     <p> Mesure de la reconnaissance de tonalité</p>
 
 </div>

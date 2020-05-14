@@ -40,11 +40,14 @@
 .actif {
     background-color: grey;
 }
-. titre p{
-    font-size: 60%;
+
+.titre1 p {
+    font-size: large;
 }
-.titre{
+
+.titre1{
     margin-top: 3%;
     display: flex;
     justify-content: space-around;
+    font-size: medium;
 }
