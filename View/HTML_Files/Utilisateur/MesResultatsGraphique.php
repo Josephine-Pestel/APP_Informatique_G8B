@@ -46,13 +46,11 @@
     $req->execute(array(
     'email' => $_SESSION['email']
     ));
-
-
-    while ($donnees = $req->fetch()) { ?>
-
+?>
 
 <script>
 
+    <?php while ($donnees = $req->fetch()) { ?>
     var ctx = document.getElementById('myChart1').getContext('2d');
     var chart = new Chart(ctx, {
         // The type of chart we want to create
@@ -60,21 +58,24 @@
 
         // The data for our dataset
         data: {
-            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            labels: [<?php echo $donnees['date']?>],
             datasets: [{
-                label: 'My First dataset',
+                label: 'Mes données',
                 backgroundColor: 'rgb(176,196,222)',
                 borderColor: 'rgb(176,196,222)',
-                data: [<?php $_POST['score'] ?>]
+                data: [<?php echo $donnees['score']?>],
             }]
         },
 
     });
-</script>
+
 
     <?php }
     $req->closeCursor();
     ?>
+</script>
+
+
 
 
 
