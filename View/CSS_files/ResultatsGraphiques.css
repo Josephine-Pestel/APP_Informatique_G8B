@@ -23,24 +23,24 @@
     background-color: beige;
 }
 
-li {
+.type_test li {
     float: left;
 }
-li a {
+.type_test li a {
     color: black;
     text-align: center;
     padding: 20px 14px;
     text-decoration: none;
 }
 
-a:hover {
+.type_test a:hover {
     background-color: grey;
 }
 
 .actif {
     background-color: grey;
 }
-p{
+. titre p{
     font-size: 60%;
 }
 .titre{
