@@ -1,0 +1,41 @@
+.graphique{
+    display: flex;
+    margin-bottom: 15%;
+    justify-content:space-around;
+    margin-top: 5%;
+}
+.canvas2{
+    width: 40%;
+
+}
+.canvas1{
+    width: 40%;
+}
+
+.type_test {
+    list-style-type: none;
+    margin-left:20%;
+    margin-top:2%;
+    margin-right: 43%;
+    padding: 0.8%;
+    overflow: hidden;
+    background-color: beige;
+}
+
+li {
+    float: left;
+}
+li a {
+    color: black;
+    text-align: center;
+    padding: 20px 14px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: lightslategrey;
+}
+
+.actif {
+    background-color: lightslategrey;
+}
