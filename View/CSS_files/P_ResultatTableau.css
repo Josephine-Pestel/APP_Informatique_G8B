@@ -27,7 +27,7 @@ html, body
     background: #F1F9FF;
     z-index:2;
     position:absolute;
-    margin-bottom: 50%;
+
 
 
 }
@@ -51,5 +51,5 @@ tr, th, td /* Mettre une bordure sur les td ET les th */
 }
 
 .all{
-    margin-bottom: 30%;
+    margin-bottom: 50%;
 }

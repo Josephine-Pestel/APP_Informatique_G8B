@@ -13,6 +13,7 @@ footer
     width: 100%;
     box-shadow: 0 2px 5px 3px #1c1a19;
     position : absolute;
+    height: auto;
 }
 
 .bloc_footer1, .bloc_footer2 {

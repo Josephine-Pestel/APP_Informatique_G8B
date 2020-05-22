@@ -48,32 +48,44 @@
     ));
 ?>
 
-<script>
+    <?php
+    $data = array();
+    $label = array();
+    foreach ($this->list_excercise as $value) :
+        $data[] = $value['data'];
+        $label[] = $value['label'];
+    endforeach;
+    ?>
 
-    <?php while ($donnees = $req->fetch()) { ?>
+    <?php
+     while ($donnees = $req->fetch()) {
+         echo $donnees['score'].',';
+     }
+     $req->closeCursor();
+
+        ?>
+
+    <script>
+
     var ctx = document.getElementById('myChart1').getContext('2d');
     var chart = new Chart(ctx, {
         // The type of chart we want to create
-        type: 'line',
+        type: 'bar',
 
         // The data for our dataset
         data: {
-            labels: [<?php echo $donnees['date']?>],
+            labels: <?php echo json_encode($label) ?>,
             datasets: [{
                 label: 'Mes données',
                 backgroundColor: 'rgb(176,196,222)',
                 borderColor: 'rgb(176,196,222)',
-                data: [<?php echo $donnees['score']?>],
+                data: <?php echo json_encode($data) ?>,
             }]
         },
 
     });
-
-
-    <?php }
-    $req->closeCursor();
-    ?>
 </script>
+
 
 
 
@@ -88,11 +100,11 @@
     var ctx = document.getElementById('myChart2').getContext('2d');
     var chart = new Chart(ctx, {
         // The type of chart we want to create
-        type: 'line',
+        type: 'bar',
 
         // The data for our dataset
         data: {
-            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            labels: <?=json_encode($donnees['date']);?>,
             datasets: [{
                 label: 'My First dataset',
                 backgroundColor: 'rgb(176,196,222)',

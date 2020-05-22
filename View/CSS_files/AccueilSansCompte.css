@@ -9,13 +9,11 @@ html, body
 /* BANNIERE */
 /* BANNIERE */
 
-.banniere_image
-{
-    width: 1920px;
+.banniere_image {
+
+    background: url('../../images/index.jpg');
     height: 1003px;
-    background: url('../../images/index.jpg') fixed, no-repeat;
-    margin-left: 15%;
-    background-size: cover; /* permet le responsive de l'image*/
+    width: 1920px;
 }
 
 #banniere_description
