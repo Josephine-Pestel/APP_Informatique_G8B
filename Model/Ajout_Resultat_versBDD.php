@@ -1,6 +1,7 @@
 
 <?php
 
+
 try {
     $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
 } catch (Exception $e){
@@ -13,8 +14,10 @@ $req->execute(array(
     ));
 
 $donnees = $req -> fetch();
+$datejour = new DateTime();
+$date=$_POST['date'];
 
-    if ($donnees['email'] == $_POST['email']) {
+    if ($donnees['email'] == $_POST['email'] AND $date < $datejour ) {
         // On ajoute dans la table test le score et la date de l'utilisateur en fonction du test effectué
 
         $req = $bdd->prepare('INSERT INTO `tests`(`type`,`score`, `date`, `email`) VALUES(:type, :score, :date, :email)');
@@ -29,4 +32,6 @@ $donnees = $req -> fetch();
     } else {
         header('location:../View/HTML_Files/Gestionnaire/Gestionnaire_Ajout_Resultat2.php');
     }
+
+
 ?>

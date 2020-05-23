@@ -17,7 +17,7 @@
 require('ENTETE_MENU_Gestionnaire.php');
 
 ?>
-<p class="titre_alerte">L'utilisateur saisi n'existe pas ! Veuillez remplir le formulaire à nouveau !! </p>
+<p class="titre_alerte">L'utilisateur saisi n'existe pas ou la date saisie est une date dans le future ! </p>
 
 <h1>Veuillez remplir le formulaire ci-dessous pour ajouter un résultat à un utilisateur </h1>
 
