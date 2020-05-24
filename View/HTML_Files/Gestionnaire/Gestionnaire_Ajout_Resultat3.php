@@ -17,7 +17,7 @@
 require('ENTETE_MENU_Gestionnaire.php');
 
 ?>
-<p class="titre_alerte">L'utilisateur saisi n'existe pas !  </p>
+<p class="titre_alerte">La date saisie est une date future !  </p>
 
 <h1>Veuillez remplir le formulaire ci-dessous pour ajouter un résultat à un utilisateur </h1>
 
@@ -32,14 +32,14 @@ require('ENTETE_MENU_Gestionnaire.php');
                     <option value="stimulus sonore">Temps de réaction à un stimulus sonore</option>
                     <option value="stimulus visuel">Temps de réaction à un stimulus visuel</option>
                 </select></label></p>
-        <p><label> Score (/100): <input  type="number" name="score" max="100" required></label></p>
+        <p><label> Score (/100) : <input  type="number" name="score" max="100" required></label></p>
         <p><label>Date : <input type="date" name="date"required></label></p>
         <p><input type="submit" /></p>
 
     </form>
-        <a href="MonCompteGestionnaire.php">
-            <button class="bouton_retour">RETOUR </button>
-        </a>
+    <a href="MonCompteGestionnaire.php">
+        <button class="bouton_retour">RETOUR </button>
+    </a>
 </div>
 
 

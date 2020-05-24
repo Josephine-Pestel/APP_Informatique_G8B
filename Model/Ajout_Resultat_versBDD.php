@@ -14,10 +14,20 @@ $req->execute(array(
     ));
 
 $donnees = $req -> fetch();
-$datejour = new DateTime();
-$date=$_POST['date'];
 
-    if ($donnees['email'] == $_POST['email'] AND $date < $datejour ) {
+$datejour = date('d/m/Y');
+$datefin= $_POST['date'];
+$dfin = explode("/", $datefin);
+$djour = explode("/", $datejour);
+$finab = $dfin[2].$dfin[1].$dfin[0];
+$auj = $djour[2].$djour[1].$djour[0];
+
+if ($auj< $finab)
+    {
+    header('location:../View/HTML_Files/Gestionnaire/Gestionnaire_Ajout_Resultat3.php');
+    }
+
+    elseif($donnees['email'] == $_POST['email'])  {
         // On ajoute dans la table test le score et la date de l'utilisateur en fonction du test effectué
 
         $req = $bdd->prepare('INSERT INTO `tests`(`type`,`score`, `date`, `email`) VALUES(:type, :score, :date, :email)');
