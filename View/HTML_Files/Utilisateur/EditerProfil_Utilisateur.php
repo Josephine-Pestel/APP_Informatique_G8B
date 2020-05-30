@@ -21,13 +21,17 @@ include('ENTETE_MENU_Utilisateur.php');
 
 <h1 class="titre_connexion"> Editer son profil </h1>
 <!-- Formulaire -->
-<p>Voici vos données acutelles.</p>
-<?php echo $_SESSION['prenom']?> </br>
-<?php echo $_SESSION['nom']?></br>
-<?php echo $_SESSION['email']?></br>
-<?php echo $_SESSION['naissance']?></br>
+<p class="titre_infos">Données actuelles:</p>
+<section class="donnees_actuelles">
+    <p class="infos">Prénom : <?php echo $_SESSION['prenom']?></p>
+    <p class="infos">Nom : <?php echo $_SESSION['nom']?></p>
+    <p class="infos">Email : <?php echo $_SESSION['email']?></p>
+    <p class="infos">Date de naissance : <?php echo $_SESSION['naissance']?></p>
+</section>
+<p class="separation"> ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
 
-<p> Changez les données que vous souhaitée.</p>
+
+<p class="titre_infos"> Changez les données que vous souhaitée.</p>
 
 <section class="bloc_infos">
     <form name="formulaire_inscription" action="../../../Controller/editerProfil_Utilisateur.php" method="post">

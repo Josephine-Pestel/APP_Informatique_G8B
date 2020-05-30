@@ -60,7 +60,7 @@ require('ENTETE_MENU_Utilisateur.php');
 
         <section class="details2">
             <p class="naissance"> Né le <?php echo $_SESSION['naissance'];?></p>
-            <p class="email_utilisateur"> EMAIL : <?php echo $_SESSION['email'];?></p>
+            <p class="email_utilisateur"> Email : </br><?php echo $_SESSION['email'];?></p>
 
         </section>
 

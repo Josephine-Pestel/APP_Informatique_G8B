@@ -89,10 +89,17 @@ html, body
 
 }
 
-.nom, .naissance, .date_inscription,.email_utilisateur
+.nom, .email_utilisateur
 {
     font-weight: bold;
-    font-size: 170%;
+    font-size: 150%;
+    margin-bottom:0%;
+}
+
+.naissance, .date_inscription
+{
+
+    font-size: 130%;
     margin-bottom:0%;
 }
 
