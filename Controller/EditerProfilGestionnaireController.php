@@ -24,6 +24,10 @@ if($_POST['Domaine']){
     $_SESSION['domaine']=$_POST['Domaine'];
     header('Location:../view/HTML_Files/Gestionnaire/MonCompteGestionnaire.php');
 }
+if($_POST['MotdePasse']){
+    updateMdp($_SESSION['email']);
+    header('Location:../view/HTML_Files/Gestionnaire/MonCompteGestionnaire.php');
+}
 else{
     echo "tu n'a rien rempli";
 }

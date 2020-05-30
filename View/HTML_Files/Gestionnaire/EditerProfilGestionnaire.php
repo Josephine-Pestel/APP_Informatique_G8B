@@ -32,16 +32,16 @@ include('ENTETE_MENU_Gestionnaire.php');
         </br>
 
         <p class="MotdePasse"> Modifier son mot de passe:</p>
-        <input type="text" name="MotdePasse"></label>
+        <input class = "rectangle_email" type="text" name="MotdePasse"></label>
         </br>
 
 
         <p class="NumeroTel"> Modifier son numéro de tel :</p>
-        <input type="text" name="NumeroTel"></label>
+        <input class = "rectangle_email" type="text" name="NumeroTel"></label>
         </br>
 
         <p class="Domaine"> Modifier son domaine :</p>
-        <input type="text" name="Domaine"></label>
+        <input class = "rectangle_email" type="text" name="Domaine"></label>
         </br>
 
 
