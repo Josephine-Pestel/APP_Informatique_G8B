@@ -73,22 +73,12 @@ $Verif_email_banis = verifEmail_tableUtilisateursBanis_connexion($_POST['email']
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//HASHAGE DES MOTS DE PASSE
-//HACHAGE DU MOT DE PASSE
-
-$mdp_hash_admin = passwordHashAdminGest($recup_mdp_admin);
-$mdp_hash_gest = passwordHashAdminGest($recup_mdp_gestionnaire);
-
-function passwordHashAdminGest($input_password){
-    $pass_hash = password_hash($input_password,  PASSWORD_DEFAULT);
-    return($pass_hash);
-}
-
 //Fonction "password_verify" permet de hasher le mot de passe qui vient d'être rentré dans le formulaire de connexion
 //Elle permet aussi la comparaison du mdp envoyé via le formulaire avec le mdp hashé de la bdd
 
-$isPasswordCorrect_admin = password_verify($_POST['mdp'], $mdp_hash_admin);
-$isPasswordCorrect_gestionnaire = password_verify($_POST['mdp'], $mdp_hash_gest);
+
+$isPasswordCorrect_admin = password_verify($_POST['mdp'], $recup_mdp_admin);
+$isPasswordCorrect_gestionnaire = password_verify($_POST['mdp'], $recup_mdp_gestionnaire);
 $isPasswordCorrect_membre = password_verify($_POST['mdp'], $recupMdp);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -120,7 +110,7 @@ else if($_POST['email'] == $recup_email_admin){
     }
     else{
         echo '<p class="ERREURS"> Administrateur : Mauvais identifiant ou mot de passe. Vous allez être redirigé sur le formulaire de connexion.</p>';
-        header('Refresh:8; url=../View/HTML_Files/SansCompte/P_Connexion.php');
+        //header('Refresh:8; url=../View/HTML_Files/SansCompte/P_Connexion.php');
     }
 }
 
