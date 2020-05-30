@@ -37,10 +37,12 @@ include('ENTETE_MENU_SansCompte.php');
         <input class="envoyer" type ="submit" value="Envoyer" />
 
         <p>
-        <button class="nouvel_utilisateur">
-            <a class="text" href="P_Inscription.php">Nouvel utilisateur ? INSCRIS-TOI ! </a>
-        </button></p>
+
     </form>
+
+    <button class="nouvel_utilisateur">
+        <a class="text" href="P_Inscription.php">Nouvel utilisateur ? INSCRIS-TOI ! </a>
+    </button></p>
 
 </section>
 
