@@ -26,7 +26,7 @@
             <p>Wink est une jeune start-up française spécialisée dans la réalisation de tests psychotechniques</p>
             <p>Les tests sur cette plateforme ont été conçus pour Infinite Measures</p>
         </div>
-        <a href="#" class="bouton_mail" alt="Envoyer un mail" target="_blank">CONTACTEZ-NOUS</a>
+        <a href="Apropos_Utilisateur.php" class="bouton_mail" alt="Envoyer un mail">INFINITE MEASURES & WINK</a>
 
     </div>
 
