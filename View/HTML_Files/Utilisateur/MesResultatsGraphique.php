@@ -15,7 +15,7 @@ session_start()?>
 
     <li><a class="actif" href="MesResultatsGraphique.php"> Temps de réaction à un stimulus</a></li>
     <li><a href="GraphiquesMesuresCorporelles.php">Mesures corporelles</a></li>
-    <li><a href="GraphiquesMesureTonalité.php">Mesure de reconnaissance de tonalité</a></li>
+    <li><a href="GraphiqueMesureTonalite.php">Mesure de reconnaissance de tonalité</a></li>
 
 </div>
 
