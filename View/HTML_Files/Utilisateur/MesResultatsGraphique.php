@@ -8,7 +8,8 @@
 </head>
 
 <body>
-<?php include("ENTETE_MENU_Utilisateur.php"); ?>
+<?php include("ENTETE_MENU_Utilisateur.php");
+session_start()?>
 
 <div class="type_test">
 
@@ -24,108 +25,130 @@
 
 </div>
 
-
-
-
-
-
-
-
-
-
-
 <div class="graphique">
 
-<div class="canvas1">
-    <canvas id="myChart1"></canvas>
-</div>
 
-    <?php session_start();
-    $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
-    $req = $bdd->prepare('SELECT `idTest`, `type`, `score`, `date`, `email` FROM `tests` WHERE `email`= :email AND `type`="stimulus sonore"');
-    $req->execute(array(
-    'email' => $_SESSION['email']
-    ));
-?>
 
-    <?php
-    $data = array();
-    $label = array();
-    foreach ($this->list_excercise as $value) :
-        $data[] = $value['data'];
-        $label[] = $value['label'];
-    endforeach;
+<div class="stimulus sonore">
+    <?php $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
+
+    $reqDate=$bdd->prepare('SELECT `date` FROM `tests` WHERE email = :email AND type="stimulus sonore"');
+    $reqDate->execute(array(
+        'email' => $_SESSION['email']));
+
+    $reqScore=$bdd->prepare('SELECT score  FROM tests WHERE email = :email AND type="stimulus sonore"');
+    $reqScore->execute(array(
+        'email' => $_SESSION['email']));
+
+
+    function affiche_date($req) {
+        while($donneesDate = $req ->fetch()) {
+            echo "'Test du ".$donneesDate['date']."'," ;}
+    }
+
+    function affiche_score($req) {
+        while($donneesTests = $req ->fetch()) {
+            echo "'".$donneesTests['score']."'," ;}
+    }
+
     ?>
+        <canvas id="myChart" width="500" ></canvas>
 
-    <?php
-     while ($donnees = $req->fetch()) {
-         echo $donnees['score'].',';
-     }
-     $req->closeCursor();
+        <script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var chart = new Chart(ctx, {
+                // The type of chart we want to create
+                type: 'line',
+
+                // The data for our dataset
+                data: {
+                    labels: [<?php affiche_date($reqDate); ?>],
+                    datasets: [
+                        {
+                            label: 'Score',
+                            backgroundColor: 'rgba(0, 0, 0, 0.1)',
+                            borderColor: 'rgba(0, 0, 0, 0.1)',
+                            data: [<?php affiche_score($reqScore); ?>]
+                        },
+                    ]
+                },
+
+                // Configuration options go here
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+        </script>
+
+    </div>
+
+    <div class="stimulus visuel">
+        <?php
+
+        $reqDate=$bdd->prepare('SELECT `date` FROM `tests` WHERE email = :email AND type="stimulus visuel"');
+        $reqDate->execute(array(
+            'email' => $_SESSION['email']));
+
+        $reqScore=$bdd->prepare('SELECT score  FROM tests WHERE email = :email AND type="stimulus visuel"');
+        $reqScore->execute(array(
+            'email' => $_SESSION['email']));
+
+
+        function affiche_date1($req) {
+            while($donneesDate = $req ->fetch()) {
+                echo "'Test du ".$donneesDate['date']."'," ;}
+        }
+
+        function affiche_score1($req) {
+            while($donneesTests = $req ->fetch()) {
+                echo "'".$donneesTests['score']."'," ;}
+        }
 
         ?>
 
-    <script>
+        <canvas id="myChart1" width="500" ></canvas>
 
-    var ctx = document.getElementById('myChart1').getContext('2d');
-    var chart = new Chart(ctx, {
-        // The type of chart we want to create
-        type: 'bar',
+        <script>
+            var ctx = document.getElementById('myChart1').getContext('2d');
+            var chart = new Chart(ctx, {
+                // The type of chart we want to create
+                type: 'line',
 
-        // The data for our dataset
-        data: {
-            labels: <?php echo json_encode($label) ?>,
-            datasets: [{
-                label: 'Mes données',
-                backgroundColor: 'rgb(176,196,222)',
-                borderColor: 'rgb(176,196,222)',
-                data: <?php echo json_encode($data) ?>,
-            }]
-        },
+                // The data for our dataset
+                data: {
+                    labels: [<?php affiche_date1($reqDate); ?>],
+                    datasets: [
+                        {
+                            label: 'Score',
+                            backgroundColor: 'rgba(0, 0, 0, 0.1)',
+                            borderColor: 'rgba(0, 0, 0, 0.1)',
+                            data: [<?php affiche_score1($reqScore); ?>]
+                        },
+                    ]
+                },
 
-    });
-</script>
+                // Configuration options go here
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+        </script>
 
-
-
-
-
-
-
-<div class="canvas2">
-    <canvas id="myChart2"></canvas>
-</div>
-<script>
-
-    var ctx = document.getElementById('myChart2').getContext('2d');
-    var chart = new Chart(ctx, {
-        // The type of chart we want to create
-        type: 'bar',
-
-        // The data for our dataset
-        data: {
-            labels: <?=json_encode($donnees['date']);?>,
-            datasets: [{
-                label: 'My First dataset',
-                backgroundColor: 'rgb(176,196,222)',
-                borderColor: 'rgb(176,196,222)',
-                data: [0, 10, 5, 2, 20, 30, 45]
-            }]
-        },
-
-        // Configuration options go here
-        options: {
-            title:{
-                text:"Résulats du temps de réaction à un stimulus sonore"
-            }
-        }
-
-    });
-</script>
-
+    </div>
 
 </div>
-
 
 
 
