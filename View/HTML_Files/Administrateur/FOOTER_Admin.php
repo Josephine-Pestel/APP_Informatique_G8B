@@ -22,11 +22,11 @@
 
         <div class="texte_footer">
 
-            <h2>À Propos de nous</h2>
+            <h2>A propos de nous </h2>
             <p>Wink est une jeune start-up française spécialisée dans la réalisation de tests psychotechniques</p>
             <p>Les tests sur cette plateforme ont été conçus pour Infinite Measures</p>
         </div>
-        <a href="#" class="bouton_mail" alt="Envoyer un mail" target="_blank">CONTACTEZ-NOUS</a>
+        <a href="Apropos_admin.php" class="bouton_mail" alt="Envoyer un mail">INFINITE MEASURES & WINK</a>
 
     </div>
 
