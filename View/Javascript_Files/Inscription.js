@@ -25,7 +25,7 @@ function checkName(name) {
 
 function checkPassword(password, confirm_password) {
     if (password != confirm_password) {
-        alert("the passwords don't match");
+        alert("Les mots de passe ne sont pas identiques !");
         window.location.reload();
     }
 }
@@ -36,6 +36,6 @@ function ValidateEmail(mail)
     {
         return (true)
     }
-    alert("You have entered an invalid email address!")
+    alert("Vous avez rentré une adresse email invalide !")
     return (false)
 }

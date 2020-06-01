@@ -36,7 +36,7 @@ else if($_POST['email']==$mailGestionnaire){
 //si si les variables existent
 else{
     //S'il y a plusieurs erreurs, alors message d'erreur
-    if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) OR $_POST['mdp'] != $_POST['confirmation_mdp'] ){
+    if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) Or $_POST['mdp'] != $_POST['confirmation_mdp'] ){
         echo '<p class="ERREURS"> Change les erreurs qui te sont apparus en pop-up !
                                   Tu vas être redirigé dans quelques secondes sur le formulaire d\'inscription</p>' ;
         header('Refresh:8; url=../view/HTML_Files/SansCompte/P_Inscription.php');
