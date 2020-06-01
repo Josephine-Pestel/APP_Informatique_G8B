@@ -19,7 +19,7 @@ include('ENTETE_MENU_Admin.php');
 
 <!-- Milieu -->
 
-<h1 class="titre_connexion"> Editer son profil </h1>
+<h1 class="titre_connexion"> Editer le profil d'un utilisateur </h1>
 <!-- Formulaire -->
 
 

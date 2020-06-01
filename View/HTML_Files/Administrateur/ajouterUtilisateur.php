@@ -14,7 +14,7 @@
 require('ENTETE_MENU_Admin.php');
 
 ?>
-<h1>Veuillez remplir le formulaire ci-dessous pour ajouter un utilisateur à la base de donnée </h1>
+<h1 class="titre_page">Veuillez remplir le formulaire ci-dessous pour ajouter un utilisateur à la base de donnée </h1>
 
 <section class="bloc_infos">
     <form name="formulaire_ajout" action="../../../Controller/ajoutUtilisateur_Admin.php" method="post">

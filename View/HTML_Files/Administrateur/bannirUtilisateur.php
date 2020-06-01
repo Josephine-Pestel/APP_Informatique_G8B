@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <link type="text/css" rel="stylesheet" href="../../CSS_files/ajoutUtilisateur_Admin.css?t=<? echo time(); ?>" media="all">
+    <link type="text/css" rel="stylesheet" href="../../CSS_files/bannirUtilisateur.css?t=<? echo time(); ?>" media="all">
     <meta charset="utf-8" />
     <title>WINK FOR INIFINITE MEASURES</title>
     <script src="../../Javascript_Files/ajoutUtilisateur_Admin.js"></script>
@@ -14,7 +14,7 @@
 require('ENTETE_MENU_Admin.php');
 
 ?>
-<h1> Bannir des utilisateurs</h1>
+<h1 class="titre_page"> Bannir des utilisateurs</h1>
 
 <section class="bloc_infos">
     <form name="formulaire_banir" action="../../../Controller/bannirUtilisateur_Admin.php" method="post">
