@@ -30,7 +30,7 @@ session_start()?>
 
 
 <div class="stimulus sonore">
-    <?php $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
+    <?php $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', 'HpB9ADcAKZrU');
 
     $reqDate=$bdd->prepare('SELECT `date` FROM `tests` WHERE email = :email AND type="stimulus sonore"');
     $reqDate->execute(array(

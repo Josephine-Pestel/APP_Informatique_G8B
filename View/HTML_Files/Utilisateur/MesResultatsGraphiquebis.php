@@ -23,7 +23,7 @@
             <div class="bargraph" style= "width: 365px;">
                 <?php
                 session_start();
-                $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
+                $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', 'HpB9ADcAKZrU');
                 $req = $bdd->prepare('SELECT `idTest`, `type`, `score`, `date`, `email` FROM `tests` WHERE `email`= :email AND `type`="stimulus sonore"');
                 $req->execute(array(
                     'email' => $_SESSION['email']

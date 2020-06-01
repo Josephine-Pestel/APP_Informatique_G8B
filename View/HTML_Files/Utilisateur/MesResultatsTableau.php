@@ -20,7 +20,7 @@ require('ENTETE_MENU_Utilisateur.php');
 
 <?php
 session_start();
-$bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
+$bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', 'HpB9ADcAKZrU');
     $req = $bdd->prepare('SELECT `idTest`, `type`, `score`, DATE_FORMAT(`date`, "%d/%m/%Y"), `email` FROM `tests` WHERE email=:email');
     $req->execute(array(
         'email' => $_SESSION['email']));

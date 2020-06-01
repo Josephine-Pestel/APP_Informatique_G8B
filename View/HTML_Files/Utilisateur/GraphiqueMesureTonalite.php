@@ -29,7 +29,7 @@ session_start()?>
 
 
     <div class="tonalite">
-        <?php $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', '');
+        <?php $bdd= new PDO( 'mysql:host=localhost;dbname=g8b;port=3308;charset=UTF8', 'root', 'HpB9ADcAKZrU');
 
         $reqDate=$bdd->prepare('SELECT `date` FROM `tests` WHERE email = :email AND type="reconnaissance de tonalité"');
         $reqDate->execute(array(
