@@ -29,7 +29,7 @@ require('ENTETE_MENU_Admin.php');
 <section class="deux_parties">
     <section class="partie_gauche">
 
-        <form name="choix_admin" action="../../../Controller/gererUtilisateur_Admin" method="POST">
+        <form name="choix_admin" action="../../../Controller/gererUtilisateur_Admin.php" method="POST">
                 <label class="texte_choix"> Que voulez-vous faire ? :</label>
                 <select class="liste_choix" name="choix">
                     <option value="editer">Editer le profil d'un utilisateur</option>
