@@ -27,11 +27,11 @@ if ($pseudo_rentre)
 }
 else if($_POST['email']==$mailAdmin){
     echo '<p class="ERREUR_mail_existe"> Impossible ce mail est celui de l\'administrateur. Vous allez être redirigé dans quelques secondes sur le formulaire d\'inscription </p>';
-    header('Refresh:8; url=../view/HTML_Files/SansCompte/P_Inscription.php');
+    header('Refresh:8; url=../View/HTML_Files/SansCompte/P_Inscription.php');
 }
 else if($_POST['email']==$mailGestionnaire){
     echo '<p class="ERREUR_mail_existe"> Impossible ce mail est celui du gestionnaire.  Vous allez être redirigé dans quelques secondes sur le formulaire d\'inscription </p>';
-    header('Refresh:8; url=../view/HTML_Files/SansCompte/P_Inscription.php');
+    header('Refresh:8; url=../View/HTML_Files/SansCompte/P_Inscription.php');
 }
 
 //si si les variables existent
@@ -40,12 +40,12 @@ else{
     if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) OR $_POST['mdp'] != $_POST['confirmation_mdp'] ){
         echo '<p class="ERREURS"> Change les erreurs qui te sont apparus en pop-up !
                                   Tu vas être redirigé dans quelques secondes sur le formulaire d\'inscription</p>' ;
-        header('Refresh:8; url=../view/HTML_Files/SansCompte/P_Inscription.php');
+        header('Refresh:8; url=../View/HTML_Files/SansCompte/P_Inscription.php');
     }
 
     else if($_POST['naissance']> date("jj-mm-aaaa")){
     echo '<p class="ERREURS"> Vous avez entré une date dans le futur. Veuillez changer svp.</p>' ;
-    header('Refresh:8; url=../view/HTML_Files/SansCompte/P_Inscription.php');
+    header('Refresh:8; url=../View/HTML_Files/SansCompte/P_Inscription.php');
     }
     //sinon, s'il n'y a pas d'erreur, c'est bon on passe à la connexion !
     else{
