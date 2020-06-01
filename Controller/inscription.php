@@ -43,14 +43,16 @@ else{
         header('Refresh:8; url=../View/HTML_Files/SansCompte/P_Inscription.php');
     }
 
-    else if($_POST['naissance']> date("jj-mm-aaaa")){
+    else if($_POST['naissance']> date("Y-d-m")){
     echo '<p class="ERREURS"> Vous avez entré une date dans le futur. Veuillez changer svp.</p>' ;
-    header('Refresh:8; url=../View/HTML_Files/SansCompte/P_Inscription.php');
+    header('Refresh:15; url=../View/HTML_Files/SansCompte/P_Inscription.php');
     }
     //sinon, s'il n'y a pas d'erreur, c'est bon on passe à la connexion !
     else{
         getDonneesUtilisateurs();
         header('Location:../View/HTML_Files/SansCompte/P_Connexion.php');
+
+
     }
 }
 
