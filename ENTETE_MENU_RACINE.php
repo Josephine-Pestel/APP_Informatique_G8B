@@ -13,7 +13,7 @@
 <body>
 
 <header>
-        <a href="http://localhost/APP_Informatique_G8B_ANGLAIS/indexxxx.php" target="_blank">
+        <a href="http://localhost/APP_Informatique_G8B_ENGLISH/indexxx.php" target="_blank">
             <img class= "anglais" src="images/anglais.png" alt= "nom de ton image">
         </a>
         <h1 class="titre">INFINITE MEASURES</h1>
