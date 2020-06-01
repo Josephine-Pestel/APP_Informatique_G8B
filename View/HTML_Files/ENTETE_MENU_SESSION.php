@@ -25,7 +25,7 @@
         <a href="mailto:infinitemeasures@gmail.com">
             <img class= "email" src="../../../images/iconmail.png" alt= "nom de ton image">
         </a>
-        <a href="../deconnexion" class="bouton_deconnexion" alt="Changer la langue">Déconnexion</a>
+        <a href="../deconnexion.php" class="bouton_deconnexion" alt="Changer la langue">Déconnexion</a>
     </div>
 
 </header>
