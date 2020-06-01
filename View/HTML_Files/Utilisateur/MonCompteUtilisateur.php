@@ -34,7 +34,7 @@ require('ENTETE_MENU_Utilisateur.php');
             <a href="EditerProfil_Utilisateur.php">
                 <button class="editer">EDITER SON PROFIL</button>
             </a>
-            <a href="lancerTest.php">
+            <a href="lancerTEST.php">
                 <button class="consulter_graphique"> LANCER UN TEST</button>
             </a>
         </section>
