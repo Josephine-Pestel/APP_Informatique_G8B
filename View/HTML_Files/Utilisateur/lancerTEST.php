@@ -30,7 +30,7 @@ require('ENTETE_MENU_Utilisateur.php');
 
 <div class="formulaire">
 
-    <form action="#.php" method="POST">
+    <form>
         <p>
             <label>Type de test :
                 <select name="choix">
@@ -43,7 +43,7 @@ require('ENTETE_MENU_Utilisateur.php');
             </label>
         </p>
         <button class="lancer"> LANCER</button>
-
+    </form>
 </div>
 
 
