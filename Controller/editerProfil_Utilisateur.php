@@ -34,12 +34,21 @@ if($_POST['email']){
     header('Location:../View/HTML_Files/Utilisateur/MonCompteUtilisateur.php');
 }
 if($_POST['naissance']){
-    updateNaissance($_SESSION['email']);
-    $_SESSION['naissance']=$_POST['naissance'];
-    header('Location:../View/HTML_Files/Utilisateur/MonCompteUtilisateur.php');
+    if($_POST['naissance']> date("jj-mm-aaaa")){
+        echo '<p class="ERREURS"> Vous avez entré une date dans le futur. Veuillez changer svp. Vous allez être redirigé dans quelques secondes.</p>' ;
+        header('Refresh:8; url=../View/HTML_Files/Utilisateur/EditerProfil_Utilisateur.php');
+    }
+    else{
+        updateNaissance($_SESSION['email']);
+        $_SESSION['naissance']=$_POST['naissance'];
+        header('Location:../View/HTML_Files/Utilisateur/MonCompteUtilisateur.php');
+
+    }
+
 }
 else{
-    echo "tu n'a rien rempli";
+    echo  '<p class="ERREURS"> Vous n\'avez rien rempli. Vous allez être redirigé sur le formulaire pour éditer votre profil.</p>' ;
+    header('Refresh:8; url=../View/HTML_Files/Utilisateur/EditerProfil_Utilisateur.php');
 }
 
 

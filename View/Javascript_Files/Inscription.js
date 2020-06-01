@@ -26,7 +26,7 @@ function checkName(name) {
 function checkPassword(password, confirm_password) {
     if (password != confirm_password) {
         alert("Les mots de passe ne sont pas identiques !");
-        window.location.reload();
+
     }
 }
 
