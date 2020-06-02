@@ -26,7 +26,7 @@ require('ENTETE_MENU_Utilisateur.php'); ?>
 <!-- Formulaire pour mettre question/réponse -->
 <p>Exprime-toi !</p>
 <!-- PARTIE 1 : Formulaire pour écrire un commentaire -->
-<form action="../../../Controller/ajoutForumQR.php" method="post">
+<form action="../../../Controller/ajoutForumQR_Utilisateur.php" method="post">
 
     <input type="hidden" name="auteur" value = "<?php echo $_SESSION['email']?>" />
 

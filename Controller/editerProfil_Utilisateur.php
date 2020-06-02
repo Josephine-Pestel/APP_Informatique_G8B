@@ -34,8 +34,8 @@ if($_POST['email']){
     header('Location:../View/HTML_Files/Utilisateur/MonCompteUtilisateur.php');
 }
 if($_POST['naissance']){
-    if($_POST['naissance']> date("jj-mm-aaaa")){
-        echo '<p class="ERREURS"> Vous avez entré une date dans le futur. Veuillez changer svp. Vous allez être redirigé dans quelques secondes.</p>' ;
+    if($_POST['naissance']> date("Y-d-m")){
+        echo '<p class="ERREURS"> Vous avez entré une date dans le futur. Veuillez changer svp.</p>' ;
         header('Refresh:8; url=../View/HTML_Files/Utilisateur/EditerProfil_Utilisateur.php');
     }
     else{
