@@ -25,7 +25,7 @@ require('ENTETE_MENU_Gestionnaire.php'); ?>
 <h1 class="titre_page"> Ajouter une discusssion au forum </h1>
 
 <section class="bloc_infos">
-    <form name="formulaire_ajout" action="../../../Controller/ajoutDiscussion_Forum.php" method="post">
+    <form name="formulaire_ajout" action="../../../Controller/ajouterDiscussion_Forum_Gestionnaire.php" method="post">
 
         <p class="theme"> Thème* :</p>
         <input class = "rectangle_theme" type="text" name="theme" required/> <br/>
