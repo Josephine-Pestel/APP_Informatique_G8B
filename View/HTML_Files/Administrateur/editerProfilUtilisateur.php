@@ -43,7 +43,7 @@ include('ENTETE_MENU_Admin.php');
         </br>
 
         <p class="naissance"> Modifier sa date de naissance :</p>
-        <input type="date" name="naissance"></label>
+        <input type="date" name="naissance" max="<?php echo date("Y-m-d");?>" value="<?php echo date("Y-m-d");?>">
         </br>
 
         <input class="envoyer" type ="submit" value="Enregistrer" onclick="checkForm();"/>
