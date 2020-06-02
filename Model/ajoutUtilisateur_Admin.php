@@ -10,7 +10,7 @@ function ajoututilisateurBDD(){
     $req->execute(array(
         'prenom' => $_POST['prenom'],
         'nom' => $_POST['nom'],
-        'mdp' => $_POST['mdp'],
+        'mdp' => passwordHash_admin($_POST['mdp']),
         'email' => $_POST['email'],
         'naissance'=>$_POST['naissance']));
     //fermeture de la requête

@@ -18,5 +18,12 @@ else{
 
 <?php
 }
+
+//HACHAGE DU MOT DE PASSE
+function passwordHash_admin($input_password){
+    $pass_hash = password_hash($input_password,  PASSWORD_DEFAULT);
+    return($pass_hash);
+}
 ?>
+
 
