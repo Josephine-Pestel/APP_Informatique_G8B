@@ -43,7 +43,7 @@ require('ENTETE_MENU_SansCompte.php');
         </br>
 
         <p class="date_naissance"> Date de naissance* :</p>
-            <input type="date" name="naissance" required></label>
+        <input type="date" name="naissance" max="<?php echo date("Y-m-d");?>" value="<?php echo date("Y-m-d");?>">
         </br>
 
         <input class="envoyer" type ="submit" value="S'inscrire" onclick="checkForm();"/>
