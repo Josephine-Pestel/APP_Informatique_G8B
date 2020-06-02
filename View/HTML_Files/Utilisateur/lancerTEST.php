@@ -35,10 +35,10 @@ require('ENTETE_MENU_Utilisateur.php');
             <label>Type de test :
                 <select name="choix">
                     <option value="Temperature">Temperature</option>
-                    <option value="Frequence cardiaque">frequence_cardiaque</option>
+                    <option value="Frequence cardiaque">frequence cardiaque</option>
                     <option value="reconnaissance de tonalité">Mesure de reconnaissance de tonalite</option>
                     <option value="stimulus sonore">Temps de réaction à un stimulus sonore</option>
-                    <option value="stimulus visuel">Temps de réaction à un stimulus_visuel</option>
+                    <option value="stimulus visuel">Temps de réaction à un stimulus visuel</option>
                 </select>
             </label>
         </p>
